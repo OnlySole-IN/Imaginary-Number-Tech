@@ -18,14 +18,14 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
-import onlysole.imaginary_tech.Tags;
+import onlysole.imaginarytech.api.ITValues;
 import onlysole.imaginarytech.api.utils.ITLog;
 
 import javax.annotation.Nonnull;
 import java.util.Objects;
 import java.util.function.Function;
 
-@Mod.EventBusSubscriber(modid = Tags.MOD_ID)
+@Mod.EventBusSubscriber(modid = ITValues.MOD_ID)
 public class CommonProxy {
 
         public static final CreativeTabs IMAGINARY_TAB = new CreativeTabs("ImaginaryTech") {

@@ -17,7 +17,7 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import onlysole.imaginary_tech.Tags;
+import onlysole.imaginarytech.api.ITValues;
 import org.apache.commons.lang3.ArrayUtils;
 
 import javax.annotation.Nullable;
@@ -40,7 +40,7 @@ public class ITOverlayRenderer implements ICubeRenderer {
 
     @SideOnly(Side.CLIENT)
     public void registerIcons(TextureMap textureMap) {
-        String modID = Tags.MOD_ID;
+        String modID = ITValues.MOD_ID;
         String path = this.path;
         String[] split = this.path.split(":");
         if (split.length == 2) {

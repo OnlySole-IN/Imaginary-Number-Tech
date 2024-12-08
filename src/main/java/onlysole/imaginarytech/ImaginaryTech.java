@@ -2,27 +2,28 @@ package onlysole.imaginarytech;
 
 import gregtech.api.worldgen.config.WorldGenRegistry;
 import gregtech.common.ConfigHolder;
-import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLConstructionEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import onlysole.imaginary_tech.Tags;
 import onlysole.imaginarytech.api.utils.ITLog;
 import onlysole.imaginarytech.common.CommonProxy;
+import onlysole.imaginarytech.common.items.ITMetaItems;
 
 import java.io.IOException;
 
-@Mod(modid = Tags.MOD_ID,
-        name = Tags.MOD_NAME,
+import static onlysole.imaginarytech.api.ITValues.*;
+
+@Mod(modid = MOD_ID,
+        name = MOD_NAME,
         acceptedMinecraftVersions = "[1.12.2,1.13)",
-        version = Tags.VERSION,
+        version = VERSION,
         dependencies = "required-after:gregtech@[2.8.10-beta,);")
 public class ImaginaryTech {
 
     @SidedProxy(
-            modId = Tags.MOD_ID,
+            modId = MOD_ID,
             clientSide = "onlysole.imaginarytech.client.ClientProxy",
             serverSide = "onlysole.imaginarytech.common.CommonProxy"
     )
@@ -37,7 +38,7 @@ public class ImaginaryTech {
         ITLog.init(event.getModLog());
         ConfigHolder.machines.highTierContent = true;
         ITLog.logger.info("Enabled GregTechCEu highTierContent");
-        //ITMetaItems.init();
+        ITMetaItems.init();
         //ITMetaBlocks.init();
         //ITAPI.APIBlockInit();
         //MetaTileEntities.init();
