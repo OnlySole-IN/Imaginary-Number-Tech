@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "imaginarytech:items/singularity/gastronomic_singularity",
+    "layer1": "imaginarytech:items/singularity/gastronomic_singularity_overlay"
+  }
+}

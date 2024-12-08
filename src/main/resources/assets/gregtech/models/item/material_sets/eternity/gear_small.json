@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "imaginarytech:items/material_sets/eternity/gear_small",
+    "layer1": "imaginarytech:items/material_sets/eternity/gear_small_overlay"
+  }
+}

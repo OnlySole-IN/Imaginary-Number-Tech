@@ -1,0 +1,81 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "variant": {
+      "draconium_casing": {
+        "model": "minecraft:cube_all",
+        "textures": {
+          "all": "imaginarytech:blocks/casings/machine_casing_b/draconium_casing"
+        }
+      },
+      "dragon_fusion_coil": {
+        "model": "minecraft:cube_all",
+        "textures": {
+          "all": "imaginarytech:blocks/casings/machine_casing_b/dragon_fusion_coil"
+        }
+      },
+      "hg_1223_casing": {
+        "model": "minecraft:cube_all",
+        "textures": {
+          "all": "imaginarytech:blocks/casings/machine_casing_b/hg_1223_casing"
+        }
+      },
+      "macerator_casing": {
+        "model": "minecraft:cube_all",
+        "textures": {
+          "all": "imaginarytech:blocks/casings/machine_casing_b/macerator_casing"
+        }
+      },
+      "brick": {
+        "model": "minecraft:cube_all",
+        "textures": {
+          "all": "imaginarytech:blocks/casings/machine_casing_b/brick"
+        }
+      },
+      "talonite_casing": {
+        "model": "minecraft:cube_all",
+        "textures": {
+          "all": "imaginarytech:blocks/casings/machine_casing_b/talonite_casing"
+        }
+      },
+      "machine_casing": {
+        "model": "minecraft:cube_all",
+        "textures": {
+          "all": "imaginarytech:blocks/casings/machine_casing_b/machine_casing"
+        }
+      },
+      "turbine_casing": {
+        "model": "minecraft:cube_all",
+        "textures": {
+          "all": "imaginarytech:blocks/casings/machine_casing_b/turbine_casing"
+        }
+      },
+      "fishing_casing": {
+        "model": "minecraft:cube_all",
+        "textures": {
+          "all": "imaginarytech:blocks/casings/machine_casing_b/fishing_casing"
+        }
+      },
+      "vacuum_casing": {
+        "model": "minecraft:cube_bottom_top",
+        "textures": {
+          "top": "imaginarytech:blocks/casings/machine_casing_b/vacuum_casing",
+          "side": "imaginarytech:blocks/casings/machine_casing_b/vacuum_casing_side",
+          "bottom": "imaginarytech:blocks/casings/machine_casing_b/vacuum_casing"
+        }
+      },
+      "process_casing": {
+        "model": "minecraft:cube_all",
+        "textures": {
+          "all": "imaginarytech:blocks/casings/machine_casing_b/process_casing"
+        }
+      },
+      "aseptic_farm_machine_casing": {
+        "model": "minecraft:cube_all",
+        "textures": {
+          "all": "imaginarytech:blocks/casings/machine_casing_b/aseptic_farm_machine_casing"
+        }
+      }
+    }
+  }
+}

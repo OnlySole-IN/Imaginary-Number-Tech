@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "imaginarytech:items/wrap/metaitems/smd_diode",
+    "layer1": "imaginarytech:items/wrap_overlay"
+  }
+}

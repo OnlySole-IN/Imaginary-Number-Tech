@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "imaginarytech:items/material_sets/spacetime/spring",
+    "layer1": "imaginarytech:items/material_sets/spacetime/halo_overlay"
+  }
+}
