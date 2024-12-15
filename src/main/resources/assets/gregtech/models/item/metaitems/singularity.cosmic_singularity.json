@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarytech:items/singularity/cosmic_singularity",
-    "layer1": "imaginarytech:items/singularity/cosmic_singularity_overlay"
+    "layer0": "imaginarynumbertech:items/singularity/cosmic_singularity",
+    "layer1": "imaginarynumbertech:items/singularity/cosmic_singularity_overlay"
   }
 }

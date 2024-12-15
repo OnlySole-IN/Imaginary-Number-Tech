@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarytech:items/metaitems/station_1"
+    "layer0": "imaginarynumbertech:items/metaitems/station_1"
   }
 }

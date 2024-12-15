@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarytech:items/metaitems/component.supracausal_smd.transistor",
-    "layer1": "imaginarytech:items/wrap_overlay"
+    "layer0": "imaginarynumbertech:items/metaitems/component.supracausal_smd.transistor",
+    "layer1": "imaginarynumbertech:items/wrap_overlay"
   }
 }

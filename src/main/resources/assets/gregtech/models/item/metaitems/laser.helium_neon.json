@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarytech:items/metaitems/laser.helium_neon"
+    "layer0": "imaginarynumbertech:items/metaitems/laser.helium_neon"
   }
 }

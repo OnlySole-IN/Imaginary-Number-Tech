@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarytech:items/metaitems/charged_triplet_neutronium_sphere"
+    "layer0": "imaginarynumbertech:items/metaitems/charged_triplet_neutronium_sphere"
   }
 }

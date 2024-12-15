@@ -87,7 +87,7 @@ minecraft {
     if (propertyBool('use_mixins')) {
         args << '-Dmixin.hotSwap=true'
         args << '-Dmixin.checks.interfaces=true'
-        args << '-Dmixin.debug.export=true'
+        args << '-Dmixin.debug.export=false'//是否导出调试信息
     }
     extraRunJvmArguments.addAll(args)
     extraRunJvmArguments.addAll(propertyStringList('extra_jvm_args'))

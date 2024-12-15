@@ -3,7 +3,7 @@
   "defaults": {
     "model": "leaves",
     "textures": {
-      "all": "imaginarytech:blocks/trees/leaves/leaves_pine"
+      "all": "imaginarynumbertech:blocks/trees/leaves/leaves_pine"
     }
   },
   "variants": {

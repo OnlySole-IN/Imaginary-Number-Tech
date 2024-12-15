@@ -1,0 +1,13 @@
+{
+    "ctm": {
+        "ctm_version": 1,
+        "type": "CTM",
+        "layer": "SOLID",
+        "textures": [
+            "imaginarynumbertech:blocks/casings/coils/awakened_draconium_ctm"
+        ],
+        "extra": {
+            "connect_inside": true
+        }
+    }
+}

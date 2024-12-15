@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarytech:items/metaitems/circuit.optical_assembly"
+    "layer0": "imaginarynumbertech:items/metaitems/circuit.optical_assembly"
   }
 }

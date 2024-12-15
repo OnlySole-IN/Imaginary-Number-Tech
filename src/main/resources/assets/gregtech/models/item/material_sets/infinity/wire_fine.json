@@ -1,8 +1,8 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarytech:items/material_sets/infinity/wire_fine",
-    "layer1": "imaginarytech:items/material_sets/infinity/wire_fine_overlay",
-    "layer2": "imaginarytech:items/material_sets/infinity/halo_overlay"
+    "layer0": "imaginarynumbertech:items/material_sets/infinity/wire_fine",
+    "layer1": "imaginarynumbertech:items/material_sets/infinity/wire_fine_overlay",
+    "layer2": "imaginarynumbertech:items/material_sets/infinity/halo_overlay"
   }
 }

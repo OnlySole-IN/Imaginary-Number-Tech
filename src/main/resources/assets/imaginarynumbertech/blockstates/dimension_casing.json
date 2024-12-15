@@ -1,0 +1,74 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:cube_all",
+    "textures": {
+      "all": "imaginarynumbertech:blocks/rendering_error"
+    }
+  },
+  "variants": {
+    "variant": {
+      "motor_block": {
+        "model": "minecraft:cube_all",
+        "textures": {
+          "all": "imaginarynumbertech:blocks/casings/dimension_casing/motor_block"
+        }
+      },
+      "annihilation": {
+        "model": "minecraft:cube_all",
+        "textures": {
+          "all": "imaginarynumbertech:blocks/casings/dimension_casing/annihilation"
+        }
+      },
+      "dimensional": {
+        "model": "minecraft:cube_all",
+        "textures": {
+          "all": "imaginarynumbertech:blocks/casings/dimension_casing/dimensional"
+        }
+      },
+      "field_generator": {
+        "model": "minecraft:cube_all",
+        "textures": {
+          "all": "imaginarynumbertech:blocks/casings/dimension_casing/field_generator"
+        }
+      },
+      "dimension": {
+        "model": "minecraft:cube_all",
+        "textures": {
+          "all": "imaginarynumbertech:blocks/casings/dimension_casing/dimension"
+        }
+      },
+      "dimension_computer": {
+        "model": "minecraft:cube_all",
+        "textures": {
+          "all": "imaginarynumbertech:blocks/casings/dimension_casing/dimension_computer"
+        }
+      },
+      "advanced_dimension_energy": {
+        "model": "minecraft:cube_all",
+        "textures": {
+          "all": "imaginarynumbertech:blocks/casings/dimension_casing/advanced_dimension_energy"
+        }
+      },
+      "ultimate_dimension_energy": {
+        "model": "minecraft:cube_all",
+        "textures": {
+          "all": "imaginarynumbertech:blocks/casings/dimension_casing/ultimate_dimension_energy"
+        }
+      },
+      "hollow": {
+        "model": "minecraft:cube_all",
+        "textures": {
+          "all": "imaginarynumbertech:blocks/casings/dimension_casing/hollow"
+        }
+      },
+      "spacetime": {
+        "model": "minecraft:cube_all",
+        "textures": {
+          "all": "imaginarynumbertech:blocks/casings/dimension_casing/spacetime"
+        }
+      }
+    }
+  }
+}
+

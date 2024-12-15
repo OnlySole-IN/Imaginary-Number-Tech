@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarytech:items/material_sets/mhcsm/casing_small",
-    "layer1": "imaginarytech:items/material_sets/mhcsm/casing_small_overlay"
+    "layer0": "imaginarynumbertech:items/material_sets/mhcsm/casing_small",
+    "layer1": "imaginarynumbertech:items/material_sets/mhcsm/casing_small_overlay"
   }
 }

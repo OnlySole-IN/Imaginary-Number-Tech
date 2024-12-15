@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "cross": "imaginarytech:blocks/trees/saplings/sapling_pine"
-  }
-}

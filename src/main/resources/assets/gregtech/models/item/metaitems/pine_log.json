@@ -4,8 +4,8 @@
     "transform": "forge:default-block",
     "model": "minecraft:cube_column",
     "textures": {
-      "end": "imaginarytech:blocks/trees/logs/log_pine_top",
-      "side": "imaginarytech:blocks/trees/logs/log_pine"
+      "end": "imaginarynumbertech:blocks/trees/logs/log_pine_top",
+      "side": "imaginarynumbertech:blocks/trees/logs/log_pine"
     }
   },
   "variants": {

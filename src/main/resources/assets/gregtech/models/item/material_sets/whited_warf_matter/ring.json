@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarytech:items/material_sets/whited_warf_matter/ring",
-    "layer1": "imaginarytech:items/material_sets/whited_warf_matter/halo_overlay"
+    "layer0": "imaginarynumbertech:items/material_sets/whited_warf_matter/ring",
+    "layer1": "imaginarynumbertech:items/material_sets/whited_warf_matter/halo_overlay"
   }
 }

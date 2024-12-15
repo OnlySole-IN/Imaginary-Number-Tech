@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures" : {
-    "layer0": "imaginarytech:items/metaitems/component.cosmic_smd.diode"
+    "layer0": "imaginarynumbertech:items/metaitems/component.cosmic_smd.diode"
   }
 }

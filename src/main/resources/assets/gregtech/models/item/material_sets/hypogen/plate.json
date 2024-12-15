@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarytech:items/material_sets/hypogen/plate",
-    "layer1": "imaginarytech:items/material_sets/hypogen/plate_overlay"
+    "layer0": "imaginarynumbertech:items/material_sets/hypogen/plate",
+    "layer1": "imaginarynumbertech:items/material_sets/hypogen/plate_overlay"
   }
 }

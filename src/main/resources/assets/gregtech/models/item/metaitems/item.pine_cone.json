@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarytech:items/metaitems/item.pine_cone"
+    "layer0": "imaginarynumbertech:items/metaitems/item.pine_cone"
   }
 }

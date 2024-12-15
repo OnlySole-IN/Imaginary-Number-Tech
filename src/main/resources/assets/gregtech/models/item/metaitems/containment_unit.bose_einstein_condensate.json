@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarytech:items/metaitems/containment_unit.bose_einstein_condensate"
+    "layer0": "imaginarynumbertech:items/metaitems/containment_unit.bose_einstein_condensate"
   }
 }

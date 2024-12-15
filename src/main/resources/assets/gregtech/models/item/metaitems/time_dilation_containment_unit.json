@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarytech:items/metaitems/time_dilation_containment_unit"
+    "layer0": "imaginarynumbertech:items/metaitems/time_dilation_containment_unit"
   }
 }

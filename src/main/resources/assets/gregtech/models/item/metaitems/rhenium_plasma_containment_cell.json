@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarytech:items/metaitems/rhenium_plasma_containment_cell"
+    "layer0": "imaginarynumbertech:items/metaitems/rhenium_plasma_containment_cell"
   }
 }
