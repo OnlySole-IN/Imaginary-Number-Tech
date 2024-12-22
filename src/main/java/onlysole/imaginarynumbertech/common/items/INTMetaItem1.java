@@ -20,11 +20,11 @@ import static onlysole.imaginarynumbertech.common.items.INTMetaItems.*;
 public class INTMetaItem1 extends StandardMetaItem {
 
     public INTMetaItem1() {
-        this.setRegistryName("meta_item_int");
-        setCreativeTabs(CommonProxy.IMAGINARY_TAB);
+        super();
     }
 
     // = this.addItem(,"");
+    @Override
     public void registerSubItems(){
 
         //ID 0~19

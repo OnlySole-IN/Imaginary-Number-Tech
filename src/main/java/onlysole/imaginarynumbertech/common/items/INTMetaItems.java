@@ -2,12 +2,20 @@ package onlysole.imaginarynumbertech.common.items;
 
 import gregtech.api.items.metaitem.MetaItem;
 import gregtech.api.items.metaitem.StandardMetaItem;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.relauncher.SideOnly;
+import onlysole.imaginarynumbertech.api.items.metaitem.INTMetaItem;
+import net.minecraftforge.fml.relauncher.Side;
+import onlysole.imaginarynumbertech.common.CommonProxy;
+
+import java.util.List;
 
 public class INTMetaItems {
 
-    static StandardMetaItem metaItem_NT;
+    public static final List<INTMetaItem<?>> INT_ITEMS = INTMetaItem.getMetaItems();
 
     //ID0-19
+    public static INTMetaItem<?>.MetaValueItem GOOWARE_PROCESSOR_I;
     public static MetaItem<?>.MetaValueItem GOOWARE_PROCESSOR;
     public static MetaItem<?>.MetaValueItem GOOWARE_ASSEMBLY;
     public static MetaItem<?>.MetaValueItem GOOWARE_COMPUTER;
@@ -471,9 +479,21 @@ public class INTMetaItems {
     public static MetaItem<?>.MetaValueItem DEBUG_STRUCTURE_WRITER;
     public static MetaItem<?>.MetaValueItem DEBUG_STRUCTURE_BUILDER;
 
-    public static void init()
-    {
-        metaItem_NT = new INTMetaItem1();
+    public static void init() {
+        INTMetaItem1 first = new INTMetaItem1();
+        first.setRegistryName("meta_item_int");
+        first.setCreativeTabs(CommonProxy.IMAGINARY_TAB);
+        INTMetaItem2 x = new INTMetaItem2();
+        x.setRegistryName("meta_item_int_x");
+        x.setCreativeTabs(CommonProxy.IMAGINARY_TAB);
     }
 
+    @SideOnly(Side.CLIENT)
+    public static void registerModels() {
+        MinecraftForge.EVENT_BUS.register(INTMetaItems.class);
+        for (INTMetaItem<?> item : INT_ITEMS) {
+            item.registerModels();
+            item.registerTextureMesh();
+        }
+    }
 }

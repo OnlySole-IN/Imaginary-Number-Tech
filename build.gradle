@@ -110,6 +110,10 @@ repositories {
 }
 
 dependencies {
+
+    api("com.cleanroommc:modularui:2.5.0-rc1") { transitive = false }
+    api("com.cleanroommc:groovyscript:1.1.1") { transitive = false }
+
     if (propertyBool('use_modern_java_syntax')) {
         annotationProcessor 'com.github.bsideup.jabel:jabel-javac-plugin:1.0.0'
         // Workaround for https://github.com/bsideup/jabel/issues/174
@@ -147,6 +151,10 @@ dependencies {
     compileOnlyApi 'org.jetbrains:annotations:24.1.0'
     annotationProcessor 'org.jetbrains:annotations:24.1.0'
 
+    tasks.withType(JavaCompile) {
+        options.compilerArgs << "-Xlint:deprecation"
+        options.compilerArgs << "-Xlint:unchecked"
+    }
 
     implementation rfg.deobf("curse.maven:codechicken-lib-1-8-242818:2779848")//CCL-3.2.3.358-universal
     implementation rfg.deobf("curse.maven:gregtech-ce-unofficial-557242:5519022")//GT CEu-2.8.10-beta

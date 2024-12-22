@@ -3,7 +3,6 @@ package onlysole.imaginarynumbertech.common;
 import gregtech.api.GregTechAPI;
 import gregtech.api.cover.CoverDefinition;
 import gregtech.api.recipes.recipeproperties.FusionEUToStartProperty;
-import gregtech.common.items.MetaItems;
 import gregtech.loaders.recipe.CraftingComponent;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
@@ -19,6 +18,7 @@ import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
 import onlysole.imaginarynumbertech.api.INTValues;
+import onlysole.imaginarynumbertech.api.items.metaitem.INTMetaItem;
 import onlysole.imaginarynumbertech.api.utils.INTLog;
 import onlysole.imaginarynumbertech.common.items.INTMetaItems;
 
@@ -56,6 +56,10 @@ public class CommonProxy {
         INTLog.logger.info("Registering Items...");
         IForgeRegistry<Item> registry = event.getRegistry();
 
+        for (INTMetaItem<?> item : INTMetaItems.INT_ITEMS) {
+            registry.register(item);
+            item.registerSubItems();
+        }
 
     }
 
