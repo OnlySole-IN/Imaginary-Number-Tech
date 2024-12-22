@@ -151,13 +151,15 @@ dependencies {
     implementation rfg.deobf("curse.maven:codechicken-lib-1-8-242818:2779848")//CCL-3.2.3.358-universal
     implementation rfg.deobf("curse.maven:gregtech-ce-unofficial-557242:5519022")//GT CEu-2.8.10-beta
     implementation rfg.deobf("curse.maven:gregicality-multiblocks-564858:5619513")//GCYM-1.2.11
-    implementation rfg.deobf("curse.maven:gregtech-food-option-477021:5910187")//GTFO-1.12.2
+    implementation rfg.deobf("curse.maven:gregtech-food-option-477021:5994740")//GTFO-1.12.3
 
     implementation rfg.deobf("curse.maven:ae2-extended-life-570458:5411078")// AE2 UEL-v0.56.6
     implementation rfg.deobf("curse.maven:forestry-59751:2918418")//FR-5.8.2.422
 
+    implementation rfg.deobf("curse.maven:avaritia-1-10-261348:3143349")//Avaritia-3.3.0.37-universal
+
     runtimeOnly 'curse.maven:had-enough-items-557549:5906628'//HEI-4.26.2
-    runtimeOnly 'curse.maven:the-one-probe-community-edition-885670:5868069'//TOPML-1.3.1
+    runtimeOnly 'curse.maven:the-one-probe-community-edition-885670:5868069'//TOPCE-1.3.1
 
     // https://mvnrepository.com/artifact/CraftTweaker2/CraftTweaker2-API
     implementation rfg.deobf(files("libs/CraftTweaker2-API-4.1.20.700.jar"))
