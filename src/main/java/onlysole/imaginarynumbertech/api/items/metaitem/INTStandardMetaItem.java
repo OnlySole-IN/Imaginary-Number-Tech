@@ -1,12 +1,6 @@
 package onlysole.imaginarynumbertech.api.items.metaitem;
 
-
-import gregtech.api.gui.ModularUI;
-import gregtech.api.items.gui.PlayerInventoryHolder;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import org.jetbrains.annotations.NotNull;
-
+//2024-12-29
 public abstract class INTStandardMetaItem extends INTMetaItem<INTMetaItem<?>.MetaValueItem> {
 
     public INTStandardMetaItem() {

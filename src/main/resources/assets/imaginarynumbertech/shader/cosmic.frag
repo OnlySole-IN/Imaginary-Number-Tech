@@ -22,7 +22,7 @@ uniform mat2 cosmicuvs[cosmiccount];
 varying vec3 position;
 
 float rand2d(vec2 x) {
-    return fract(sin(mod(dot(x, vec2(12.9898, 78.233)), 3.14)) * 43758.5453);
+	return fract(sin(mod(dot(x, vec2(12.9898, 78.233)), M_PI)) * 43758.5453);
 }
 
 mat4 rotationMatrix(vec3 axis, float angle)
@@ -44,19 +44,18 @@ void main (void)
     vec4 light = gl_Color;
     vec4 mask = texture2D(texture0, gl_TexCoord[0].xy);
     light.rgb *= lightlevel;
-    
+
     float oneOverExternalScale = 1.0/externalScale;
     
     int uvtiles = 16;
     
     // background colour
-//    vec4 col = vec4(0.1,0.0,0.0,1.0);
-	vec4 col = vec4(0.0,0.0,0.3,1.0);
+    vec4 col = vec4(0.1,0.0,0.0,1.0);
     
     float pulse = mod(time,400)/400.0;
-    //  似乎想实现颜色的周期性变化，但好像未起作用
-//    col.g = sin(pulse*M_PI*2) * 0.075 + 0.225;
-//    col.b = cos(pulse*M_PI*2) * 0.05 + 0.3;
+    
+    col.g = sin(pulse*M_PI*2) * 0.075 + 0.225;
+    col.b = cos(pulse*M_PI*2) * 0.05 + 0.3;
     
     // get ray from camera to fragment
     vec4 dir = normalize(vec4( -position, 0));

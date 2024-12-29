@@ -87,6 +87,7 @@ public class CommonProxy {
 
         INTLog.logger.info("Registering recipes...");
 
+        INTMetaItems.registerOreDict();
     }
 
     @SubscribeEvent
@@ -102,5 +103,9 @@ public class CommonProxy {
 
     public void preInit(FMLPreInitializationEvent event) {
 
+    }
+
+    public void load() {
+        //GTDataFixers.init();
     }
 }

@@ -1,3 +1,11 @@
+/**
+ * Original class written by Vazkii for Botania.
+ */
+
+// TEMA: this is the main shader stuff, where the programs are loaded and compiled for the card.
+// other relevant files are the shader in /assets/physis/shader/, and the tesr in /client/render/tile/
+// they have other comments like this in.
+
 package onlysole.imaginarynumbertech.client.utils;
 
 import net.minecraft.client.Minecraft;
@@ -39,10 +47,12 @@ public final class ShaderHelper {
         ARBShaderObjects.glUseProgramObjectARB(shader);
 
         if (shader != 0) {
-            int time = ARBShaderObjects.glGetUniformLocationARB(shader, "time");
             Minecraft mc = Minecraft.getMinecraft();
+            int time = ARBShaderObjects.glGetUniformLocationARB(shader, "time");
+            int animationTime = (int) (mc.player.ticksExisted % 24000);
+
             if (mc.player != null && mc.player.world != null) {
-                ARBShaderObjects.glUniform1iARB(time, (int) (mc.player.world.getWorldTime() % Integer.MAX_VALUE));
+                ARBShaderObjects.glUniform1iARB(time, animationTime <= 12000 ? animationTime : animationTime * -1 + 24000);
             }
 
             if (callback != null) {
@@ -89,13 +99,13 @@ public final class ShaderHelper {
 
         ARBShaderObjects.glLinkProgramARB(program);
         if (ARBShaderObjects.glGetObjectParameteriARB(program, ARBShaderObjects.GL_OBJECT_LINK_STATUS_ARB) == GL11.GL_FALSE) {
-            INTLog.logger.log(Level.ERROR, getLogInfo(program));
+            INTLog.log(Level.ERROR, getLogInfo(program));
             return 0;
         }
 
         ARBShaderObjects.glValidateProgramARB(program);
         if (ARBShaderObjects.glGetObjectParameteriARB(program, ARBShaderObjects.GL_OBJECT_VALIDATE_STATUS_ARB) == GL11.GL_FALSE) {
-            INTLog.logger.log(Level.ERROR, getLogInfo(program));
+            INTLog.log(Level.ERROR, getLogInfo(program));
             return 0;
         }
 

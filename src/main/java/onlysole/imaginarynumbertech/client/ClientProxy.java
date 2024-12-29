@@ -14,8 +14,7 @@ import onlysole.imaginarynumbertech.common.items.INTMetaItems;
 @Mod.EventBusSubscriber({Side.CLIENT})
 public class ClientProxy extends CommonProxy {
 
-    public void preLoad()
-    {
+    public void preLoad() {
         super.preLoad();
         MinecraftForge.EVENT_BUS.register(new INTClientEventHandler());
         ShaderHelper.initShaders();
@@ -23,9 +22,21 @@ public class ClientProxy extends CommonProxy {
 //
 //        ResearchPipeRenderer.INSTANCE.preInit();
     }
+
+    @Override
+    public void load() {
+        super.load();
+        registerColors();
+    }
+
+    public static void registerColors() {
+    //    MetaBlocks.registerColors();
+        INTMetaItems.registerColors();
+    //    ToolItems.registerColors();
+    }
+
     @SubscribeEvent
-    public static void registerModels(ModelRegistryEvent event)
-    {
+    public static void registerModels(ModelRegistryEvent event) {
 //        INTMetaBlocks.registerStateMappers();
 //        INTMetaBlocks.registerItemModels();
         INTMetaItems.registerModels();

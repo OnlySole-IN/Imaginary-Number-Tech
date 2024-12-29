@@ -59,5 +59,6 @@ public class ImaginaryNumberTech {
         } catch (IOException | RuntimeException exception) {
             INTLog.logger.fatal("Failed to initialize worldgen registry.", exception);
         }
+        proxy.load();
     }
 }
