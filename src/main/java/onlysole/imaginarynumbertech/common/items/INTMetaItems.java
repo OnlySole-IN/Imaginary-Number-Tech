@@ -1,5 +1,6 @@
 package onlysole.imaginarynumbertech.common.items;
 
+import gregtech.api.items.metaitem.MetaItem;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
@@ -20,9 +21,9 @@ public class INTMetaItems {
 //    public static final INTMetaItem<?>.MetaValueItem[] DYE_ONLY_ITEMS = new MetaItem.MetaValueItem[EnumDyeColor.values().length];化学染料
 //    public static final INTMetaItem<?>.MetaValueItem[] SPRAY_CAN_DYES = new MetaItem.MetaValueItem[EnumDyeColor.values().length];喷漆罐（溶剂）
 
+    public static MetaItem<?>.MetaValueItem NULL;
 
     //ID0-19
-
     public static INTMetaItem<?>.MetaValueItem GOOWARE_PROCESSOR;
     public static INTMetaItem<?>.MetaValueItem GOOWARE_ASSEMBLY;
     public static INTMetaItem<?>.MetaValueItem GOOWARE_COMPUTER;
@@ -79,7 +80,6 @@ public class INTMetaItems {
 
     public static INTMetaItem<?>.MetaValueItem GRINDBALL_SOAPSTONE;
     public static INTMetaItem<?>.MetaValueItem GRINDBALL_ALUMINIUM;
-    public static INTMetaItem<?>.MetaValueItem NULL;
     public static INTMetaItem<?>.MetaValueItem PINE_CONE;
     public static INTMetaItem<?>.MetaValueItem PINE_FRAGMENT;
     public static INTMetaItem<?>.MetaValueItem BIOLOGY_INTEGRATED_CIRCUIT;

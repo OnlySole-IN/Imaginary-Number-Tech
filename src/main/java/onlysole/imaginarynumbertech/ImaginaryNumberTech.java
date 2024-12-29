@@ -9,6 +9,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import onlysole.imaginarynumbertech.api.utils.INTLog;
 import onlysole.imaginarynumbertech.common.CommonProxy;
+import onlysole.imaginarynumbertech.common.block.INTMetaBlocks;
 import onlysole.imaginarynumbertech.common.items.INTMetaItems;
 
 import java.io.IOException;
@@ -40,7 +41,7 @@ public class ImaginaryNumberTech {
         //Facade showPlacementPreview TODO
         INTLog.logger.info("Enabled GregTechCEu highTierContent");
         INTMetaItems.init();
-        //INTMetaBlocks.init();
+        INTMetaBlocks.init();
         //INTAPI.APIBlockInit();
         //MetaTileEntities.init();
         //INTWorldGenRegistry.init();

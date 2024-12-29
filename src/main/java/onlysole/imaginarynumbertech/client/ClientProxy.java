@@ -9,6 +9,7 @@ import onlysole.imaginarynumbertech.client.event.INTClientEventHandler;
 import onlysole.imaginarynumbertech.client.renderer.texture.INTTextures;
 import onlysole.imaginarynumbertech.client.utils.ShaderHelper;
 import onlysole.imaginarynumbertech.common.CommonProxy;
+import onlysole.imaginarynumbertech.common.block.INTMetaBlocks;
 import onlysole.imaginarynumbertech.common.items.INTMetaItems;
 
 @Mod.EventBusSubscriber({Side.CLIENT})
@@ -37,8 +38,7 @@ public class ClientProxy extends CommonProxy {
 
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event) {
-//        INTMetaBlocks.registerStateMappers();
-//        INTMetaBlocks.registerItemModels();
+        INTMetaBlocks.registerItemModels();
         INTMetaItems.registerModels();
     }
 

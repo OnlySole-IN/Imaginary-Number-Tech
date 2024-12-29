@@ -8,9 +8,9 @@ import net.minecraft.util.text.TextFormatting;
 import onlysole.imaginarynumbertech.api.unification.INTElements;
 
 import static gregtech.api.unification.material.Materials.*;
-import static gregtech.api.unification.material.info.MaterialFlags.DISABLE_DECOMPOSITION;
-import static gregtech.api.unification.material.info.MaterialIconSet.DULL;
-import static gregtech.api.unification.material.info.MaterialIconSet.METALLIC;
+import static gregtech.api.unification.material.info.MaterialFlags.*;
+import static gregtech.api.unification.material.info.MaterialFlags.NO_UNIFICATION;
+import static gregtech.api.unification.material.info.MaterialIconSet.*;
 import static gregtech.api.util.GTUtility.gregtechId;
 import static onlysole.imaginarynumbertech.api.unification.INTMaterials.*;
 
@@ -165,6 +165,13 @@ public class FluidsMaterials {
                 .build()
                 .setFormula("*Dr*Rn?", true);
 
+        DragonTear = new Material.Builder(getMaterialsId(), gregtechId("dragon_tear"))
+                .liquid(new FluidBuilder().temperature(2992))
+                .color(0x9999FF)
+                .iconSet(DULL)
+                .build()
+                .setFormula("⚙", false);
+
         NitratedDragonDustSolution = new Material.Builder(getMaterialsId(), gregtechId("nitrated_dragon_dust_solution"))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
                 .color(0xF553FF)
@@ -200,6 +207,8 @@ public class FluidsMaterials {
                 .fluid()
                 .color(0xD6AC37)
                 .build();
+
+
     }
     private static int getMaterialsId() {
         if (startId < END_ID) {

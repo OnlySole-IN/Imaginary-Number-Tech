@@ -107,24 +107,22 @@ public class INTMetaItem2 extends INTStandardMetaItem {
 //                .setMaxStackSize(1).addComponents(new MillBallBehavior());
 //        GRINDBALL_ALUMINIUM = this.addItem(47, "mill.grindball_aluminium")
 //                .setMaxStackSize(1).addComponents(new MillBallBehavior());
-        NULL = this.addItem(48, "null")
-                .addComponents(new CosmicRenderItemBehavior(() -> INTTextures.MASK_INGOT, 1));
-        PINE_CONE=this.addItem(49, "item.pine_cone");
-        PINE_FRAGMENT=this.addItem(50, "item.pine_fragment");
-//        BIOLOGY_INTEGRATED_CIRCUIT = this.addItem(52, "item.biology_integrated_circuit")TODO
+        PINE_CONE=this.addItem(48, "item.pine_cone");
+        PINE_FRAGMENT=this.addItem(49, "item.pine_fragment");
+//        BIOLOGY_INTEGRATED_CIRCUIT = this.addItem(50, "item.biology_integrated_circuit")TODO
 //                .addComponents(new IntBcircuitBehavior());
-        CHROMATIC_LENS = this.addItem(53, "chromatic_lens")
+        CHROMATIC_LENS = this.addItem(51, "chromatic_lens")
                 .addOreDict("craftingLensChromatic");
-        QCD_PROTECTIVE_PLATING = this.addItem(54, "qcd_protective_plating");
-        COSMIC_FABRIC = this.addItem(55, "cosmic_fabric");
+        QCD_PROTECTIVE_PLATING = this.addItem(52, "qcd_protective_plating");
+        COSMIC_FABRIC = this.addItem(53, "cosmic_fabric");
 
-        RAW_TESSERACT = this.addItem(56,"dimension.raw_tesseract");
-        ENERGISED_TESSERACT = this.addItem(57,"dimension.energised_tesseract");
-        BLACK_BODY_NAQUADRIA_SUPERSOLID = this.addItem(58,"dimension.black_body_naquadria_supersolid");
-        HYPER_STABLE_SELF_HEALING_ADHESIVE = this.addItem(59,"dimension.hyper-stable_self-healing_adhesive");
-        SUPERCONDUCTOR_RARE_EARTH_COMPOSITE = this.addItem(60,"dimension.superconductor_rare-earth_composite");
-        TIMEPIECE = this.addItem(61,"timepiece");
-        QUANTUM_ANOMALY = this.addItem(62,"dimension.quantum_anomaly");
+        RAW_TESSERACT = this.addItem(54,"dimension.raw_tesseract");
+        ENERGISED_TESSERACT = this.addItem(55,"dimension.energised_tesseract");
+        BLACK_BODY_NAQUADRIA_SUPERSOLID = this.addItem(56,"dimension.black_body_naquadria_supersolid");
+        HYPER_STABLE_SELF_HEALING_ADHESIVE = this.addItem(57,"dimension.hyper-stable_self-healing_adhesive");
+        SUPERCONDUCTOR_RARE_EARTH_COMPOSITE = this.addItem(58,"dimension.superconductor_rare-earth_composite");
+        TIMEPIECE = this.addItem(59,"timepiece");
+        QUANTUM_ANOMALY = this.addItem(60,"dimension.quantum_anomaly");
 
 
         //ID 100~

@@ -48,8 +48,8 @@ public class INTMaterials {
         //28001-29000 虚空
         VoidMaterials.register();
 
-        //29001-30000 机械外壳
-        MachineCasingMaterials.register();
+        //29001-30000 魔法
+        MagicMaterials.register();
     }
 
     //材料
@@ -75,7 +75,6 @@ public class INTMaterials {
     public static Material Hypogen;
     public static Material MARM200Steel;
     public static Material TranscendentMetal;
-    public static Material Celestite;
     public static Material DegenerateRhenium;
     public static Material Vibranium;
     public static Material Adamantium;
