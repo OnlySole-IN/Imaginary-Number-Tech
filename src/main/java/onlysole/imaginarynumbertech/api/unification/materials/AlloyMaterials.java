@@ -117,16 +117,6 @@ public class AlloyMaterials {
                 .build()
                 .setFormula("§cR§de", false);
 
-        Legendarium = new Material.Builder(getMaterialsId(), gregtechId("legendarium"))
-                .ingot()
-                .fluid()
-                .color(0xF58FDA)
-                .iconSet(CUSTOM_LEGENDARIUM)
-                .components(Naquadria, 1, Trinium, 1, Duranium, 1, Tritanium, 1, Orichalcum, 1, Adamantium, 1, Vibranium, 1, Taranium, 1)
-                .blast(b -> b .temp(12960, HIGHEST).blastStats(VA[UIV], 5200))
-                .flags(GENERATE_PLATE, GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_ROUND, GENERATE_BOLT_SCREW, GENERATE_FRAME, GENERATE_DOUBLE_PLATE, GENERATE_GEAR, GENERATE_SMALL_GEAR, NO_UNIFICATION)
-                .build();
-
         Taranium = new Material.Builder(getMaterialsId(), gregtechId("taranium"))
                 .ingot()
                 .fluid()
@@ -136,6 +126,18 @@ public class AlloyMaterials {
                 .element(INTElements.Taranium)
                 .flags(GENERATE_PLATE, GENERATE_DOUBLE_PLATE, NO_UNIFICATION)
                 .build();
+
+        Legendarium = new Material.Builder(getMaterialsId(), gregtechId("legendarium"))
+                .ingot()
+                .fluid()
+                .color(0xF58FDA)
+                .iconSet(CUSTOM_LEGENDARIUM)
+                //.components(Naquadria, 1, Trinium, 1, Duranium, 1, Tritanium, 1, Orichalcum, 1, Adamantium, 1, Vibranium, 1, Taranium, 1) TODO
+                .blast(b -> b .temp(12960, HIGHEST).blastStats(VA[UIV], 5200))
+                .flags(GENERATE_PLATE, GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_ROUND, GENERATE_BOLT_SCREW, GENERATE_FRAME, GENERATE_DOUBLE_PLATE, GENERATE_GEAR, GENERATE_SMALL_GEAR, NO_UNIFICATION)
+                .build();
+
+
 
 
     }

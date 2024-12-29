@@ -11,8 +11,8 @@ import gregtech.common.items.behaviors.TooltipBehavior;
 import net.minecraft.client.resources.I18n;
 import onlysole.imaginarynumbertech.api.items.metaitem.INTStandardMetaItem;
 import onlysole.imaginarynumbertech.client.renderer.texture.INTTextures;
-import onlysole.imaginarynumbertech.common.items.behaviors.renderer.CosmicRenderItemBehavior;
-import onlysole.imaginarynumbertech.common.items.behaviors.renderer.HaloRenderItemBehavior;
+import onlysole.imaginarynumbertech.common.items.behaviors.*;
+import onlysole.imaginarynumbertech.common.items.behaviors.renderer.*;
 
 import static onlysole.imaginarynumbertech.common.items.INTMetaItems.*;
 public class INTMetaItem2 extends INTStandardMetaItem {
@@ -103,14 +103,14 @@ public class INTMetaItem2 extends INTStandardMetaItem {
         CRYSTAL_COSMIC_RAW_CHIP = this.addItem(44,"crystal.cosmic_raw_chip");
         CRYSTAL_OPTICAL_INTERFACE_PLATE = this.addItem(45,"plate.crystal.optical_interface");
 
-//        GRINDBALL_SOAPSTONE = this.addItem(46, "mill.grindball_soapstone")TODO
-//                .setMaxStackSize(1).addComponents(new MillBallBehavior());
-//        GRINDBALL_ALUMINIUM = this.addItem(47, "mill.grindball_aluminium")
-//                .setMaxStackSize(1).addComponents(new MillBallBehavior());
+        GRINDBALL_SOAPSTONE = this.addItem(46, "mill.grindball_soapstone")
+                .setMaxStackSize(1).addComponents(new MillBallBehavior());
+        GRINDBALL_ALUMINIUM = this.addItem(47, "mill.grindball_aluminium")
+                .setMaxStackSize(1).addComponents(new MillBallBehavior());
         PINE_CONE=this.addItem(48, "item.pine_cone");
         PINE_FRAGMENT=this.addItem(49, "item.pine_fragment");
-//        BIOLOGY_INTEGRATED_CIRCUIT = this.addItem(50, "item.biology_integrated_circuit")TODO
-//                .addComponents(new IntBcircuitBehavior());
+        BIOLOGY_INTEGRATED_CIRCUIT = this.addItem(50, "item.biology_integrated_circuit")
+                .addComponents(new IntBcircuitBehavior());
         CHROMATIC_LENS = this.addItem(51, "chromatic_lens")
                 .addOreDict("craftingLensChromatic");
         QCD_PROTECTIVE_PLATING = this.addItem(52, "qcd_protective_plating");
@@ -556,23 +556,23 @@ public class INTMetaItem2 extends INTStandardMetaItem {
                 .setMaxStackSize(1)
                 .setCreativeTabs(GregTechAPI.TAB_GREGTECH_TOOLS);
 
-//        //ID2400~TODO
-//        RESEARCH_DATA_CARD = this.addItem(2400,"research_data_card")
-//                .addComponents(new DataItemResearch());
-//        GOOWARE_RESEARCH_DATA_CARD = this.addItem(2401,"gooware_research_data_card")
-//                .addComponents(new DataItemResearch());
-//        OPTICAL_RESEARCH_DATA_CARD = this.addItem(2402,"optical_research_data_card")
-//                .addComponents(new DataItemResearch());
-//        SPINTRONIC_RESEARCH_DATA_CARD  = this.addItem(2403,"spintronic_research_data_card")
-//                .addComponents(new DataItemResearch());
-//        COSMIC_RESEARCH_DATA_CARD = this.addItem(2404,"cosmic_research_data_card")
-//                .addComponents(new DataItemResearch());
-//        SUPRA_CAUSAL_RESEARCH_DATA_CARD = this.addItem(2405,"supra_causal_research_data_card")
-//                .addComponents(new DataItemResearch());
-//        SUPRA_CHRONAL_RESEARCH_DATA_CARD = this.addItem(2406,"supra_chronal_research_data_card")
-//                .addComponents(new DataItemResearch());
-//        SUPRA_DIMENSION_RESEARCH_DATA_CARD = this.addItem(2407,"supra_dimension_research_data_card")
-//                .addComponents(new DataItemResearch(), new CosmicRenderItemBehavior(() -> ITTextures.SUPRA_DIMENSION_RESEARCH_DATA_CARD_HALO, 1));
+        //ID2400~TODO
+        RESEARCH_DATA_CARD = this.addItem(2400,"research_data_card")
+                .addComponents(new DataItemResearch());
+        GOOWARE_RESEARCH_DATA_CARD = this.addItem(2401,"gooware_research_data_card")
+                .addComponents(new DataItemResearch());
+        OPTICAL_RESEARCH_DATA_CARD = this.addItem(2402,"optical_research_data_card")
+                .addComponents(new DataItemResearch());
+        SPINTRONIC_RESEARCH_DATA_CARD  = this.addItem(2403,"spintronic_research_data_card")
+                .addComponents(new DataItemResearch());
+        COSMIC_RESEARCH_DATA_CARD = this.addItem(2404,"cosmic_research_data_card")
+                .addComponents(new DataItemResearch());
+        SUPRA_CAUSAL_RESEARCH_DATA_CARD = this.addItem(2405,"supra_causal_research_data_card")
+                .addComponents(new DataItemResearch());
+        SUPRA_CHRONAL_RESEARCH_DATA_CARD = this.addItem(2406,"supra_chronal_research_data_card")
+                .addComponents(new DataItemResearch());
+        SUPRA_DIMENSION_RESEARCH_DATA_CARD = this.addItem(2407,"supra_dimension_research_data_card")
+                .addComponents(new DataItemResearch(), new CosmicRenderItemBehavior(() -> INTTextures.SUPRA_DIMENSION_RESEARCH_DATA_CARD_HALO, 1));
 
 
 

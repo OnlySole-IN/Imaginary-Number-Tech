@@ -10,6 +10,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import onlysole.imaginarynumbertech.api.INTValues;
 import onlysole.imaginarynumbertech.api.capability.pollution.PollutionProvider;
 import onlysole.imaginarynumbertech.api.unification.INTMaterials;
+import onlysole.imaginarynumbertech.api.unification.OrePrefixAdditions;
 
 @Mod.EventBusSubscriber(modid = INTValues.MOD_ID)
 public class INTEventHandler {
@@ -18,7 +19,7 @@ public class INTEventHandler {
     @SubscribeEvent(priority = EventPriority.HIGH)
     public static void registerMaterials(MaterialEvent event) {
         INTMaterials.initregister();
-        //OrePrefixAdditions.init();
+        OrePrefixAdditions.init();
     }
     @SubscribeEvent
     public void attachChunkPollutionCapability(AttachCapabilitiesEvent<Chunk> event) {
