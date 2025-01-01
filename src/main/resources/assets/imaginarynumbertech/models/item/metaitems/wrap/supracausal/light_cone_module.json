@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarynumbertech:items/metaitems/component.supracausal.light_cone_module",
+    "layer0": "imaginarynumbertech:items/metaitems/component/supracausal/light_cone_module",
     "layer1": "imaginarynumbertech:items/wrap_overlay"
   }
 }

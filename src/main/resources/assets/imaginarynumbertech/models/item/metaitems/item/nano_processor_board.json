@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarynumbertech:items/metaitems/item.nano_processor_board"
+    "layer0": "imaginarynumbertech:items/metaitems/item/nano_processor_board"
   }
 }

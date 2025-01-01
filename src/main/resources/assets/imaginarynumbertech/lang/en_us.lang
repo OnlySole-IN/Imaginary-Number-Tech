@@ -1190,29 +1190,29 @@ metaitem.cover.emitter.max.name=
 metaitem.cover.sensor.max.name=
 metaitem.cover.field_generator.max.name=
 
+metaitem.cover.electric_motor.maxx.name=
+metaitem.cover.electric_piston.maxx.name=
+metaitem.cover.electric_pump.maxx.name=
+metaitem.cover.electric_pump.ex.tooltip=
+metaitem.cover.conveyor_module.maxx.name=
+metaitem.cover.conveyor_module.ex.tooltip=
+metaitem.cover.robot_arm.maxx.name=
+metaitem.cover.robot_arm.ex.tooltip=
+metaitem.cover.emitter.maxx.name=
+metaitem.cover.sensor.maxx.name=
+metaitem.cover.field_generator.maxx.name=
+
 metaitem.cover.electric_motor.ex.name=
 metaitem.cover.electric_piston.ex.name=
 metaitem.cover.electric_pump.ex.name=
-metaitem.cover.electric_pump.ex.tooltip=
+metaitem.cover.electric_pump.in.tooltip=
 metaitem.cover.conveyor_module.ex.name=
-metaitem.cover.conveyor_module.ex.tooltip=
+metaitem.cover.conveyor_module.in.tooltip=
 metaitem.cover.robot_arm.ex.name=
-metaitem.cover.robot_arm.ex.tooltip=
+metaitem.cover.robot_arm.in.tooltip=
 metaitem.cover.emitter.ex.name=
 metaitem.cover.sensor.ex.name=
 metaitem.cover.field_generator.ex.name=
-
-metaitem.cover.electric_motor.in.name=
-metaitem.cover.electric_piston.in.name=
-metaitem.cover.electric_pump.in.name=
-metaitem.cover.electric_pump.in.tooltip=
-metaitem.cover.conveyor_module.in.name=
-metaitem.cover.conveyor_module.in.tooltip=
-metaitem.cover.robot_arm.in.name=
-metaitem.cover.robot_arm.in.tooltip=
-metaitem.cover.emitter.in.name=
-metaitem.cover.sensor.in.name=
-metaitem.cover.field_generator.in.name=
 
 imaginarynumbertech.machine.catalyst_hatch.name=Catalyst Hatch
 imaginarynumbertech.multipart.catalyst.only=Only catalysts can be placed

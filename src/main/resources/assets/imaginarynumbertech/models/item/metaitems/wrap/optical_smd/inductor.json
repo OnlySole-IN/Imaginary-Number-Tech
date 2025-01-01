@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarynumbertech:items/metaitems/component.optical_smd.inductor",
+    "layer0": "imaginarynumbertech:items/metaitems/component/optical_smd/inductor",
     "layer1": "imaginarynumbertech:items/wrap_overlay"
   }
 }

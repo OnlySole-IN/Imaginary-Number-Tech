@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarynumbertech:items/metaitems/cover.electric_motor.maxx"
+    "layer0": "imaginarynumbertech:items/metaitems/cover/electric_motor/ex"
   }
 }

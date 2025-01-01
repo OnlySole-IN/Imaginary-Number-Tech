@@ -20,7 +20,7 @@ public class INTMetaItem2 extends INTStandardMetaItem {
         super();
     }
 
-    // = this.addItem(,"");
+    // = this.addItem(, "");
     @Override
     public void registerSubItems(){
 
@@ -35,13 +35,13 @@ public class INTMetaItem2 extends INTStandardMetaItem {
         GOOWARE_MAINFRAME = this.addItem(3, "circuit.gooware_mainframe")
                 .setUnificationData(OrePrefix.circuit, MarkerMaterials.Tier.UEV);
 
-        OPTICAL_PROCESSOR = this.addItem(4,"circuit.optical_processor")
+        OPTICAL_PROCESSOR = this.addItem(4, "circuit.optical_processor")
                 .setUnificationData(OrePrefix.circuit, MarkerMaterials.Tier.UV);
-        OPTICAL_ASSEMBLY = this.addItem(5,"circuit.optical_assembly")
+        OPTICAL_ASSEMBLY = this.addItem(5, "circuit.optical_assembly")
                 .setUnificationData(OrePrefix.circuit, MarkerMaterials.Tier.UHV);
-        OPTICAL_COMPUTER = this.addItem(6,"circuit.optical_computer")
+        OPTICAL_COMPUTER = this.addItem(6, "circuit.optical_computer")
                 .setUnificationData(OrePrefix.circuit, MarkerMaterials.Tier.UEV);
-        OPTICAL_MAINFRAME = this.addItem(7,"circuit.optical_mainframe")
+        OPTICAL_MAINFRAME = this.addItem(7, "circuit.optical_mainframe")
                 .setUnificationData(OrePrefix.circuit, MarkerMaterials.Tier.UIV);
 
         SPINTRONIC_PROCESSOR = this.addItem(8, "circuit.spintronic_processor")
@@ -87,21 +87,21 @@ public class INTMetaItem2 extends INTStandardMetaItem {
         CRYSTAL_MODULATOR_SAPPHIRE = this.addItem(28, "crystal.modulator.sapphire");
         CRYSTAL_MODULATOR_DIAMOND = this.addItem(29, "crystal.modulator.diamond");
         CRYSTAL_SYSTEM_ON_CHIP_SOCKET = this.addItem(30, "crystal.system_on_chip.socket");
-        GLASS_FIBER = this.addItem(31,"glass_fiber");
-        EUROPIUM_DOPED_MONOCRYSTALLINE_SILICON_BOULE = this.addItem(32,"europium_doped_monocrystalline_silicon_boule");
-        EUROPIUM_DOPED_WAFER = this.addItem(33,"europium_doped_wafer");
-        AMERICIUM_DOPED_MONOCRYSTALLINE_SILICON_BOULE = this.addItem(34,"americium_doped_monocrystalline_silicon_boule");
-        AMERICIUM_DOPED_WAFER = this.addItem(35,"americium_doped_wafer");
-        STATION_MKI = this.addItem(36,"station_1");
-        STATION_MKII = this.addItem(37,"station_2");
-        STATION_MKIII = this.addItem(38,"station_3");
-        STATION_MKIV = this.addItem(39,"station_4");
-        STATION_MKV = this.addItem(40,"station_5");
-        CRYSTAL_ADVANCED_RAW_CHIP = this.addItem(41,"crystal.advanced_raw_chip");
-        CRYSTAL_OPTICAL_RAW_CHIP = this.addItem(42,"crystal.optical_raw_chip");
-        CRYSTAL_SPINTRONIC_RAW_CHIP = this.addItem(43,"crystal.spintronic_raw_chip");
-        CRYSTAL_COSMIC_RAW_CHIP = this.addItem(44,"crystal.cosmic_raw_chip");
-        CRYSTAL_OPTICAL_INTERFACE_PLATE = this.addItem(45,"plate.crystal.optical_interface");
+        GLASS_FIBER = this.addItem(31, "glass_fiber");
+        EUROPIUM_DOPED_MONOCRYSTALLINE_SILICON_BOULE = this.addItem(32, "europium_doped_monocrystalline_silicon_boule");
+        EUROPIUM_DOPED_WAFER = this.addItem(33, "europium_doped_wafer");
+        AMERICIUM_DOPED_MONOCRYSTALLINE_SILICON_BOULE = this.addItem(34, "americium_doped_monocrystalline_silicon_boule");
+        AMERICIUM_DOPED_WAFER = this.addItem(35, "americium_doped_wafer");
+        STATION_MKI = this.addItem(36, "station_1");
+        STATION_MKII = this.addItem(37, "station_2");
+        STATION_MKIII = this.addItem(38, "station_3");
+        STATION_MKIV = this.addItem(39, "station_4");
+        STATION_MKV = this.addItem(40, "station_5");
+        CRYSTAL_ADVANCED_RAW_CHIP = this.addItem(41, "crystal.advanced_raw_chip");
+        CRYSTAL_OPTICAL_RAW_CHIP = this.addItem(42, "crystal.optical_raw_chip");
+        CRYSTAL_SPINTRONIC_RAW_CHIP = this.addItem(43, "crystal.spintronic_raw_chip");
+        CRYSTAL_COSMIC_RAW_CHIP = this.addItem(44, "crystal.cosmic_raw_chip");
+        CRYSTAL_OPTICAL_INTERFACE_PLATE = this.addItem(45, "plate.crystal.optical_interface");
 
         GRINDBALL_SOAPSTONE = this.addItem(46, "mill.grindball_soapstone")
                 .setMaxStackSize(1).addComponents(new MillBallBehavior());
@@ -116,13 +116,13 @@ public class INTMetaItem2 extends INTStandardMetaItem {
         QCD_PROTECTIVE_PLATING = this.addItem(52, "qcd_protective_plating");
         COSMIC_FABRIC = this.addItem(53, "cosmic_fabric");
 
-        RAW_TESSERACT = this.addItem(54,"dimension.raw_tesseract");
-        ENERGISED_TESSERACT = this.addItem(55,"dimension.energised_tesseract");
-        BLACK_BODY_NAQUADRIA_SUPERSOLID = this.addItem(56,"dimension.black_body_naquadria_supersolid");
-        HYPER_STABLE_SELF_HEALING_ADHESIVE = this.addItem(57,"dimension.hyper-stable_self-healing_adhesive");
-        SUPERCONDUCTOR_RARE_EARTH_COMPOSITE = this.addItem(58,"dimension.superconductor_rare-earth_composite");
-        TIMEPIECE = this.addItem(59,"timepiece");
-        QUANTUM_ANOMALY = this.addItem(60,"dimension.quantum_anomaly");
+        RAW_TESSERACT = this.addItem(54, "dimension.raw_tesseract");
+        ENERGISED_TESSERACT = this.addItem(55, "dimension.energised_tesseract");
+        BLACK_BODY_NAQUADRIA_SUPERSOLID = this.addItem(56, "dimension.black_body_naquadria_supersolid");
+        HYPER_STABLE_SELF_HEALING_ADHESIVE = this.addItem(57, "dimension.hyper-stable_self-healing_adhesive");
+        SUPERCONDUCTOR_RARE_EARTH_COMPOSITE = this.addItem(58, "dimension.superconductor_rare-earth_composite");
+        TIMEPIECE = this.addItem(59, "timepiece");
+        QUANTUM_ANOMALY = this.addItem(60, "dimension.quantum_anomaly");
 
 
         //ID 100~
@@ -135,30 +135,30 @@ public class INTMetaItem2 extends INTStandardMetaItem {
         SENSOR_MAX = this.addItem(106, "cover.sensor.max");
         FIELD_GENERATOR_MAX = this.addItem(107, "cover.field_generator.max");
 
-        ELECTRIC_MOTOR_MAXX = this.addItem(108, "cover.electric_motor.ex");
-        ELECTRIC_PISTON_MAXX = this.addItem(109, "cover.electric_piston.ex");
-        ELECTRIC_PUMP_MAXX = this.addItem(110, "cover.electric_pump.ex");
-        CONVEYOR_MODULE_MAXX = this.addItem(111, "cover.conveyor_module.ex");
-        ROBOT_ARM_MAXX = this.addItem(112, "cover.robot_arm.ex");
-        EMITTER_MAXX = this.addItem(113, "cover.emitter.ex");
-        SENSOR_MAXX = this.addItem(114, "cover.sensor.ex");
-        FIELD_GENERATOR_MAXX = this.addItem(115, "cover.field_generator.ex");
+        ELECTRIC_MOTOR_MAXX = this.addItem(108, "cover.electric_motor.maxx");
+        ELECTRIC_PISTON_MAXX = this.addItem(109, "cover.electric_piston.maxx");
+        ELECTRIC_PUMP_MAXX = this.addItem(110, "cover.electric_pump.maxx");
+        CONVEYOR_MODULE_MAXX = this.addItem(111, "cover.conveyor_module.maxx");
+        ROBOT_ARM_MAXX = this.addItem(112, "cover.robot_arm.maxx");
+        EMITTER_MAXX = this.addItem(113, "cover.emitter.maxx");
+        SENSOR_MAXX = this.addItem(114, "cover.sensor.maxx");
+        FIELD_GENERATOR_MAXX = this.addItem(115, "cover.field_generator.maxx");
 
-        ELECTRIC_MOTOR_EX = this.addItem(116, "cover.electric_motor.in");
-        ELECTRIC_PISTON_EX = this.addItem(117, "cover.electric_piston.in");
-        ELECTRIC_PUMP_EX = this.addItem(118, "cover.electric_pump.in");
-        CONVEYOR_MODULE_EX = this.addItem(119, "cover.conveyor_module.in");
-        ROBOT_ARM_EX = this.addItem(120, "cover.robot_arm.in");
-        EMITTER_EX = this.addItem(121, "cover.emitter.in");
-        SENSOR_EX = this.addItem(122, "cover.sensor.in");
-        FIELD_GENERATOR_EX = this.addItem(123, "cover.field_generator.in");
+        ELECTRIC_MOTOR_EX = this.addItem(116, "cover.electric_motor.ex");
+        ELECTRIC_PISTON_EX = this.addItem(117, "cover.electric_piston.ex");
+        ELECTRIC_PUMP_EX = this.addItem(118, "cover.electric_pump.ex");
+        CONVEYOR_MODULE_EX = this.addItem(119, "cover.conveyor_module.ex");
+        ROBOT_ARM_EX = this.addItem(120, "cover.robot_arm.ex");
+        EMITTER_EX = this.addItem(121, "cover.emitter.ex");
+        SENSOR_EX = this.addItem(122, "cover.sensor.ex");
+        FIELD_GENERATOR_EX = this.addItem(123, "cover.field_generator.ex");
 
-        BIOCELLS = this.addItem(124,"gooware.biocells");
-        LIVING_BIO_WAFER = this.addItem(125,"gooware.living_bio_wafer");
-        LIVING_BIO_CHIP = this.addItem(126,"gooware.living_bio_chip");
+        BIOCELLS = this.addItem(124, "gooware.biocells");
+        LIVING_BIO_WAFER = this.addItem(125, "gooware.living_bio_wafer");
+        LIVING_BIO_CHIP = this.addItem(126, "gooware.living_bio_chip");
 
-        NUCLEAR_STAR = this.addItem(127,"nuclear_star");
-        LIVING_CRYSTAL_CHIP = this.addItem(128,"living_crystal_chip");
+        NUCLEAR_STAR = this.addItem(127, "nuclear_star");
+        LIVING_CRYSTAL_CHIP = this.addItem(128, "living_crystal_chip");
         PROTONATED_FULLERENE_SIEVING_MATRIX = this.addItem(129, "protonated_fullerene_sieving_matrix");
         SATURATED_FULLERENE_SIEVING_MATRIX = this.addItem( 130, "saturated_fullerene_sieving_matrix");
 
@@ -166,28 +166,28 @@ public class INTMetaItem2 extends INTStandardMetaItem {
 
 
         //ID140~
-        OPTICALLY_ENRICHED_CRYSTALLINE_BOULE = this.addItem(140,"optical.optically_enriched_crystalline_boule");
-        PHOTONICALLY_PREPARED_WAFER = this.addItem(141,"optical.photonically_prepared_wafer");
-        PHOTONICALLY_ENHANCED_WAFER = this.addItem(142,"optical.photonically_enhanced_wafer");
-        RAW_EXPOSED_OPTICAL_CHIP = this.addItem(143,"optical.raw_exposed_optical_chip");
-        OPTICALLY_COMPATIBLE_MEMORY = this.addItem(144,"optical.optically_compatible_memory");
-        OPTICALLY_PERFECTED_CPU = this.addItem(145,"optical.optically_perfected_cpu");
-        OPTICAL_CPU_CONTAINMENT_HOUSING = this.addItem(146,"optical.optical_cpu_containment_housing");
-        OPTICAL_CIRCUIT_BOARD = this.addItem(147,"optical.optical_circuit_board");
+        OPTICALLY_ENRICHED_CRYSTALLINE_BOULE = this.addItem(140, "optical.optically_enriched_crystalline_boule");
+        PHOTONICALLY_PREPARED_WAFER = this.addItem(141, "optical.photonically_prepared_wafer");
+        PHOTONICALLY_ENHANCED_WAFER = this.addItem(142, "optical.photonically_enhanced_wafer");
+        RAW_EXPOSED_OPTICAL_CHIP = this.addItem(143, "optical.raw_exposed_optical_chip");
+        OPTICALLY_COMPATIBLE_MEMORY = this.addItem(144, "optical.optically_compatible_memory");
+        OPTICALLY_PERFECTED_CPU = this.addItem(145, "optical.optically_perfected_cpu");
+        OPTICAL_CPU_CONTAINMENT_HOUSING = this.addItem(146, "optical.optical_cpu_containment_housing");
+        OPTICAL_CIRCUIT_BOARD = this.addItem(147, "optical.optical_circuit_board");
 
         OPTICAL_CAPACITOR = this.addItem(148, "component.optical_smd.capacitor");
         OPTICAL_DIODE = this.addItem(149, "component.optical_smd.diode");
         OPTICAL_RESISTOR = this.addItem(150, "component.optical_smd.resistor");
         OPTICAL_TRANSISTOR = this.addItem(151, "component.optical_smd.transistor");
-        OPTICAL_INDUCTOR = this.addItem(152,"component.optical_smd.inductor");
+        OPTICAL_INDUCTOR = this.addItem(152, "component.optical_smd.inductor");
 
 
 
         //ID 180~199
         BZ_REACTION_CHAMBER = this.addItem(180, "reaction_chamber.bz");
         NONLINEAR_CHEMICAL_OSCILLATOR = this.addItem(181, "nonlinear_chemical_oscillator");
-        PETRI_DISH_STERILE = this.addItem(182,"petri_dish.sterile");
-        PETRI_DISH_FERTILE = this.addItem(183,"petri_dish.fertile");
+        PETRI_DISH_STERILE = this.addItem(182, "petri_dish.sterile");
+        PETRI_DISH_FERTILE = this.addItem(183, "petri_dish.fertile");
         //  Algae
         BARNARDA_C_BASE = this.addItem(184, "alga.barnarda_c.base");
         BARNARDA_C_CHLORELLA = this.addItem(185, "alga.barnarda_c.chlorella")
@@ -211,8 +211,8 @@ public class INTMetaItem2 extends INTStandardMetaItem {
         PROXIMA_B_SPIROGYRA = this.addItem(195, "alga.proxima_b.spirogyra")
                 .addOreDict("dyeGray");
 
-        BIO_DISH_PETRI_DISH_STERILE = this.addItem(196,"petri_dish.bio_dish.sterile");
-        BIO_DISH_PETRI_DISH_FERTILE = this.addItem(197,"petri_dish.bio_dish.fertile");
+        BIO_DISH_PETRI_DISH_STERILE = this.addItem(196, "petri_dish.bio_dish.sterile");
+        BIO_DISH_PETRI_DISH_FERTILE = this.addItem(197, "petri_dish.bio_dish.fertile");
 
         //ID 200~
         OPTICAL_FIBER = this.addItem(200, "optical_fiber");
@@ -318,13 +318,13 @@ public class INTMetaItem2 extends INTStandardMetaItem {
         BROWN_ALGA = this.addItem(364, "algae.brown_alga");
 
         //ID400~
-        BIO_PROCESSING_UNIT = this.addItem(400,"item.bio_processing_unit");
-        ADVANCED_PROCESSOR_BOARD = this.addItem(401,"item.advanced_processor_board");
-        ADVANCED_BOARD = this.addItem(402,"item.advanced_board");
-        QUANTUM_PROCESSOR_BOARD = this.addItem(403,"item.quantum_processor_board");
-        QUANTUM_BOARD = this.addItem(404,"item.quantum_board");
-        NANO_PROCESSOR_BOARD = this.addItem(405,"item.nano_processor_board");
-        NANO_BOARD = this.addItem(406,"item.nano_board");
+        BIO_PROCESSING_UNIT = this.addItem(400, "item.bio_processing_unit");
+        ADVANCED_PROCESSOR_BOARD = this.addItem(401, "item.advanced_processor_board");
+        ADVANCED_BOARD = this.addItem(402, "item.advanced_board");
+        QUANTUM_PROCESSOR_BOARD = this.addItem(403, "item.quantum_processor_board");
+        QUANTUM_BOARD = this.addItem(404, "item.quantum_board");
+        NANO_PROCESSOR_BOARD = this.addItem(405, "item.nano_processor_board");
+        NANO_BOARD = this.addItem(406, "item.nano_board");
         EXOTIC_BOARD = this.addItem(407, "item.exotic_board");
         EXOTIC_PROCESSOR_BOARD = this.addItem(408, "item.exotic_processor_board");
 
@@ -504,10 +504,10 @@ public class INTMetaItem2 extends INTStandardMetaItem {
 
         WRAP_COSMIC_CPU_CHIP = this.addItem(1310, "wrap.cosmic_cpu_chip");
         WRAP_COSMIC_MEMORY_CHIP = this.addItem(1311, "wrap.cosmic_memory_chip");
-        WRAP_CRYSTAL_OPTICAL_RAW_CHIP = this.addItem(1312,"wrap.crystal.optical_raw_chip");
-        WRAP_CRYSTAL_SPINTRONIC_RAW_CHIP = this.addItem(1313,"wrap.crystal.spintronic_raw_chip");
-        WRAP_CRYSTAL_COSMIC_RAW_CHIP = this.addItem(1314,"wrap.crystal.cosmic_raw_chip");
-        WRAP_SUPRACAUSAL_MEMORY_CHIP = this.addItem(1315,"wrap.supracausal_memory_chip");
+        WRAP_CRYSTAL_OPTICAL_RAW_CHIP = this.addItem(1312, "wrap.crystal.optical_raw_chip");
+        WRAP_CRYSTAL_SPINTRONIC_RAW_CHIP = this.addItem(1313, "wrap.crystal.spintronic_raw_chip");
+        WRAP_CRYSTAL_COSMIC_RAW_CHIP = this.addItem(1314, "wrap.crystal.cosmic_raw_chip");
+        WRAP_SUPRACAUSAL_MEMORY_CHIP = this.addItem(1315, "wrap.supracausal_memory_chip");
 
 
 
@@ -557,21 +557,21 @@ public class INTMetaItem2 extends INTStandardMetaItem {
                 .setCreativeTabs(GregTechAPI.TAB_GREGTECH_TOOLS);
 
         //ID2400~TODO
-        RESEARCH_DATA_CARD = this.addItem(2400,"research_data_card")
+        RESEARCH_DATA_CARD = this.addItem(2400, "research_data_card")
                 .addComponents(new DataItemResearch());
-        GOOWARE_RESEARCH_DATA_CARD = this.addItem(2401,"gooware_research_data_card")
+        GOOWARE_RESEARCH_DATA_CARD = this.addItem(2401, "gooware_research_data_card")
                 .addComponents(new DataItemResearch());
-        OPTICAL_RESEARCH_DATA_CARD = this.addItem(2402,"optical_research_data_card")
+        OPTICAL_RESEARCH_DATA_CARD = this.addItem(2402, "optical_research_data_card")
                 .addComponents(new DataItemResearch());
-        SPINTRONIC_RESEARCH_DATA_CARD  = this.addItem(2403,"spintronic_research_data_card")
+        SPINTRONIC_RESEARCH_DATA_CARD  = this.addItem(2403, "spintronic_research_data_card")
                 .addComponents(new DataItemResearch());
-        COSMIC_RESEARCH_DATA_CARD = this.addItem(2404,"cosmic_research_data_card")
+        COSMIC_RESEARCH_DATA_CARD = this.addItem(2404, "cosmic_research_data_card")
                 .addComponents(new DataItemResearch());
-        SUPRA_CAUSAL_RESEARCH_DATA_CARD = this.addItem(2405,"supra_causal_research_data_card")
+        SUPRA_CAUSAL_RESEARCH_DATA_CARD = this.addItem(2405, "supra_causal_research_data_card")
                 .addComponents(new DataItemResearch());
-        SUPRA_CHRONAL_RESEARCH_DATA_CARD = this.addItem(2406,"supra_chronal_research_data_card")
+        SUPRA_CHRONAL_RESEARCH_DATA_CARD = this.addItem(2406, "supra_chronal_research_data_card")
                 .addComponents(new DataItemResearch());
-        SUPRA_DIMENSION_RESEARCH_DATA_CARD = this.addItem(2407,"supra_dimension_research_data_card")
+        SUPRA_DIMENSION_RESEARCH_DATA_CARD = this.addItem(2407, "supra_dimension_research_data_card")
                 .addComponents(new DataItemResearch(), new CosmicRenderItemBehavior(() -> INTTextures.SUPRA_DIMENSION_RESEARCH_DATA_CARD_HALO, 1));
 
 
@@ -596,5 +596,15 @@ public class INTMetaItem2 extends INTStandardMetaItem {
 
 
 
-    }
+    }//32766
+
+
+//    private static int startId = 0;
+//    private static final int END_ID = Short.MAX_VALUE-1;
+//    private static int getMetaItemId() {
+//        if (startId < END_ID) {
+//            return startId++;
+//        }
+//        throw new ArrayIndexOutOfBoundsException();
+//    }
 }

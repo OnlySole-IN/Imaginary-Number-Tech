@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarynumbertech:items/metaitems/component.cosmic.holographic_imc",
+    "layer0": "imaginarynumbertech:items/metaitems/component/cosmic/holographic_imc",
     "layer1": "imaginarynumbertech:items/wrap_overlay"
   }
 }

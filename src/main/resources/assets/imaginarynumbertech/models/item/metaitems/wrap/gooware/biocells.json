@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarynumbertech:items/metaitems/gooware.biocells",
+    "layer0": "imaginarynumbertech:items/metaitems/gooware/biocells",
     "layer1": "imaginarynumbertech:items/wrap_overlay"
   }
 }

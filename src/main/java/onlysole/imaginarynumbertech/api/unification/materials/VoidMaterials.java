@@ -1,9 +1,7 @@
 package onlysole.imaginarynumbertech.api.unification.materials;
 
 import gregtech.api.fluids.FluidBuilder;
-import gregtech.api.unification.Elements;
 import gregtech.api.unification.material.Material;
-import gregtech.api.unification.material.properties.ToolProperty;
 import onlysole.imaginarynumbertech.api.unification.INTElements;
 
 import static onlysole.imaginarynumbertech.api.unification.material.info.INTMaterialFlags.*;
@@ -11,8 +9,7 @@ import static onlysole.imaginarynumbertech.api.unification.material.info.INTMate
 import static gregtech.api.GTValues.*;
 import static gregtech.api.unification.material.info.MaterialFlags.*;
 import static gregtech.api.unification.material.info.MaterialIconSet.*;
-import static gregtech.api.unification.material.properties.BlastProperty.GasTier.HIGH;
-import static gregtech.api.unification.material.properties.BlastProperty.GasTier.HIGHEST;
+import static gregtech.api.unification.material.properties.BlastProperty.GasTier.*;
 import static gregtech.api.util.GTUtility.gregtechId;
 import static onlysole.imaginarynumbertech.api.unification.INTMaterials.*;
 

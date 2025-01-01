@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarynumbertech:items/metaitems/dimension.hyper-stable_self-healing_adhesive"
+    "layer0": "imaginarynumbertech:items/metaitems/dimension/hyper-stable_self-healing_adhesive"
   }
 }

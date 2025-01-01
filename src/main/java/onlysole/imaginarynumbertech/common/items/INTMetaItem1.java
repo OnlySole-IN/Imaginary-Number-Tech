@@ -4,7 +4,7 @@ import gregtech.api.items.metaitem.StandardMetaItem;
 import onlysole.imaginarynumbertech.client.renderer.texture.INTTextures;
 import onlysole.imaginarynumbertech.common.items.behaviors.renderer.CosmicRenderItemBehavior;
 
-import static onlysole.imaginarynumbertech.common.items.INTMetaItems.NULL;
+import static onlysole.imaginarynumbertech.common.items.INTMetaItems.*;
 
 public class INTMetaItem1 extends StandardMetaItem {
 

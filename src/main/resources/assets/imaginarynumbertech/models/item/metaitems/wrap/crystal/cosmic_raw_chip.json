@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarynumbertech:items/metaitems/crystal.cosmic_raw_chip",
+    "layer0": "imaginarynumbertech:items/metaitems/crystal/cosmic_raw_chip",
     "layer1": "imaginarynumbertech:items/wrap_overlay"
   }
 }

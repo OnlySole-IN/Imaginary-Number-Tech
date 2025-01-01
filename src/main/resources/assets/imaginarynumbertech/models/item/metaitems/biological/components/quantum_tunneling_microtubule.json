@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures" : {
-    "layer0": "imaginarynumbertech:items/metaitems/biological.components.quantum_tunneling_microtubule"
+    "layer0": "imaginarynumbertech:items/metaitems/biological/components/quantum_tunneling_microtubule"
   }
 }

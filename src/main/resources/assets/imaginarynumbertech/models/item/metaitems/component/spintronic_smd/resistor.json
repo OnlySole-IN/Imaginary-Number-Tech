@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarynumbertech:items/metaitems/component.spintronic_smd.resistor"
+    "layer0": "imaginarynumbertech:items/metaitems/component/spintronic_smd/resistor"
   }
 }

@@ -42,17 +42,17 @@ public class INTMetaBlocks {
 
     //quantum
     public static BlockQuantumForceTransformerCasing QUANTUM_FORCE_TRANSFORMER_CASING;//量子操纵者外壳
-    public static BlockQuantumForceTransformerGlassCasing QUANTUM_FORCE_TRANSFORMER_GLASS_CASING;//量子操纵者玻璃
+    public static BlockQuantumForceTransformerGlassCasing QUANTUM_FORCE_TRANSFORMER_GLASS_CASING;//量子操纵者玻璃 TODO XX
 
     //Assembly
     public static BlockComponentAssemblyLineCasing COMPONENT_ASSEMBLY_LINE_CASING;//部件装配线外壳
     public static BlockAdvancedAssemblyLineCasing ADVANCED_ASSEMBLY_LINE_CASING;//进阶装配线外壳
 
-    public static BlockActiveMultiblockCasing ACTIVE_MULTIBLOCK_CASING;//活跃多块外壳
+    public static BlockActiveMultiblockCasing ACTIVE_MULTIBLOCK_CASING;//活跃多块外壳 TODO XX
     public static BlockPackagingline PACKAGING_LINE;//封装线外壳
     public static BlockPCBFactoryCasing PCB_FACTORY_CASING;//PCB
     public static BlockADVFactoryCasing ADV_FACTORY_CASING;//ADV
-    public static BlockDHPCAFactoryCasing DHPCA_FACTORY_CASING;//DHPCA
+    public static BlockDHPCAFactoryCasing DHPCA_FACTORY_CASING;//DHPCA TODO XX
 
 
     private INTMetaBlocks() {}

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarynumbertech:items/metaitems/gooware.living_bio_chip"
+    "layer0": "imaginarynumbertech:items/metaitems/gooware/living_bio_chip"
   }
 }

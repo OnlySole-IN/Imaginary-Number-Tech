@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "imaginarynumbertech:items/metaitems/optical.optical_circuit_board",
+    "layer0": "imaginarynumbertech:items/metaitems/optical/optical_circuit_board",
     "layer1": "imaginarynumbertech:items/wrap_overlay"
   }
 }
