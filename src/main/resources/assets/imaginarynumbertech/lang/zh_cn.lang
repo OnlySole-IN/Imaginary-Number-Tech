@@ -559,6 +559,42 @@ metaitem.chromatic_lens.tooltip=五彩斑斓
 metaitem.cosmic_fabric.name=寰宇织料
 metaitem.cosmic_fabric.tooltip=宇宙的织机缓缓扭动
 metaitem.qcd_protective_plating.name=量子色动力学防护层
+metaitem.graviton_shard.name=引力子碎片
+metaitem.black_hole.seed.name=黑洞种子
+metaitem.black_hole.seed.tooltip=放入§f黑洞种子§7以开启黑洞
+metaitem.black_hole.collapser.name=黑洞坍缩器
+metaitem.black_hole.collapser.tooltip=放入§f黑洞坍缩器§7以关闭黑洞
+metaitem.transdimensional_alignment_matrix.name=超维校准矩阵
+metaitem.transdimensional_alignment_matrix.tooltip=支持跨维度空间对齐的设备。\n在DTPF上启用维度收敛。
+metaitem.relativistic_heat_capacitor.name=相对论性热容器
+metaitem.relativistic_heat_capacitor.tooltip=热共振？
+metaitem.phononic_seed_crystal.name=声子晶体种晶
+metaitem.phononic_seed_crystal.tooltip=完美的热导率
+metaitem.thermal_superconductor.name=热能超导体
+metaitem.thermal_superconductor.tooltip=借助二次声的力量！
+
+metaitem.quark_releasing_catalyst.empty_housing.name=空的夸克释放催化剂外壳
+metaitem.quark_releasing_catalyst.empty_housing.tooltip=能够容纳夸克释放催化剂
+metaitem.quark_releasing_catalyst.up.name=上-夸克释放催化剂
+metaitem.quark_releasing_catalyst.up.tooltip=能够将上-夸克释放到环境中，以重塑物质
+metaitem.quark_releasing_catalyst.down.name=下-夸克释放催化剂
+metaitem.quark_releasing_catalyst.down.tooltip=能够将下-夸克释放到环境中，以重塑物质
+metaitem.quark_releasing_catalyst.strange.name=奇-夸克释放催化剂
+metaitem.quark_releasing_catalyst.strange.tooltip=能够将奇-夸克释放到环境中，以重塑物质
+metaitem.quark_releasing_catalyst.charm.name=粲-夸克释放催化剂
+metaitem.quark_releasing_catalyst.charm.tooltip=能够将粲-夸克释放到环境中，以重塑物质
+metaitem.quark_releasing_catalyst.bottom.name=底-夸克释放催化剂
+metaitem.quark_releasing_catalyst.bottom.tooltip=能够将底-夸克释放到环境中，以重塑物质
+metaitem.quark_releasing_catalyst.top.name=顶-夸克释放催化剂
+metaitem.quark_releasing_catalyst.top.tooltip=能够将顶-夸克释放到环境中，以重塑物质
+metaitem.quark_releasing_catalyst.unaligned.name=非对齐夸克释放催化剂
+metaitem.quark_releasing_catalyst.unaligned.tooltip=在使用之前需要重新对齐
+
+metaitem.item.astral_array.name=星体阵列
+metaitem.item.astral_array.tooltip=无限的平行时空
+
+
+
 
 
 

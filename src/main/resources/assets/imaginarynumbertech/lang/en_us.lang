@@ -1532,12 +1532,39 @@ metaitem.supra_dimension_research_data_card.name=
 
 
 
+metaitem.graviton_shard.name=Graviton Shard
+metaitem.black_hole.seed.name=Black Hole Seed
+metaitem.black_hole.seed.tooltip=Opens a pseudostable black hole
+metaitem.black_hole.collapser.name=Black Hole Collapser
+metaitem.black_hole.collapser.tooltip=Safely closes a pseudostable black hole
+metaitem.transdimensional_alignment_matrix.name=Transdimensional Alignment Matrix
+metaitem.transdimensional_alignment_matrix.tooltip=Device supporting the alignment of transdimensional spaces./n Enables Dimensional Convergence on the DTPF.
+metaitem.relativistic_heat_capacitor.name=Relativistic Heat Capacitor
+metaitem.relativistic_heat_capacitor.tooltip=Thermal Resonance?
+metaitem.phononic_seed_crystal.name=Phononic Seed
+metaitem.phononic_seed_crystal.tooltip=Perfect Thermal Conductance
+metaitem.thermal_superconductor.name=Thermal Superconductor
+metaitem.thermal_superconductor.tooltip=With the power of second sound!
 
+metaitem.quark_releasing_catalyst.empty_housing.name=Empty Quark Release Catalyst Housing
+metaitem.quark_releasing_catalyst.empty_housing.tooltip=Capable of holding Quark Release Catalysts
+metaitem.quark_releasing_catalyst.up.name=Up-Quark Releasing Catalyst
+metaitem.quark_releasing_catalyst.up.tooltip=Can release up-quarks into environment to reshape matter
+metaitem.quark_releasing_catalyst.down.name=Down-Quark Releasing Catalyst
+metaitem.quark_releasing_catalyst.down.tooltip=Can release down-quarks into environment to reshape matter
+metaitem.quark_releasing_catalyst.strange.name=Strange-Quark Releasing Catalyst
+metaitem.quark_releasing_catalyst.strange.tooltip=Can release strange-quarks into environment to reshape matter
+metaitem.quark_releasing_catalyst.charm.name=Charm-Quark Releasing Catalyst
+metaitem.quark_releasing_catalyst.charm.tooltip=Can release charm-quarks into environment to reshape matter
+metaitem.quark_releasing_catalyst.bottom.name=Bottom-Quark Releasing Catalyst
+metaitem.quark_releasing_catalyst.bottom.tooltip=Can release bottom-quarks into environment to reshape matter
+metaitem.quark_releasing_catalyst.top.name=Top-Quark Releasing Catalyst
+metaitem.quark_releasing_catalyst.top.tooltip=Can release top-quarks into environment to reshape matter
+metaitem.quark_releasing_catalyst.unaligned.name=Unaligned Quark Releasing Catalyst
+metaitem.quark_releasing_catalyst.unaligned.tooltip=Needs to be realigned before use
 
-
-
-
-
+metaitem.item.astral_array.name=Astral Array
+metaitem.item.astral_array.tooltip=
 
 
 

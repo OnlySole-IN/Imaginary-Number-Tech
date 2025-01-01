@@ -94,6 +94,22 @@ public class INTMetaItems {
     public static INTMetaItem<?>.MetaValueItem SUPERCONDUCTOR_RARE_EARTH_COMPOSITE;
     public static INTMetaItem<?>.MetaValueItem TIMEPIECE;
     public static INTMetaItem<?>.MetaValueItem QUANTUM_ANOMALY;
+    public static INTMetaItem<?>.MetaValueItem GRAVITON_SHARD;
+    public static INTMetaItem<?>.MetaValueItem BLACK_HOLE_SEED;
+    public static INTMetaItem<?>.MetaValueItem BLACK_HOLE_COLLAPSER;
+    public static INTMetaItem<?>.MetaValueItem TRANSDIMENSIONAL_ALIGNMENT_MATRIX;
+    public static INTMetaItem<?>.MetaValueItem RELATIVISTIC_HEAT_CAPACITOR;
+    public static INTMetaItem<?>.MetaValueItem PHONONIC_SEED_CRYSTAL;
+    public static INTMetaItem<?>.MetaValueItem THERMAL_SUPERCONDUCTOR;
+    public static INTMetaItem<?>.MetaValueItem QUARK_RELEASING_CATALYST_EMPTY_HOUSING;
+    public static INTMetaItem<?>.MetaValueItem QUARK_RELEASING_CATALYST_UP;
+    public static INTMetaItem<?>.MetaValueItem QUARK_RELEASING_CATALYST_DOW;
+    public static INTMetaItem<?>.MetaValueItem QUARK_RELEASING_CATALYST_STRANGE;
+    public static INTMetaItem<?>.MetaValueItem QUARK_RELEASING_CATALYST_CHARM;
+    public static INTMetaItem<?>.MetaValueItem QUARK_RELEASING_CATALYST_BOTTOM;
+    public static INTMetaItem<?>.MetaValueItem QUARK_RELEASING_CATALYST_TOP;
+    public static INTMetaItem<?>.MetaValueItem QUARK_RELEASING_CATALYST_UNALIGNED;
+    public static INTMetaItem<?>.MetaValueItem ASTRAL_ARRAY;
 
 
     //ID 100~TODO

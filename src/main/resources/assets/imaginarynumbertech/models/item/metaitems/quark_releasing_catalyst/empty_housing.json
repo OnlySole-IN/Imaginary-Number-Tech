@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "imaginarynumbertech:items/metaitems/quark_releasing_catalyst/empty_housing"
+  }
+}

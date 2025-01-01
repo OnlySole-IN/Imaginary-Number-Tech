@@ -76,53 +76,94 @@ public class INTMetaItem2 extends INTStandardMetaItem {
                 .addComponents(new HaloRenderItemBehavior(10, 0xFF000000, () -> INTTextures.HALO, true));
 
         //ID 20~
-        EU_DOPED_CUBIC_ZIRCONIA_BOULE = this.addItem(20, "boule.cubic_zirconia.europium");
-        EU_DOPED_CUBIC_ZIRCONIA_WAFER = this.addItem(21, "wafer.cubic_zirconia.europium");
-        CRYSTAL_INTERFACE_WAFER = this.addItem(22, "wafer.crystal.interface");
-        CRYSTAL_INTERFACE_PLATE = this.addItem(23, "plate.crystal.interface");
-        ENGRAVED_RUBY_CRYSTAL_CHIP = this.addItem(24, "engraved.crystal_chip.ruby");
-        ENGRAVED_SAPPHIRE_CRYSTAL_CHIP = this.addItem(25, "engraved.crystal_chip.sapphire");
-        ENGRAVED_DIAMOND_CRYSTAL_CHIP = this.addItem(26, "engraved.crystal_chip.diamond");
-        CRYSTAL_MODULATOR_RUBY = this.addItem(27, "crystal.modulator.ruby");
-        CRYSTAL_MODULATOR_SAPPHIRE = this.addItem(28, "crystal.modulator.sapphire");
-        CRYSTAL_MODULATOR_DIAMOND = this.addItem(29, "crystal.modulator.diamond");
-        CRYSTAL_SYSTEM_ON_CHIP_SOCKET = this.addItem(30, "crystal.system_on_chip.socket");
-        GLASS_FIBER = this.addItem(31, "glass_fiber");
-        EUROPIUM_DOPED_MONOCRYSTALLINE_SILICON_BOULE = this.addItem(32, "europium_doped_monocrystalline_silicon_boule");
-        EUROPIUM_DOPED_WAFER = this.addItem(33, "europium_doped_wafer");
-        AMERICIUM_DOPED_MONOCRYSTALLINE_SILICON_BOULE = this.addItem(34, "americium_doped_monocrystalline_silicon_boule");
-        AMERICIUM_DOPED_WAFER = this.addItem(35, "americium_doped_wafer");
-        STATION_MKI = this.addItem(36, "station_1");
-        STATION_MKII = this.addItem(37, "station_2");
-        STATION_MKIII = this.addItem(38, "station_3");
-        STATION_MKIV = this.addItem(39, "station_4");
-        STATION_MKV = this.addItem(40, "station_5");
-        CRYSTAL_ADVANCED_RAW_CHIP = this.addItem(41, "crystal.advanced_raw_chip");
-        CRYSTAL_OPTICAL_RAW_CHIP = this.addItem(42, "crystal.optical_raw_chip");
-        CRYSTAL_SPINTRONIC_RAW_CHIP = this.addItem(43, "crystal.spintronic_raw_chip");
-        CRYSTAL_COSMIC_RAW_CHIP = this.addItem(44, "crystal.cosmic_raw_chip");
-        CRYSTAL_OPTICAL_INTERFACE_PLATE = this.addItem(45, "plate.crystal.optical_interface");
+        EU_DOPED_CUBIC_ZIRCONIA_BOULE = this.addItem(24, "boule.cubic_zirconia.europium");
 
-        GRINDBALL_SOAPSTONE = this.addItem(46, "mill.grindball_soapstone")
+        EU_DOPED_CUBIC_ZIRCONIA_WAFER = this.addItem(25, "wafer.cubic_zirconia.europium");
+        CRYSTAL_INTERFACE_WAFER = this.addItem(26, "wafer.crystal.interface");
+
+        CRYSTAL_INTERFACE_PLATE = this.addItem(27, "plate.crystal.interface");
+
+        ENGRAVED_RUBY_CRYSTAL_CHIP = this.addItem(28, "engraved.crystal_chip.ruby");
+        ENGRAVED_SAPPHIRE_CRYSTAL_CHIP = this.addItem(29, "engraved.crystal_chip.sapphire");
+        ENGRAVED_DIAMOND_CRYSTAL_CHIP = this.addItem(30, "engraved.crystal_chip.diamond");
+
+        CRYSTAL_MODULATOR_RUBY = this.addItem(31, "crystal.modulator.ruby");
+        CRYSTAL_MODULATOR_SAPPHIRE = this.addItem(32, "crystal.modulator.sapphire");
+        CRYSTAL_MODULATOR_DIAMOND = this.addItem(33, "crystal.modulator.diamond");
+        CRYSTAL_SYSTEM_ON_CHIP_SOCKET = this.addItem(34, "crystal.system_on_chip.socket");
+
+        GLASS_FIBER = this.addItem(35, "glass_fiber");
+        EUROPIUM_DOPED_MONOCRYSTALLINE_SILICON_BOULE = this.addItem(36, "europium_doped_monocrystalline_silicon_boule");
+        EUROPIUM_DOPED_WAFER = this.addItem(37, "europium_doped_wafer");
+        AMERICIUM_DOPED_MONOCRYSTALLINE_SILICON_BOULE = this.addItem(38, "americium_doped_monocrystalline_silicon_boule");
+        AMERICIUM_DOPED_WAFER = this.addItem(39, "americium_doped_wafer");
+
+        STATION_MKI = this.addItem(40, "station_1");
+        STATION_MKII = this.addItem(42, "station_2");
+        STATION_MKIII = this.addItem(43, "station_3");
+        STATION_MKIV = this.addItem(44, "station_4");
+        STATION_MKV = this.addItem(45, "station_5");
+
+        CRYSTAL_ADVANCED_RAW_CHIP = this.addItem(46, "crystal.advanced_raw_chip");
+        CRYSTAL_OPTICAL_RAW_CHIP = this.addItem(47, "crystal.optical_raw_chip");
+        CRYSTAL_SPINTRONIC_RAW_CHIP = this.addItem(48, "crystal.spintronic_raw_chip");
+        CRYSTAL_COSMIC_RAW_CHIP = this.addItem(49, "crystal.cosmic_raw_chip");
+        CRYSTAL_OPTICAL_INTERFACE_PLATE = this.addItem(50, "plate.crystal.optical_interface");
+
+        GRINDBALL_SOAPSTONE = this.addItem(51, "mill.grindball_soapstone")
                 .setMaxStackSize(1).addComponents(new MillBallBehavior());
-        GRINDBALL_ALUMINIUM = this.addItem(47, "mill.grindball_aluminium")
+        GRINDBALL_ALUMINIUM = this.addItem(52, "mill.grindball_aluminium")
                 .setMaxStackSize(1).addComponents(new MillBallBehavior());
-        PINE_CONE=this.addItem(48, "item.pine_cone");
-        PINE_FRAGMENT=this.addItem(49, "item.pine_fragment");
-        BIOLOGY_INTEGRATED_CIRCUIT = this.addItem(50, "item.biology_integrated_circuit")
+
+        PINE_CONE=this.addItem(53, "item.pine_cone");
+        PINE_FRAGMENT=this.addItem(54, "item.pine_fragment");
+        BIOLOGY_INTEGRATED_CIRCUIT = this.addItem(55, "item.biology_integrated_circuit")
                 .addComponents(new IntBcircuitBehavior());
-        CHROMATIC_LENS = this.addItem(51, "chromatic_lens")
-                .addOreDict("craftingLensChromatic");
-        QCD_PROTECTIVE_PLATING = this.addItem(52, "qcd_protective_plating");
-        COSMIC_FABRIC = this.addItem(53, "cosmic_fabric");
 
-        RAW_TESSERACT = this.addItem(54, "dimension.raw_tesseract");
-        ENERGISED_TESSERACT = this.addItem(55, "dimension.energised_tesseract");
-        BLACK_BODY_NAQUADRIA_SUPERSOLID = this.addItem(56, "dimension.black_body_naquadria_supersolid");
-        HYPER_STABLE_SELF_HEALING_ADHESIVE = this.addItem(57, "dimension.hyper-stable_self-healing_adhesive");
-        SUPERCONDUCTOR_RARE_EARTH_COMPOSITE = this.addItem(58, "dimension.superconductor_rare-earth_composite");
-        TIMEPIECE = this.addItem(59, "timepiece");
-        QUANTUM_ANOMALY = this.addItem(60, "dimension.quantum_anomaly");
+        CHROMATIC_LENS = this.addItem(56, "chromatic_lens")
+                .addOreDict("craftingLensChromatic");
+        QCD_PROTECTIVE_PLATING = this.addItem(57, "qcd_protective_plating");
+        COSMIC_FABRIC = this.addItem(58, "cosmic_fabric");
+
+        RAW_TESSERACT = this.addItem(59, "dimension.raw_tesseract");
+        ENERGISED_TESSERACT = this.addItem(60, "dimension.energised_tesseract");
+        BLACK_BODY_NAQUADRIA_SUPERSOLID = this.addItem(61, "dimension.black_body_naquadria_supersolid");
+        HYPER_STABLE_SELF_HEALING_ADHESIVE = this.addItem(62, "dimension.hyper-stable_self-healing_adhesive");
+        SUPERCONDUCTOR_RARE_EARTH_COMPOSITE = this.addItem(63, "dimension.superconductor_rare-earth_composite");
+
+        TIMEPIECE = this.addItem(64, "timepiece");
+
+        QUANTUM_ANOMALY = this.addItem(65, "dimension.quantum_anomaly");
+        GRAVITON_SHARD = this.addItem(66, "graviton_shard")
+                .addComponents(new HaloRenderItemBehavior(10, 0xFF000000, () -> INTTextures.HALO, true));
+
+        BLACK_HOLE_SEED = this.addItem(67, "black_hole.seed")
+                .addComponents(new HaloRenderItemBehavior(10, 0xFF000000, () -> INTTextures.HALO, true));
+        BLACK_HOLE_COLLAPSER = this.addItem(68, "black_hole.collapser")
+                .addComponents(new HaloRenderItemBehavior(10, 0xFF000000, () -> INTTextures.HALO, true));
+
+        TRANSDIMENSIONAL_ALIGNMENT_MATRIX = this.addItem(69, "transdimensional_alignment_matrix");
+        RELATIVISTIC_HEAT_CAPACITOR = this.addItem(70, "relativistic_heat_capacitor");
+        PHONONIC_SEED_CRYSTAL = this.addItem(71, "phononic_seed_crystal");
+        THERMAL_SUPERCONDUCTOR = this.addItem(72, "thermal_superconductor");
+
+        QUARK_RELEASING_CATALYST_EMPTY_HOUSING = this.addItem(73, "quark_releasing_catalyst.empty_housing");
+        QUARK_RELEASING_CATALYST_UP = this.addItem(74, "quark_releasing_catalyst.up");
+        QUARK_RELEASING_CATALYST_DOW = this.addItem(75, "quark_releasing_catalyst.down");
+        QUARK_RELEASING_CATALYST_STRANGE = this.addItem(76, "quark_releasing_catalyst.strange");
+        QUARK_RELEASING_CATALYST_CHARM = this.addItem(77, "quark_releasing_catalyst.charm");
+        QUARK_RELEASING_CATALYST_BOTTOM = this.addItem(78, "quark_releasing_catalyst.bottom");
+        QUARK_RELEASING_CATALYST_TOP = this.addItem(79, "quark_releasing_catalyst.top");
+        QUARK_RELEASING_CATALYST_UNALIGNED = this.addItem(80, "quark_releasing_catalyst.unaligned");
+
+        ASTRAL_ARRAY = this.addItem(81, "item.astral_array");
+
+
+
+
+
+
+
 
 
         //ID 100~
