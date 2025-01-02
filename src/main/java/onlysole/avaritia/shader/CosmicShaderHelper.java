@@ -1,13 +1,13 @@
-package onlysole.imaginarynumbertech.client.shader;
+package onlysole.avaritia.shader;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import onlysole.imaginarynumbertech.client.event.INTClientEventHandler;
-import onlysole.imaginarynumbertech.client.utils.ShaderHelper;
+import onlysole.avaritia.handler.INTClientEventHandler;
 import org.lwjgl.opengl.ARBShaderObjects;
 
 public class CosmicShaderHelper {
+
     public static final ShaderCallback shaderCallback;
 
     public static float[] lightlevel = new float[3];
@@ -19,6 +19,7 @@ public class CosmicShaderHelper {
         shaderCallback = new ShaderCallback() {
             @Override
             public void call(int shader) {
+                //TODO, 这段代码可以优化
                 Minecraft mc = Minecraft.getMinecraft();
 
                 float yaw = 0;
@@ -65,28 +66,25 @@ public class CosmicShaderHelper {
     }
 
     public static void setLightFromLocation(World world, BlockPos pos) {
-        // 检查世界对象是否为空
         if (world == null) {
             setLightLevel(1.0f);
             return;
         }
 
-        // 获取指定位置的光照亮度
-        int lightValue = world.getLight(pos);
+        int coord = world.getCombinedLight(pos, 0);
 
-        // 检查是否能够获取光照亮度
-        if (lightValue == 0) {
+        int[] map = Minecraft.getMinecraft().entityRenderer.lightmapColors;
+        if (map == null) {
             setLightLevel(1.0f);
             return;
         }
 
-        // 将光照亮度转换为 RGB 值
-        float r = ((lightValue >> 16) & 0xFF) / 255.0f;
-        float g = ((lightValue >> 8) & 0xFF) / 255.0f;
-        float b = (lightValue & 0xFF) / 255.0f;
+        int mx = (coord % 65536) / 16;
+        int my = (coord / 65536) / 16;
 
-        // 设置光照强度
-        setLightLevel(r, g, b);
+        int lightcolour = map[my * 16 + mx];
+
+        setLightLevel(((lightcolour >> 16) & 0xFF) / 256.0f, ((lightcolour >> 8) & 0xFF) / 256.0f, ((lightcolour) & 0xFF) / 256.0f);
     }
 
     public static void setLightLevel(float level) {

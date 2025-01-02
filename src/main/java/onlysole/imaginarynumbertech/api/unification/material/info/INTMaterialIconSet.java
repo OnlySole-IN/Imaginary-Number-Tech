@@ -1,11 +1,12 @@
 package onlysole.imaginarynumbertech.api.unification.material.info;
 
-import onlysole.imaginarynumbertech.client.renderer.texture.INTTextures;
-import onlysole.imaginarynumbertech.common.items.behaviors.renderer.CosmicRenderItemBehavior;
-import onlysole.imaginarynumbertech.common.items.behaviors.renderer.DataRenderItemBehavior;
-import onlysole.imaginarynumbertech.common.items.behaviors.renderer.HaloRenderItemBehavior;
 import crafttweaker.annotations.ZenRegister;
 import gregtech.api.unification.material.info.MaterialIconSet;
+import onlysole.avaritia.api.MaterialIconSetWithRenderer;
+import onlysole.avaritia.behavior.CosmicRenderItemBehavior;
+import onlysole.avaritia.behavior.DataRenderItemBehavior;
+import onlysole.avaritia.behavior.HaloRenderItemBehavior;
+import onlysole.imaginarynumbertech.client.renderer.texture.INTTextures;
 
 @ZenRegister
 public class INTMaterialIconSet {

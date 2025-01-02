@@ -2,8 +2,8 @@ package onlysole.imaginarynumbertech.mixin.gregtech;
 
 import gregtech.api.items.metaitem.MetaItem;
 import gregtech.api.items.metaitem.stats.IItemComponent;
-import onlysole.imaginarynumbertech.api.items.metaitem.IRenderer;
-import onlysole.imaginarynumbertech.api.items.metaitem.stats.renderer.IItemRendererManager;
+import onlysole.avaritia.api.IItemRendererManager;
+import onlysole.avaritia.api.IRenderer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

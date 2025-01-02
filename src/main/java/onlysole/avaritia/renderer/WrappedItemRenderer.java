@@ -1,4 +1,4 @@
-package onlysole.imaginarynumbertech.client.renderer.handler;
+package onlysole.avaritia.renderer;
 
 import codechicken.lib.model.ModelRegistryHelper;
 import net.minecraft.client.Minecraft;
@@ -33,7 +33,7 @@ public abstract class WrappedItemRenderer extends PerspectiveAwareItemRenderer{
         ModelRegistryHelper.registerPreBakeCallback(modelRegistry -> wrapped = getter.getWrappedModel(modelRegistry));
     }
 
-    public interface IWrappedModelGetter {
+    public static interface IWrappedModelGetter {
 
         /**
          * A callback from the model load event to grab the wrapped model.

@@ -2,16 +2,6 @@ package onlysole.imaginarynumbertech.common.items.behaviors;
 
 import gregtech.api.items.metaitem.stats.IDataItem;
 import gregtech.api.items.metaitem.stats.IItemBehaviour;
-import gregtech.api.recipes.Recipe;
-import gregtech.api.recipes.machines.IScannerRecipeMap;
-import it.unimi.dsi.fastutil.objects.ObjectOpenHashSet;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.item.ItemStack;
-import onlysole.imaginarynumbertech.api.utils.ResearchId;
-import org.jetbrains.annotations.NotNull;
-
-import java.util.Collection;
-import java.util.List;
 
 public class DataItemResearch implements IItemBehaviour, IDataItem {
 

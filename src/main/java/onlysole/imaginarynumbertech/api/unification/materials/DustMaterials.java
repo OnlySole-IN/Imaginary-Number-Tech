@@ -1,13 +1,9 @@
 package onlysole.imaginarynumbertech.api.unification.materials;
 
-import gregtech.api.fluids.FluidBuilder;
 import gregtech.api.unification.material.Material;
-import onlysole.imaginarynumbertech.api.unification.INTElements;
 
 import static gregtech.api.unification.material.Materials.*;
-import static gregtech.api.unification.material.info.MaterialFlags.*;
-import static gregtech.api.unification.material.info.MaterialFlags.NO_UNIFICATION;
-import static gregtech.api.unification.material.info.MaterialIconSet.*;
+import static gregtech.api.unification.material.info.MaterialIconSet.DULL;
 import static gregtech.api.util.GTUtility.gregtechId;
 import static onlysole.imaginarynumbertech.api.unification.INTMaterials.*;
 

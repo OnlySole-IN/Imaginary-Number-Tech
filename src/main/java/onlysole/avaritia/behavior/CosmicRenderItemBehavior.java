@@ -1,4 +1,4 @@
-package onlysole.imaginarynumbertech.common.items.behaviors.renderer;
+package onlysole.avaritia.behavior;
 
 import codechicken.lib.model.ModelRegistryHelper;
 import codechicken.lib.util.TransformUtils;
@@ -7,12 +7,12 @@ import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
-import onlysole.imaginarynumbertech.api.items.metaitem.stats.renderer.ICosmicRenderBehavior;
-import onlysole.imaginarynumbertech.client.renderer.handler.CosmicItemRenderer;
+import onlysole.avaritia.api.ICosmicRenderBehavior;
+import onlysole.avaritia.renderer.CosmicItemRender;
 
 import javax.annotation.Nullable;
 import java.util.function.Supplier;
-
+//宇宙
 public class CosmicRenderItemBehavior implements ICosmicRenderBehavior {
 
     private final Supplier<TextureAtlasSprite> supplier;
@@ -36,7 +36,7 @@ public class CosmicRenderItemBehavior implements ICosmicRenderBehavior {
     @Override
     public void onRendererRegistry(ResourceLocation location) {
         ModelRegistryHelper.register(new ModelResourceLocation(location, "inventory"),
-                new CosmicItemRenderer(TransformUtils.DEFAULT_ITEM, modelRegistry ->
+                new CosmicItemRender(TransformUtils.DEFAULT_ITEM, modelRegistry ->
                         modelRegistry.getObject(new ModelResourceLocation(location, "inventory"))
                 )
         );

@@ -1,4 +1,4 @@
-package onlysole.imaginarynumbertech.api.items.metaitem.stats.renderer;
+package onlysole.avaritia.api;
 
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.entity.EntityLivingBase;
@@ -20,7 +20,7 @@ public interface ICosmicRenderBehavior extends IItemRendererManager {
      * @param player 持有物品的实体，可能为空，如果为空，则假设库存或地面。
      * @return 宇宙覆盖的蒙版区域。
      */
-    @SideOnly(Side.CLIENT)
+    @SideOnly (Side.CLIENT)
     TextureAtlasSprite getMaskTexture(ItemStack stack, @Nullable EntityLivingBase player);
 
     /**

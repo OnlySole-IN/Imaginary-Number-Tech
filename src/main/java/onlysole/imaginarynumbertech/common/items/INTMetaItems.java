@@ -2,14 +2,13 @@ package onlysole.imaginarynumbertech.common.items;
 
 import gregtech.api.items.metaitem.MetaItem;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
-
+import net.minecraftforge.fml.relauncher.SideOnly;
 import onlysole.imaginarynumbertech.api.items.materialitem.INTMetaPrefixItem;
 import onlysole.imaginarynumbertech.api.items.metaitem.INTMetaItem;
 import onlysole.imaginarynumbertech.common.CommonProxy;
 
-import java.util.*;
+import java.util.List;
 
 //2024-12-29
 public class INTMetaItems {

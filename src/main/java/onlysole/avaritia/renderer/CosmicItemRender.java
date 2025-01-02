@@ -1,4 +1,4 @@
-package onlysole.imaginarynumbertech.client.renderer.handler;
+package onlysole.avaritia.renderer;
 
 import codechicken.lib.model.ItemQuadBakery;
 import codechicken.lib.model.bakedmodels.ModelProperties;
@@ -8,42 +8,46 @@ import codechicken.lib.util.TransformUtils;
 import com.google.common.collect.ImmutableList;
 import gregtech.api.items.metaitem.MetaItem;
 import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.client.renderer.GlStateManager.DestFactor;
+import net.minecraft.client.renderer.GlStateManager.SourceFactor;
 import net.minecraft.client.renderer.block.model.BakedQuad;
 import net.minecraft.client.renderer.block.model.IBakedModel;
-import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
+import net.minecraft.client.renderer.block.model.ItemCameraTransforms.TransformType;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.minecraftforge.common.model.IModelState;
-import onlysole.imaginarynumbertech.api.items.metaitem.IRenderer;
-import onlysole.imaginarynumbertech.api.items.metaitem.stats.renderer.ICosmicRenderBehavior;
-import onlysole.imaginarynumbertech.client.shader.CosmicShaderHelper;
+import onlysole.avaritia.api.ICosmicRenderBehavior;
+import onlysole.avaritia.api.IRenderer;
+import onlysole.avaritia.shader.CosmicShaderHelper;
+import onlysole.imaginarynumbertech.api.items.metaitem.INTMetaItem;
 import org.lwjgl.opengl.GL11;
 
 import java.util.HashMap;
 import java.util.List;
 
-public class CosmicItemRenderer extends WrappedItemRenderer {
+public class CosmicItemRender extends WrappedItemRenderer {
+
     private static final HashMap<TextureAtlasSprite, IBakedModel> spriteQuadCache = new HashMap<>();
 
     static {
         ResourceUtils.registerReloadListener(resourceManager -> spriteQuadCache.clear());
     }
 
-/*    public CosmicItemRenderer(IModelState state, IBakedModel wrapped) {
+    public CosmicItemRender(IModelState state, IBakedModel wrapped) {
         super(state, wrapped);
 
-    }*/
+    }
 
-    public CosmicItemRenderer(IModelState state, IWrappedModelGetter getter) {
+    public CosmicItemRender(IModelState state, IWrappedModelGetter getter) {
         super(state, getter);
     }
 
     @Override
-    public void renderItem(ItemStack item, ItemCameraTransforms.TransformType transformType) {
+    public void renderItem(ItemStack item, TransformType transformType) {
         processLightLevel(transformType);
-        if (transformType == ItemCameraTransforms.TransformType.GUI) {
+        if (transformType == TransformType.GUI) {
             renderInventory(item, renderEntity);
         } else {
             renderSimple(item, renderEntity);
@@ -51,10 +55,9 @@ public class CosmicItemRenderer extends WrappedItemRenderer {
     }
 
     protected void renderSimple(ItemStack stack, EntityLivingBase player) {
-
         GlStateManager.pushMatrix();
         GlStateManager.enableBlend();
-        GlStateManager.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA);
+        GlStateManager.blendFunc(SourceFactor.SRC_ALPHA, DestFactor.ONE_MINUS_SRC_ALPHA);
         GlStateManager.color(1F, 1F, 1F, 1F);
 
         World world = player != null ? player.world : null;
@@ -75,7 +78,7 @@ public class CosmicItemRenderer extends WrappedItemRenderer {
 
             TextureAtlasSprite cosmicSprite = cri.getMaskTexture(stack, player);
 
-            IBakedModel cosmicModel = spriteQuadCache.computeIfAbsent(cosmicSprite, CosmicItemRenderer::computeModel);
+            IBakedModel cosmicModel = spriteQuadCache.computeIfAbsent(cosmicSprite, CosmicItemRender::computeModel);
 
             CosmicShaderHelper.cosmicOpacity = cri.getMaskOpacity(stack, player);
             CosmicShaderHelper.useShader();
@@ -95,7 +98,7 @@ public class CosmicItemRenderer extends WrappedItemRenderer {
 
         GlStateManager.pushMatrix();
         GlStateManager.enableBlend();
-        GlStateManager.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA);
+        GlStateManager.blendFunc(SourceFactor.SRC_ALPHA, DestFactor.ONE_MINUS_SRC_ALPHA);
 
         GlStateManager.disableAlpha();
         GlStateManager.disableDepth();
@@ -105,22 +108,27 @@ public class CosmicItemRenderer extends WrappedItemRenderer {
         renderModel(model, stack);
 
         MetaItem<?>.MetaValueItem valueItem = ((MetaItem<?>)stack.getItem()).getItem(stack);
+        INTMetaItem<?>.MetaValueItem intValueItem = ((INTMetaItem<?>)stack.getItem()).getItem(stack);
         ICosmicRenderBehavior cri = null;
         if (valueItem != null) {
             cri = (ICosmicRenderBehavior) ((IRenderer)valueItem).getRendererManager();
+        }
+        if (intValueItem != null) {
+            cri = (ICosmicRenderBehavior) ((IRenderer)intValueItem).getRendererManager();
         }
 
         if (cri != null) {
 
             GlStateManager.pushMatrix();
             GlStateManager.enableBlend();
-            GlStateManager.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA);
+            GlStateManager.blendFunc(SourceFactor.SRC_ALPHA, DestFactor.ONE_MINUS_SRC_ALPHA);
 
             GlStateManager.disableAlpha();
             GlStateManager.disableDepth();
 
             TextureAtlasSprite sprite = cri.getMaskTexture(stack, player);
-            IBakedModel cosmicModel = spriteQuadCache.computeIfAbsent(sprite, CosmicItemRenderer::computeModel);
+
+            IBakedModel cosmicModel = spriteQuadCache.computeIfAbsent(sprite, CosmicItemRender::computeModel);
 
             GlStateManager.color(1F, 1F, 1F, 1F);
             CosmicShaderHelper.cosmicOpacity = cri.getMaskOpacity(stack, player);
@@ -147,7 +155,7 @@ public class CosmicItemRenderer extends WrappedItemRenderer {
         return new PerspectiveAwareBakedModel(quads, TransformUtils.DEFAULT_ITEM, new ModelProperties(true, false));
     }
 
-    protected void processLightLevel(ItemCameraTransforms.TransformType transformType) {
+    protected void processLightLevel(TransformType transformType) {
         switch (transformType) {
             case GROUND:
                 if (entityPos != null) {

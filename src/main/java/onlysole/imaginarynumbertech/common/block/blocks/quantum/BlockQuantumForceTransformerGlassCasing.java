@@ -81,13 +81,21 @@ public class BlockQuantumForceTransformerGlassCasing extends VariantActiveBlock<
                 super.shouldSideBeRendered(state, world, pos, side);
     }
 
+    /**
+     * 当鼠标悬停在物品上时，在客户端显示额外的信息。
+     *
+     * @param stack 物品堆栈。
+     * @param player 可能为 null 的玩家对象。
+     * @param tooltip 用于添加额外信息的列表。
+     * @param advanced 是否显示高级信息。
+     */
     @SideOnly(Side.CLIENT)
     @Override
     public void addInformation(@Nonnull ItemStack stack, @Nullable World player, @Nonnull List<String> tooltip, @Nonnull ITooltipFlag advanced) {
         super.addInformation(stack, player, tooltip, advanced);
         VariantItemBlock<GlassType, BlockQuantumForceTransformerGlassCasing> itemBlock = (VariantItemBlock<GlassType, BlockQuantumForceTransformerGlassCasing>) stack.getItem();
         IBlockState stackState = itemBlock.getBlockState(stack);
-        GlassType glassType =  this.getState(stackState);
+        GlassType glassType = this.getState(stackState);
         tooltip.add(I18n.format("imaginarynumbertech.glass_tier.tooltip", glassType.getTireNameColored()));
         if (glassType.isOpticalGlass) {
             tooltip.add(glassType.getOpticalTierName());

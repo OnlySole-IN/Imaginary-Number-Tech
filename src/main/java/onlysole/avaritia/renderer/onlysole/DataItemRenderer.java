@@ -1,4 +1,4 @@
-package onlysole.imaginarynumbertech.client.renderer.handler;
+package onlysole.avaritia.renderer.onlysole;
 
 import codechicken.lib.model.ModelRegistryHelper;
 import codechicken.lib.render.item.IItemRenderer;
@@ -14,8 +14,9 @@ import net.minecraft.client.renderer.block.model.IBakedModel;
 import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.model.IModelState;
-import onlysole.imaginarynumbertech.api.items.metaitem.IRenderer;
-import onlysole.imaginarynumbertech.common.items.behaviors.renderer.DataRenderItemBehavior;
+import onlysole.avaritia.api.IRenderer;
+import onlysole.avaritia.behavior.DataRenderItemBehavior;
+import onlysole.avaritia.renderer.WrappedItemRenderer;
 import org.lwjgl.input.Keyboard;
 
 import java.util.Collection;
@@ -42,7 +43,6 @@ public class DataItemRenderer implements IItemRenderer {
 
             MetaItem<?>.MetaValueItem valueItem = ((MetaItem<?>)stack.getItem()).getItem(stack);
             DataRenderItemBehavior dri = null;
-
             if (valueItem != null) {
                 dri = (DataRenderItemBehavior) (( IRenderer)valueItem).getRendererManager();
             }

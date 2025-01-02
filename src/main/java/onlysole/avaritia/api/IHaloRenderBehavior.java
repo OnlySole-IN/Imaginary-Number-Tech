@@ -1,4 +1,4 @@
-package onlysole.imaginarynumbertech.api.items.metaitem.stats.renderer;
+package onlysole.avaritia.api;
 
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraftforge.fml.relauncher.Side;

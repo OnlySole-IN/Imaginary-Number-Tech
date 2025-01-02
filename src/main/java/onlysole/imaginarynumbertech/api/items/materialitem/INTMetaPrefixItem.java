@@ -13,7 +13,7 @@ import gregtech.api.unification.material.properties.ToolProperty;
 import gregtech.api.unification.material.registry.MaterialRegistry;
 import gregtech.api.unification.ore.OrePrefix;
 import gregtech.api.unification.stack.UnificationEntry;
-
+import it.unimi.dsi.fastutil.shorts.Short2ObjectOpenHashMap;
 import net.minecraft.block.BlockCauldron;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelBakery;
@@ -27,19 +27,17 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-
-import it.unimi.dsi.fastutil.shorts.Short2ObjectOpenHashMap;
-
 import onlysole.imaginarynumbertech.api.items.metaitem.INTStandardMetaItem;
 import onlysole.imaginarynumbertech.common.CommonProxy;
-
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 
 //2024-12-29
 public class INTMetaPrefixItem extends INTStandardMetaItem {

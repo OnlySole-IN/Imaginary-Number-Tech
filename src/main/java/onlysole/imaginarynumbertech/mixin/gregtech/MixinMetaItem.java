@@ -4,7 +4,7 @@ import gregtech.api.items.metaitem.MetaItem;
 import gregtech.api.util.GTUtility;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
-import onlysole.imaginarynumbertech.api.items.metaitem.IRenderer;
+import onlysole.avaritia.api.IRenderer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;

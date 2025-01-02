@@ -1,11 +1,11 @@
-package onlysole.imaginarynumbertech.common.items.behaviors.renderer;
+package onlysole.avaritia.behavior;
 
 import codechicken.lib.model.ModelRegistryHelper;
 import codechicken.lib.util.TransformUtils;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.util.ResourceLocation;
-import onlysole.imaginarynumbertech.api.items.metaitem.stats.renderer.IItemRendererManager;
-import onlysole.imaginarynumbertech.client.renderer.handler.DataItemRenderer;
+import onlysole.avaritia.api.IItemRendererManager;
+import onlysole.avaritia.renderer.onlysole.DataItemRenderer;
 
 public class DataRenderItemBehavior implements IItemRendererManager {//todo null
     @Override

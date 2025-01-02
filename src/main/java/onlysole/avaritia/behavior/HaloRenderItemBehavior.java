@@ -1,4 +1,4 @@
-package onlysole.imaginarynumbertech.common.items.behaviors.renderer;
+package onlysole.avaritia.behavior;
 
 import codechicken.lib.model.ModelRegistryHelper;
 import codechicken.lib.util.TransformUtils;
@@ -7,11 +7,12 @@ import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import onlysole.imaginarynumbertech.api.items.metaitem.stats.renderer.IHaloRenderBehavior;
-import onlysole.imaginarynumbertech.client.renderer.handler.HaloItemRenderer;
+import onlysole.avaritia.api.IHaloRenderBehavior;
+import onlysole.avaritia.renderer.HaloRenderItem;
 
 import java.util.function.Supplier;
 
+//光环
 public class HaloRenderItemBehavior implements IHaloRenderBehavior {
 
     private final int haloSize;
@@ -55,7 +56,7 @@ public class HaloRenderItemBehavior implements IHaloRenderBehavior {
     @Override
     public void onRendererRegistry(ResourceLocation location) {
         ModelRegistryHelper.register(new ModelResourceLocation(location, "inventory"),
-                new HaloItemRenderer(TransformUtils.DEFAULT_ITEM, modelRegistry ->
+                new HaloRenderItem(TransformUtils.DEFAULT_ITEM, modelRegistry ->
                         modelRegistry.getObject(new ModelResourceLocation(location, "inventory"))
                 )
         );

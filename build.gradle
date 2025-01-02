@@ -134,8 +134,8 @@ dependencies {
             transitive = false
         }
         annotationProcessor 'org.ow2.asm:asm-debug-all:5.2'
-        annotationProcessor 'com.google.guava:guava:24.1.1-jre'
-        annotationProcessor 'com.google.code.gson:gson:2.8.6'
+        annotationProcessor 'com.google.guava:guava:32.1.2-jre'
+        annotationProcessor 'com.google.code.gson:gson:2.8.9'
         annotationProcessor (mixin) {
             transitive = false
         }
@@ -147,12 +147,12 @@ dependencies {
     compileOnlyApi 'org.jetbrains:annotations:24.1.0'
     annotationProcessor 'org.jetbrains:annotations:24.1.0'
 
-    tasks.withType(JavaCompile) {
-        options.compilerArgs << "-Xlint:deprecation"
-        options.compilerArgs << "-Xlint:unchecked"
+    tasks.withType(JavaCompile).tap {
+        configureEach {
+            options.compilerArgs << "-Xlint:deprecation"
+            options.compilerArgs << "-Xlint:unchecked"
+        }
     }
-
-
 
 
 }
@@ -294,7 +294,7 @@ tasks.register('generateMixinJson') {
     doLast {
         for (String mixinConfig : missingConfig) {
             def file = file("src/main/resources/mixins.${mixinConfig}.json")
-            file << """{\n\t"package": "",\n\t"required": true,\n\t"refmap": "${propertyString('mixin_refmap')}",\n\t"target": "@env(DEFAULT)",\n\t"minVersion": "0.8.5",\n\t"compatibilityLevel": "JAVA_8",\n\t"mixins": [],\n\t"server": [],\n\t"client": []\n}"""
+            file << """{\n\t"package": "",\n\t"required": true,\n\t"refmap": "${propertyString('mixin_refmap')}",\n\t"target": "@env(DEFAULT)",\n\t"minVersion": "0.8.7",\n\t"compatibilityLevel": "JAVA_8",\n\t"mixins": [],\n\t"server": [],\n\t"client": []\n}"""
         }
     }
 }

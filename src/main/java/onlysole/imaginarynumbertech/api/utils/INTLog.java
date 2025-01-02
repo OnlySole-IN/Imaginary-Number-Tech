@@ -1,6 +1,7 @@
 package onlysole.imaginarynumbertech.api.utils;
 
-import org.apache.logging.log4j.*;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.Logger;
 
 public class INTLog {
     public static Logger logger;

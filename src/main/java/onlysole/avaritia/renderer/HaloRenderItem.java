@@ -1,4 +1,4 @@
-package onlysole.imaginarynumbertech.client.renderer.handler;
+package onlysole.avaritia.renderer;
 
 import codechicken.lib.colour.Colour;
 import gregtech.api.items.metaitem.MetaItem;
@@ -11,20 +11,20 @@ import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.model.IModelState;
-import onlysole.imaginarynumbertech.api.items.metaitem.IRenderer;
-import onlysole.imaginarynumbertech.api.items.metaitem.stats.renderer.IHaloRenderBehavior;
+import onlysole.avaritia.api.IHaloRenderBehavior;
+import onlysole.avaritia.api.IRenderer;
 
 import java.util.Random;
 
-public class HaloItemRenderer extends WrappedItemRenderer{
+public class HaloRenderItem extends WrappedItemRenderer {
 
     private final Random randy = new Random();
 
-    public HaloItemRenderer(IModelState state, IBakedModel model) {
+    public HaloRenderItem(IModelState state, IBakedModel model) {
         super(state, model);
     }
 
-    public HaloItemRenderer(IModelState state, IWrappedModelGetter getter) {
+    public HaloRenderItem(IModelState state, IWrappedModelGetter getter) {
         super(state, getter);
     }
 

@@ -6,7 +6,6 @@ import gregtech.api.items.metaitem.stats.IItemDurabilityManager;
 import gregtech.api.items.toolitem.IGTTool;
 import gregtech.api.items.toolitem.ToolHelper;
 import gregtech.api.util.GTUtility;
-
 import net.minecraft.client.renderer.BufferBuilder;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.Tessellator;
@@ -15,7 +14,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-
 import onlysole.imaginarynumbertech.api.items.metaitem.INTMetaItem;
 import org.apache.commons.lang3.tuple.Pair;
 import org.lwjgl.opengl.GL11;

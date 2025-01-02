@@ -1,5 +1,12 @@
 package onlysole.imaginarynumbertech.common.block;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.item.Item;
+import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import onlysole.imaginarynumbertech.common.block.blocks.*;
 import onlysole.imaginarynumbertech.common.block.blocks.assembly.BlockAdvancedAssemblyLineCasing;
 import onlysole.imaginarynumbertech.common.block.blocks.assembly.BlockComponentAssemblyLineCasing;
@@ -10,13 +17,6 @@ import onlysole.imaginarynumbertech.common.block.blocks.machinel.BlockMachinelCa
 import onlysole.imaginarynumbertech.common.block.blocks.machinel.BlockMachinelCasingB;
 import onlysole.imaginarynumbertech.common.block.blocks.quantum.BlockQuantumForceTransformerCasing;
 import onlysole.imaginarynumbertech.common.block.blocks.quantum.BlockQuantumForceTransformerGlassCasing;
-import net.minecraft.block.Block;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.item.Item;
-import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 import static gregtech.common.blocks.MetaBlocks.statePropertiesToString;
 

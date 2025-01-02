@@ -1,4 +1,4 @@
-package onlysole.imaginarynumbertech.client.renderer.handler;
+package onlysole.avaritia.handler;
 
 import net.minecraft.entity.item.EntityItem;
 

@@ -9,10 +9,13 @@ import gregtech.common.items.behaviors.MultiblockBuilderBehavior;
 import gregtech.common.items.behaviors.ProspectorScannerBehavior;
 import gregtech.common.items.behaviors.TooltipBehavior;
 import net.minecraft.client.resources.I18n;
+import onlysole.avaritia.behavior.CosmicRenderItemBehavior;
+import onlysole.avaritia.behavior.HaloRenderItemBehavior;
 import onlysole.imaginarynumbertech.api.items.metaitem.INTStandardMetaItem;
 import onlysole.imaginarynumbertech.client.renderer.texture.INTTextures;
-import onlysole.imaginarynumbertech.common.items.behaviors.*;
-import onlysole.imaginarynumbertech.common.items.behaviors.renderer.*;
+import onlysole.imaginarynumbertech.common.items.behaviors.DataItemResearch;
+import onlysole.imaginarynumbertech.common.items.behaviors.IntBcircuitBehavior;
+import onlysole.imaginarynumbertech.common.items.behaviors.MillBallBehavior;
 
 import static onlysole.imaginarynumbertech.common.items.INTMetaItems.*;
 public class INTMetaItem2 extends INTStandardMetaItem {

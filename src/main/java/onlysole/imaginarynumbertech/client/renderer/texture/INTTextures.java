@@ -143,4 +143,5 @@ OrientedOverlayRenderer
         RESEARCH_PIPE_SIDE_OVERLAY_ACTIVE = textureMap.registerSprite(INTUtils.INTID("blocks/pipe/pipe_research_side_overlay_active"));
     }
     public static void preInit() {TextureUtils.addIconRegister(INTTextures::register);}
+
 }

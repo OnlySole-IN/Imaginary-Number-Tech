@@ -1,17 +1,8 @@
-/**
- * Original class written by Vazkii for Botania.
- */
-
-// TEMA: this is the main shader stuff, where the programs are loaded and compiled for the card.
-// other relevant files are the shader in /assets/physis/shader/, and the tesr in /client/render/tile/
-// they have other comments like this in.
-
-package onlysole.imaginarynumbertech.client.utils;
+package onlysole.avaritia.shader;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.OpenGlHelper;
 import onlysole.imaginarynumbertech.api.utils.INTLog;
-import onlysole.imaginarynumbertech.client.shader.ShaderCallback;
 import org.apache.logging.log4j.Level;
 import org.lwjgl.opengl.ARBFragmentShader;
 import org.lwjgl.opengl.ARBShaderObjects;
@@ -21,7 +12,6 @@ import org.lwjgl.opengl.GL11;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
 
 public final class ShaderHelper {
 
@@ -49,9 +39,13 @@ public final class ShaderHelper {
         if (shader != 0) {
             Minecraft mc = Minecraft.getMinecraft();
             int time = ARBShaderObjects.glGetUniformLocationARB(shader, "time");
+
+            // Limits the animation time to a max value of 24000 ticks before resetting to 0
             int animationTime = (int) (mc.player.ticksExisted % 24000);
 
             if (mc.player != null && mc.player.world != null) {
+
+                // at 12000 ticks starts the render in reverse at the correct time
                 ARBShaderObjects.glUniform1iARB(time, animationTime <= 12000 ? animationTime : animationTime * -1 + 24000);
             }
 
@@ -151,7 +145,7 @@ public final class ShaderHelper {
         }
 
         try {
-            reader = new BufferedReader(new InputStreamReader(in, StandardCharsets.UTF_8));
+            reader = new BufferedReader(new InputStreamReader(in, "UTF-8"));
 
             Exception innerExc = null;
             try {

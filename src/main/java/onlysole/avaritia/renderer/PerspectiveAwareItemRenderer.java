@@ -1,4 +1,4 @@
-package onlysole.imaginarynumbertech.client.renderer.handler;
+package onlysole.avaritia.renderer;
 
 import codechicken.lib.render.item.IItemRenderer;
 import com.google.common.collect.ImmutableList;
@@ -10,11 +10,15 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.common.model.IModelState;
+import onlysole.avaritia.handler.IEntityItemTickCallback;
 
-import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+/**
+ * TODO, 1.11 Move some implementation of this to CCL.
+ */
 public abstract class PerspectiveAwareItemRenderer implements IItemRenderer, IEntityItemTickCallback {
+
     //This can be null if rendered in a gui, ALWAYS null check this.
     //Havent traced all routes, but only hand rendering may fire this..
     @Nullable
@@ -67,16 +71,15 @@ public abstract class PerspectiveAwareItemRenderer implements IItemRenderer, IEn
     //This simply represents the entity "holding" the item as such.
     private static class EntityCachingOverrideList extends ItemOverrideList {
 
-        private final IEntityCallback callback;
+        private IEntityCallback callback;
 
         public EntityCachingOverrideList(IEntityCallback callback) {
             super(ImmutableList.of());
             this.callback = callback;
         }
 
-        @Nonnull
         @Override
-        public IBakedModel handleItemState(@Nonnull IBakedModel originalModel, @Nonnull ItemStack stack, World world, EntityLivingBase entity) {
+        public IBakedModel handleItemState(IBakedModel originalModel, ItemStack stack, World world, EntityLivingBase entity) {
             callback.onEntityStuffs(entity, world);
             return super.handleItemState(originalModel, stack, world, entity);
         }
