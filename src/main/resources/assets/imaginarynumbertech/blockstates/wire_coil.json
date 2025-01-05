@@ -92,17 +92,17 @@
             "top_all":"imaginarynumbertech:blocks/casings/coils/eternal_bloom"
         }
     },
-    "active=false,variant=cupar_proton_pair_coil": {
+    "active=false,variant=cupar_proton": {
       "model": "minecraft:cube_all",
       "textures": {
-        "all": "imaginarynumbertech:blocks/casings/coils/cupar_proton_pair_coil"
+        "all": "imaginarynumbertech:blocks/casings/coils/cupar_proton"
       }
     },
-    "active=true,variant=cupar_proton_pair_coil": {
+    "active=true,variant=cupar_proton": {
       "model": "gregtech:cube_2_layer_all",
       "textures": {
-        "bot_all": "imaginarynumbertech:blocks/casings/coils/cupar_proton_pair_coil",
-        "top_all":"imaginarynumbertech:blocks/casings/coils/cupar_proton_pair_coil_bloom"
+        "bot_all": "imaginarynumbertech:blocks/casings/coils/cupar_proton",
+        "top_all":"imaginarynumbertech:blocks/casings/coils/cupar_proton_bloom"
       }
     }
   }

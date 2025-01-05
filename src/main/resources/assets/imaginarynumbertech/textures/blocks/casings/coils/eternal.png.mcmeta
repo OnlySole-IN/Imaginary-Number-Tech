@@ -1,14 +1,5 @@
 {
-  "animation": { "frametime": 3 },
-  "ctm": {
-    "ctm_version": 1,
-    "type": "CTM",
-    "layer": "SOLID",
-    "textures": [
-      "imaginarynumbertech:blocks/casings/coils/eternal_ctm"
-    ],
-    "extra": {
-      "connect_inside": true
-    }
+  "animation": { 
+    "frametime": 3 
   }
 }

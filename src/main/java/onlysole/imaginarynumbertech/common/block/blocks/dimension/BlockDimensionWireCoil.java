@@ -65,7 +65,8 @@ public class BlockDimensionWireCoil  extends VariantActiveBlock<BlockDimensionWi
             int coilTier = coilType.ordinal();
             lines.add(I18n.format("tile.wire_coil.tooltip_smelter"));
             lines.add(I18n.format("tile.wire_coil.tooltip_parallel_smelter", coilType.level * 32));
-            int EUt = MetaTileEntityMultiSmelter.getEUtForParallel(MetaTileEntityMultiSmelter.getMaxParallel(coilType.getLevel()), coilType.getEnergyDiscount());
+            int EUt = MetaTileEntityMultiSmelter.getEUtForParallel(
+                    MetaTileEntityMultiSmelter.getMaxParallel(coilType.getLevel()), coilType.getEnergyDiscount());
             lines.add(I18n.format("tile.wire_coil.tooltip_energy_smelter", EUt));
             lines.add(I18n.format("tile.wire_coil.tooltip_pyro"));
             lines.add(I18n.format("tile.wire_coil.tooltip_speed_pyro", coilTier == 0 ? 75 : 50 * (coilTier + 1)));
@@ -85,16 +86,16 @@ public class BlockDimensionWireCoil  extends VariantActiveBlock<BlockDimensionWi
     }
 
 
-    public enum CoilType implements IStringSerializable, IHeatingCoilBlockStats {//TODO 材质
+    public enum CoilType implements IStringSerializable, IHeatingCoilBlockStats {
 
         ELECTRUM_FLUX("electrum_flux", 9601, 16, 8, INTMaterials.ElectrumFlux),
-        AWAKENED_DRACONIUM("awakened_draconium", 11801, 24, 16, INTMaterials.DraconiumAwakened),
-        UNIVE("unive", 14601, 32, 24, INTMaterials.CosmicNeutronium),
-        END("end", 18001, 40, 32, INTMaterials.Infinity),
-        HYPOGEN("hypogen", 21601, 48, 32, INTMaterials.Hypogen),
+        AWAKENED_DRACONIUM("awakened_draconium", 11801, 24, 16, INTMaterials.DraconiumAwakened),//TODO CTM
+        UNIVE("unive", 14601, 32, 24, INTMaterials.CosmicNeutronium),//TODO CTM
+        END("end", 18001, 40, 32, INTMaterials.Infinity),//TODO CTM
+        HYPOGEN("hypogen", 21601, 48, 32, INTMaterials.Hypogen),//TODO CTM
         UNIVERSIUM_COIL("universium", 24801, 64, 48, INTMaterials.Universium),
-        ETERNAL("eternal", 27301, 72, 64, INTMaterials.Eternity),
-        CUPAR_PROTON_PAIR_COIL("cupar_proton_pair_coil", 30001, 256, 128, null);
+        ETERNAL("eternal", 27301, 72, 64, INTMaterials.Eternity),//TODO CTM
+        CUPAR_PROTON("cupar_proton", 30001, 256, 128, null);//TODO CTM
         private final String name;
         private final int coilTemperature;
         private final int level;

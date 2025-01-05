@@ -89,8 +89,8 @@ public class BlockQuantumForceTransformerGlassCasing extends VariantActiveBlock<
      * @param tooltip 用于添加额外信息的列表。
      * @param advanced 是否显示高级信息。
      */
-    @SideOnly(Side.CLIENT)
     @Override
+    @SideOnly(Side.CLIENT)
     public void addInformation(@Nonnull ItemStack stack, @Nullable World player, @Nonnull List<String> tooltip, @Nonnull ITooltipFlag advanced) {
         super.addInformation(stack, player, tooltip, advanced);
         VariantItemBlock<GlassType, BlockQuantumForceTransformerGlassCasing> itemBlock = (VariantItemBlock<GlassType, BlockQuantumForceTransformerGlassCasing>) stack.getItem();

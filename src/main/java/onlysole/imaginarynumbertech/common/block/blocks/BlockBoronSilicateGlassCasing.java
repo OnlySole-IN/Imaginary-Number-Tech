@@ -87,8 +87,8 @@ public class BlockBoronSilicateGlassCasing extends VariantActiveBlock<BlockBoron
                 super.shouldSideBeRendered(state, world, pos, side);
     }
 
-    @SideOnly(Side.CLIENT)
     @Override
+    @SideOnly(Side.CLIENT)
     public void addInformation(@Nonnull ItemStack stack, @Nullable World player, @Nonnull List<String> tooltip, @Nonnull ITooltipFlag advanced) {
         super.addInformation(stack, player, tooltip, advanced);
         VariantItemBlock<CasingType, BlockBoronSilicateGlassCasing> itemBlock = (VariantItemBlock<CasingType, BlockBoronSilicateGlassCasing>) stack.getItem();
