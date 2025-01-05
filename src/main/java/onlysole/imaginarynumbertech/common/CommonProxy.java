@@ -19,7 +19,6 @@ import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
 import onlysole.imaginarynumbertech.api.INTValues;
-import onlysole.imaginarynumbertech.api.items.metaitem.INTMetaItem;
 import onlysole.imaginarynumbertech.api.utils.INTLog;
 import onlysole.imaginarynumbertech.common.items.INTMetaItems;
 
@@ -76,10 +75,10 @@ public class CommonProxy {
         INTLog.logger.info("Registering Items...");
         IForgeRegistry<Item> registry = event.getRegistry();
 
-        for (INTMetaItem<?> item : INTMetaItems.INT_ITEMS) {
-            registry.register(item);
-            item.registerSubItems();
-        }
+//        for (INTMetaItem<?> item : INTMetaItems.INT_ITEMS) {
+//            registry.register(item);
+//            item.registerSubItems();
+//        }
 
         registry.register(createItemBlock(NT_WIRE_COIL, VariantItemBlock::new));
         registry.register(createItemBlock(BORON_SILICATE_GLASS_CASING, VariantItemBlock::new));
@@ -125,7 +124,7 @@ public class CommonProxy {
 
         INTLog.logger.info("Registering recipes...");
 
-        INTMetaItems.registerOreDict();
+    //    INTMetaItems.registerOreDict();
     }
 
     @SubscribeEvent

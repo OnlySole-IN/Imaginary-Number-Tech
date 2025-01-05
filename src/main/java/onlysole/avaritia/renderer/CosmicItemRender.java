@@ -21,7 +21,6 @@ import net.minecraftforge.common.model.IModelState;
 import onlysole.avaritia.api.ICosmicRenderBehavior;
 import onlysole.avaritia.api.IRenderer;
 import onlysole.avaritia.shader.CosmicShaderHelper;
-import onlysole.imaginarynumbertech.api.items.metaitem.INTMetaItem;
 import org.lwjgl.opengl.GL11;
 
 import java.util.HashMap;
@@ -108,13 +107,9 @@ public class CosmicItemRender extends WrappedItemRenderer {
         renderModel(model, stack);
 
         MetaItem<?>.MetaValueItem valueItem = ((MetaItem<?>)stack.getItem()).getItem(stack);
-        INTMetaItem<?>.MetaValueItem intValueItem = ((INTMetaItem<?>)stack.getItem()).getItem(stack);
         ICosmicRenderBehavior cri = null;
         if (valueItem != null) {
             cri = (ICosmicRenderBehavior) ((IRenderer)valueItem).getRendererManager();
-        }
-        if (intValueItem != null) {
-            cri = (ICosmicRenderBehavior) ((IRenderer)intValueItem).getRendererManager();
         }
 
         if (cri != null) {
