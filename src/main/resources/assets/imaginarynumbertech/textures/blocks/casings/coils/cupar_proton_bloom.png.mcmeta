@@ -5,7 +5,7 @@
         "layer": "BLOOM",
         "gregtech": true,
         "textures": [
-            "imaginarynumbertech:blocks/casings/coils/cupar_proton_pair_coil_bloom_bloom_ctm"
+            "imaginarynumbertech:blocks/casings/coils/cupar_proton_bloom_ctm"
         ],
         "extra": {
             "connect_inside": true,

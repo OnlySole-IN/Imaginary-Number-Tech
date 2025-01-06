@@ -2,6 +2,6 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "imaginarynumbertech:items/material_sets/legendarium/casing_small",
-    "layer1": "imaginarynumbertech:items/material_sets/legendarium/halo_overlay"
+    "layer1": "imaginarynumbertech:items/material_sets/legendarium/casing_small_overlay"
   }
 }

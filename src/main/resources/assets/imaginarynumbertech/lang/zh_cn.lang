@@ -919,6 +919,7 @@ gregtech.material.spacetime=时空
 gregtech.material.eternity=§b永恒
 gregtech.material.magneto_hydrodynamically_constrained_star_matter=磁流体约束恒星物质
 gregtech.material.universium=§3宇宙素
+gregtech.material.universium.tooltip=进入超越空间的领域
 gregtech.material.transcendent_metal=超时空金属
 gregtech.material.crystal_matrix=水晶矩阵
 
@@ -973,8 +974,13 @@ gregtech.material.draconium_slag_solution=龙素残渣溶液
 gregtech.material.blazing_pyrotheum=烈焰之炽焱
 gregtech.material.gelid_cryotheum=极寒之凛冰
 gregtech.material.pine_oil=松油
-
-
+gregtech.material.degenerate_quark_gluon_plasma=简并夸克胶子等离子体
+gregtech.material.saturated_phononic_crystal_solution=饱和声子晶体溶液
+gregtech.material.lossless_phonon_transfer_medium=无损声子传输介质
+gregtech.material.dimensionally_shifted_superfluid=维度偏移超流体
+gregtech.material.stabilised_baryonic_matter=稳定重子物质
+gregtech.material.semi_stable_antimatter=半稳定反物质
+gregtech.material.stargate_crystal_slurry=星门晶体浆液
 
 
 
@@ -1004,8 +1010,8 @@ tile.wire_coil.universium.name=‹-§3宇宙素线圈§r-›
 tile.wire_coil.universium.tooltip=
 tile.wire_coil.eternal.name=‹-§b永恒线圈§r-›
 tile.wire_coil.eternal.tooltip=
-tile.wire_coil.cupar_proton_pair_coil.name=‹-§o§1库珀对线圈§r-›
-tile.wire_coil.cupar_proton_pair_coil.tooltip=
+tile.wire_coil.cupar_proton.name=‹-§o§1库珀对线圈§r-›
+tile.wire_coil.cupar_proton.tooltip=
 
 
 metaitem.crystal_redstone.name=不稳红石络合物
@@ -1036,7 +1042,6 @@ tile.machine_casing.precise_assembler_casing_mk3.name=精密电子单元机械�
 tile.machine_casing.substrate_casing.name=基板机械方块
 tile.machine_casing.advanced_substrate_casing.name=高级基板机械方块
 tile.machine_casing.vacuum_casing.name=高气密红钢机器外壳
-tile.machine_casing.drill_head.name=钻头
 tile.machine_casing.naquadria_casing.name=超能硅岩抗辐射机器外壳
 tile.machine_casing.hyper_casing.name=超致密黑钚机器外壳
 tile.machine_casing.talonite_casing.name=低摩擦铬钴磷酸盐合金机器外壳

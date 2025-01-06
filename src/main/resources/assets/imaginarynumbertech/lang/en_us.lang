@@ -826,6 +826,7 @@ gregtech.material.astral_titanium=astral titanium
 gregtech.material.celestial_tungsten=celestial tungsten
 gregtech.material.rhugnor=Rhugnor
 gregtech.material.universium=universium
+gregtech.material.universium.tooltip=
 gregtech.material.electrum_flux=electrum flux
 gregtech.material.hypogen=Hypogen
 gregtech.material.transcendent_metal=transcendent_metal
@@ -887,6 +888,23 @@ gregtech.material.dragon_tear=
 gregtech.material.blazing_pyrotheum=Blazing Pyrotheum
 gregtech.material.gelid_cryotheum=Gelid Cryotheum
 gregtech.material.pine_oil=
+gregtech.material.degenerate_quark_gluon_plasma=Degenerate Quark Gluon Plasma
+gregtech.material.saturated_phononic_crystal_solution=Saturated Phononic Crystal Solution
+gregtech.material.lossless_phonon_transfer_medium=Lossless Phonon Transfer Medium
+gregtech.material.dimensionally_shifted_superfluid=Dimensionally Shifted Superfluid
+gregtech.material.stabilised_baryonic_matter=Stabilised Baryonic Matter
+gregtech.material.semi_stable_antimatter=Semi-Stable Antimatter
+gregtech.material.stargate_crystal_slurry=Stargate Crystal Slurry
+
+
+
+
+
+
+
+
+
+
 
 #Coil Block
 tile.wire_coil.electrum_flux.name=‹-Electrum Flux Coil-›
@@ -903,8 +921,8 @@ tile.wire_coil.universium.name=
 tile.wire_coil.universium.tooltip=
 tile.wire_coil.eternal.name=‹-Eternal Coil-›
 tile.wire_coil.eternal.tooltip=
-tile.wire_coil.cupar_proton_pair_coil.name=
-tile.wire_coil.cupar_proton_pair_coil.tooltip=
+tile.wire_coil.cupar_proton.name=
+tile.wire_coil.cupar_proton.tooltip=
 
 
 metaitem.crystal_redstone.name=crystal_redstone
@@ -935,7 +953,6 @@ tile.machine_casing.precise_assembler_casing_mk3.name=
 tile.machine_casing.substrate_casing.name=Substrate Machine Casing
 tile.machine_casing.advanced_substrate_casing.name=Advanced Substrate Machine Casing
 tile.machine_casing.vacuum_casing.name=
-tile.machine_casing.drill_head.name=Drill Head
 tile.machine_casing.naquadria_casing.name=Naquadria Radiation Resistant Machine Casing
 tile.machine_casing.hyper_casing.name=Extremely Dense Black Plutonium Machine Casing
 tile.machine_casing.talonite_casing.name=Low Friction Talonite Machine Casing

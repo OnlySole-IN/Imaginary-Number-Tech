@@ -59,6 +59,7 @@ public @interface Javadoc {
   .customStill()//自定义材质
   .alternativeName("seed.oil")//替代名称
   .attribute(FluidAttributes.ACID)//属性（流体属性）
+  .translation("tooltip=")
   )
 
   .color().iconSet()                    <--- 外观
@@ -95,6 +96,10 @@ public @interface Javadoc {
   ᒼ ᣳ ᒢ ᒻ ᔿ ᐤ ᣖ ᣵ ᙚ ᐪ ᓑ ᘁ ᐜ ᕽ ᙆ ᙇ ⁰ ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁺ ⁻ ⁼ ˂ ˃ ⁽ ⁾ ˙ * º
   更多下标 ₐ ₔ ₑ ᵢ ₒ ᵣ ᵤ ᵥ ₓ ᙮ ᵤ ᵩ ᵦ ˪ ៳ ៷ ₒ ᵨ ៴ ᵤ ᵪ ᵧ
  */
+/*
+⟁✯☯∞❆☒☾☽❅☸✩❄♛☠✻✭⁂✲✶❈✤✴❊✸✵✡✮✧ꕤ⇱⇲⇤⇥▣❖◈⋄⟁◬⧋⊘⦾◌◎⊛ℂ℈℄Ω∑∴∵¤۞✡☪
+
+*/
 
 /*
 MaterialFlag
@@ -207,7 +212,7 @@ ORE=矿石
 §n	下划线
 §o	斜体
 §r	重置
-\n	换行
+/n	换行
 */
 
 

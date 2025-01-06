@@ -19,141 +19,180 @@ public class FluidsMaterials {
     private static final int END_ID = startId + 1000;
     public static void register() {
         MutatedIivingSolder = new Material.Builder(getMaterialsId(), gregtechId("mutated_iiving_solder"))
-                .liquid(new FluidBuilder())
+                .liquid(new FluidBuilder()
+                )
                 .color(0x93699B).iconSet(METALLIC)
                 .element(INTElements.MuIiSo)
                 .build();
 
         EthylCyanoacrylateSuperGlue = new Material.Builder(getMaterialsId(), gregtechId("ethyl_cyanoacrylate_super_glue"))
-                .liquid(new FluidBuilder())
+                .liquid(new FluidBuilder()
+                )
                 .color(0xAABEC8).iconSet(METALLIC)
                 .components(Carbon, 6,Hydrogen, 7,Nitrogen, 1,Oxygen, 2)//C₆H₇NO₂
                 .build();
 
         CyanoacrylatePolymer = new Material.Builder(getMaterialsId(), gregtechId("cyanoacrylate_polymer"))
-                .liquid(new FluidBuilder())
+                .liquid(new FluidBuilder()
+                )
                 .color(0x8C96A0)
                 .element(INTElements.CyPo)
                 .build();
 
         EthylCyanoacetate = new Material.Builder(getMaterialsId(), gregtechId("ethyl_cyanoacetate"))
-                .liquid(new FluidBuilder())
+                .liquid(new FluidBuilder()
+                )
                 .color(0x004BA0).iconSet(METALLIC)
                 .components(Carbon, 5,Hydrogen, 7,Nitrogen, 1,Oxygen, 2)//C₅H₇NO₂
                 .build();
 
         SolidAcidCatalystMixture = new Material.Builder(getMaterialsId(), gregtechId("solid_acid_catalyst_mixture"))
-                .liquid(new FluidBuilder())
+                .liquid(new FluidBuilder()
+                )
                 .color(0x502800)
                 .build()
                 .setFormula("?H₂SO₄?", true);
 
         ChloroaceticMixture = new Material.Builder(getMaterialsId(), gregtechId("chloroacetic_mixture"))
-                .liquid(new FluidBuilder())
+                .liquid(new FluidBuilder()
+                )
                 .color(0xD2A00A)
                 .build()
                 .setFormula("Cl?H?C-COOH", true);
 
         TrichloroaceticAcid = new Material.Builder(getMaterialsId(), gregtechId("trichloroacetic_acid"))
-                .liquid(new FluidBuilder())
+                .liquid(new FluidBuilder()
+                )
                 .color(0x78641E).iconSet(METALLIC)
                 .build()
                 .setFormula("Cl₃C-COOH", true);
 
         DichloroaceticAcid = new Material.Builder(getMaterialsId(), gregtechId("dichloroacetic_acid"))
-                .liquid(new FluidBuilder())
+                .liquid(new FluidBuilder()
+                )
                 .color(0xBEA03C).iconSet(METALLIC)
                 .build()
                 .setFormula("Cl₂CH-COOH", true);
 
         ChloroaceticAcid = new Material.Builder(getMaterialsId(), gregtechId("chloroacetic_acid"))
-                .liquid(new FluidBuilder())
+                .liquid(new FluidBuilder()
+                )
                 .color(0xE6C85A).iconSet(METALLIC)
                 .build()
                 .setFormula("ClCH₂-COOH", true);
 
         AceticAnhydride = new Material.Builder(getMaterialsId(), gregtechId("acetic_anhydride"))
-                .liquid(new FluidBuilder())
+                .liquid(new FluidBuilder()
+                )
                 .color(0xFAF06E).iconSet(METALLIC)
                 .build()
                 .setFormula("(CH₃CO)₂O", true);
 
         TemporalFluid = new Material.Builder(getMaterialsId(), gregtechId("temporal_fluid"))
-                .liquid(new FluidBuilder().customStill())
+                .liquid(new FluidBuilder()
+                        .customStill()
+                )
                 .build()
                 .setFormula(TextFormatting.OBFUSCATED  + "a"  + TextFormatting.RESET + "§et" + TextFormatting.OBFUSCATED  + "a", false);
 
         SpatialFluid = new Material.Builder(getMaterialsId(), gregtechId("spatial_fluid"))
-                .liquid(new FluidBuilder().customStill())
+                .liquid(new FluidBuilder()
+                        .customStill()
+                )
                 .build()
                 .setFormula(TextFormatting.OBFUSCATED  + "a" + TextFormatting.RESET + "§eh" + TextFormatting.OBFUSCATED + "a", false);
 
         Rawstarmatter = new Material.Builder(getMaterialsId(), gregtechId("rawstarmatter"))
-                .liquid(new FluidBuilder().customStill())
+                .liquid(new FluidBuilder()
+                        .customStill()
+                )
                 .build();
 
         PrimordialMatter = new Material.Builder(getMaterialsId(), gregtechId("primordial_matter"))
-                .liquid(new FluidBuilder().customStill())
+                .liquid(new FluidBuilder()
+                        .customStill()
+                )
                 .build()
                 .setFormula(TextFormatting.OBFUSCATED + "aaaaaa", false);
 
         DimensionallyTranscendentResidue = new Material.Builder(getMaterialsId(), gregtechId("dimensionally_transcendent_residue"))
-                .liquid(new FluidBuilder().customStill())
+                .liquid(new FluidBuilder()
+                        .customStill()
+                )
                 .build();
 
         DimensionallyTranscendentCrudecatalyst = new Material.Builder(getMaterialsId(), gregtechId("dimensionally_transcendent_crudecatalyst"))
-                .liquid(new FluidBuilder())
+                .liquid(new FluidBuilder()
+                )
                 .color(0x0F1616)
                 .build();
 
         DimensionallyTranscendentProsaiccatalyst = new Material.Builder(getMaterialsId(), gregtechId("dimensionally_transcendent_prosaiccatalyst"))
-                .liquid(new FluidBuilder())
+                .liquid(new FluidBuilder()
+                )
                 .color(0x0F1616)
                 .build();
 
         DimensionallyTranscendentResplendentcatalyst = new Material.Builder(getMaterialsId(), gregtechId("dimensionally_transcendent_resplendentcatalyst"))
-                .liquid(new FluidBuilder())
+                .liquid(new FluidBuilder()
+                )
                 .color(0x0F1616)
                 .build();
 
         DimensionallyTranscendentExoticcatalyst = new Material.Builder(getMaterialsId(), gregtechId("dimensionally_transcendent_exoticcatalyst"))
-                .liquid(new FluidBuilder())
+                .liquid(new FluidBuilder()
+                )
                 .color(0x0F1616)
                 .build();
 
         DimensionallyTranscendentStellarcatalyst = new Material.Builder(getMaterialsId(), gregtechId("dimensionally_transcendent_stellarcatalyst"))
-                .liquid(new FluidBuilder())
+                .liquid(new FluidBuilder()
+                )
                 .color(0x0F1616)
                 .build();
 
         ExciteddtCC = new Material.Builder(getMaterialsId(), gregtechId("exciteddt_cc"))
-                .liquid(new FluidBuilder().customStill())
+                .liquid(new FluidBuilder()
+                        .customStill()
+                )
                 .build();
 
         ExciteddtPC = new Material.Builder(getMaterialsId(), gregtechId("exciteddt_pc"))
-                .liquid(new FluidBuilder().customStill())
+                .liquid(new FluidBuilder()
+                        .customStill()
+                )
                 .build();
 
         ExciteddtRC = new Material.Builder(getMaterialsId(), gregtechId("exciteddt_rc"))
-                .liquid(new FluidBuilder().customStill())
+                .liquid(new FluidBuilder()
+                        .customStill()
+                )
                 .build();
 
         ExciteddtEC = new Material.Builder(getMaterialsId(), gregtechId("exciteddt_ec"))
-                .liquid(new FluidBuilder().customStill())
+                .liquid(new FluidBuilder()
+                        .customStill()
+                )
                 .build();
 
         ExciteddtSC = new Material.Builder(getMaterialsId(), gregtechId("exciteddt_sc"))
-                .liquid(new FluidBuilder().customStill())
+                .liquid(new FluidBuilder()
+                        .customStill()
+                )
                 .build();
 
         DragonBreath = new Material.Builder(getMaterialsId(), gregtechId("dragon_breath"))
-                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .liquid(new FluidBuilder()
+                        .attribute(FluidAttributes.ACID)
+                )
                 .color(0x9400D3)
                 .build()
                 .setFormula("Dr?", false);
 
         ConcentrateDragonBreath = new Material.Builder(getMaterialsId(), gregtechId("concentrate_dragon_breath"))
-                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .liquid(new FluidBuilder()
+                        .attribute(FluidAttributes.ACID)
+                )
                 .color(0x9400D3)
                 .build()
                 .setFormula("Dr2?", true);
@@ -166,14 +205,18 @@ public class FluidsMaterials {
                 .setFormula("*Dr*Rn?", true);
 
         DragonTear = new Material.Builder(getMaterialsId(), gregtechId("dragon_tear"))
-                .liquid(new FluidBuilder().temperature(2992))
+                .liquid(new FluidBuilder()
+                        .temperature(2992)
+                )
                 .color(0x9999FF)
                 .iconSet(DULL)
                 .build()
                 .setFormula("⚙", false);
 
         NitratedDragonDustSolution = new Material.Builder(getMaterialsId(), gregtechId("nitrated_dragon_dust_solution"))
-                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .liquid(new FluidBuilder()
+                        .attribute(FluidAttributes.ACID)
+                )
                 .color(0xF553FF)
                 .build();
 
@@ -208,6 +251,52 @@ public class FluidsMaterials {
                 .color(0xD6AC37)
                 .build();
 
+        DegenerateQuarkGluonPlasma = new Material.Builder(getMaterialsId(), gregtechId( "degenerate_quark_gluon_plasma"))
+                .liquid(new FluidBuilder()
+                        .customStill()
+                        .temperature(2000000000)
+                )
+                .build()
+                .setFormula(TextFormatting.OBFUSCATED  + "a" + TextFormatting.RESET + "§eg" + TextFormatting.OBFUSCATED + "a", false);
+
+        SaturatedPhononicCrystalSolution = new Material.Builder(getMaterialsId(), gregtechId( "saturated_phononic_crystal_solution"))
+                .liquid(new FluidBuilder()
+                        .customStill()
+                        .temperature(500)
+                )
+                .element(INTElements.SaturatedPhononicCrystalSolution)
+                .build();
+
+        LosslessPhononTransferMedium = new Material.Builder(getMaterialsId(), gregtechId( "lossless_phonon_transfer_medium"))
+                .liquid(new FluidBuilder()
+                        .customStill()
+                        .temperature(500)
+                )
+                .build();
+
+        DimensionallyShiftedSuperfluid = new Material.Builder(getMaterialsId(), gregtechId( "dimensionally_shifted_superfluid"))
+                .liquid(new FluidBuilder()
+                        .customStill()
+                )
+                .build();
+
+        StabilisedBaryonicMatter = new Material.Builder(getMaterialsId(), gregtechId( "stabilised_baryonic_matter"))
+                .liquid(new FluidBuilder()
+                        .customStill()
+                )
+                .build();
+
+        SemiStableAntimatter = new Material.Builder(getMaterialsId(), gregtechId( "semi_stable_antimatter"))
+                .liquid(new FluidBuilder()
+                        .customStill()
+                )
+                .build();
+
+        StargateCrystalSlurry = new Material.Builder(getMaterialsId(), gregtechId( "stargate_crystal_slurry"))
+                .liquid(new FluidBuilder()
+                        .customStill()
+                )
+                .build();
 
     }
     private static int getMaterialsId() {

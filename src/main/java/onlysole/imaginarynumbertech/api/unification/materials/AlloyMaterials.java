@@ -10,10 +10,10 @@ import static gregtech.api.GTValues.*;
 import static gregtech.api.unification.material.Materials.*;
 import static gregtech.api.unification.material.info.MaterialFlags.*;
 import static gregtech.api.unification.material.info.MaterialIconSet.*;
-import static gregtech.api.unification.material.properties.BlastProperty.GasTier.HIGHER;
-import static gregtech.api.unification.material.properties.BlastProperty.GasTier.HIGHEST;
+import static gregtech.api.unification.material.properties.BlastProperty.GasTier.*;
 import static gregtech.api.util.GTUtility.gregtechId;
 import static onlysole.imaginarynumbertech.api.unification.INTMaterials.*;
+import static onlysole.imaginarynumbertech.api.unification.material.info.INTMaterialFlags.*;
 import static onlysole.imaginarynumbertech.api.unification.material.info.INTMaterialIconSet.*;
 
 public class AlloyMaterials {
@@ -26,7 +26,9 @@ public class AlloyMaterials {
                 .fluid()
                 .color(0x0F0F0F)
                 .iconSet(SHINY)
-                .blast(b -> b .temp(10800, HIGHEST).blastStats(VA[UHV], 1600))
+                .blast(b -> b
+                        .temp(10800, HIGHEST)
+                        .blastStats(VA[UHV], 1600))
                 .cableProperties(V[UHV], 24, 0, true)
                 .flags(GENERATE_PLATE, GENERATE_FOIL, GENERATE_FINE_WIRE, NO_UNIFICATION)
                 .build();
@@ -36,7 +38,10 @@ public class AlloyMaterials {
                 .fluid()
                 .color(0x515151)
                 .iconSet(SHINY)
-                .blast(b -> b .temp(5000, HIGHER).blastStats(VA[IV], 200))
+                .blast(b -> b
+                        .temp(5000, HIGHER)
+                        .blastStats(VA[IV], 200)
+                )
                 .components(Niobium, 2, Chrome, 9, Aluminium, 5, Titanium, 2, Cobalt, 10, Tungsten, 13, Nickel, 18)
                 .flags(GENERATE_PLATE, GENERATE_ROTOR, GENERATE_ROD, GENERATE_FRAME, NO_UNIFICATION)
                 .build();
@@ -48,8 +53,11 @@ public class AlloyMaterials {
 
         Shirabon = new Material.Builder(getMaterialsId(), gregtechId("shirabon"))
                 .ingot(13)
-                .liquid(new FluidBuilder().temperature(26000))
-                .color(0xBE125C).iconSet(METALLIC)
+                .liquid(new FluidBuilder()
+                        .temperature(26000)
+                )
+                .color(0xBE125C)
+                .iconSet(METALLIC)
                 .flags(NONTM)
                 .element(INTElements.Shir)
                 .build();
@@ -65,34 +73,45 @@ public class AlloyMaterials {
 
         Mithril = new Material.Builder(getMaterialsId(), gregtechId("mithril"))
                 .ingot()
-                .liquid(new FluidBuilder())
+                .liquid(new FluidBuilder()
+                )
                 .plasma()
                 .color(0x428fdb)
                 .iconSet(DULL)
-                .blast(b -> b .temp(10900, HIGHEST).blastStats(VA[UHV]))
+                .blast(b -> b
+                        .temp(10900, HIGHEST).
+                        blastStats(VA[UHV])
+                )
                 .element(INTElements.Mithril)
                 .flags(GENERATE_PLATE, GENERATE_FOIL, GENERATE_FINE_WIRE, NO_UNIFICATION)
                 .build();
 
         AstralTitanium = new Material.Builder(getMaterialsId(), gregtechId("astral_titanium"))
                 .ingot(9)
-                .liquid(new FluidBuilder().temperature(6900))
-                .color(0xE5ABF6).iconSet(METALLIC)
+                .liquid(new FluidBuilder()
+                        .temperature(6900)
+                )
+                .color(0xE5ABF6)
+                .iconSet(METALLIC)
                 .flags(NONTM)
                 .element(INTElements.AsTi)
                 .build();
 
         CelestialTungsten = new Material.Builder(getMaterialsId(), gregtechId("celestial_tungsten"))
                 .ingot(10)
-                .liquid(new FluidBuilder().temperature(8700))
-                .color(0x303030).iconSet(METALLIC)
+                .liquid(new FluidBuilder()
+                        .temperature(8700)
+                )
+                .color(0x303030)
+                .iconSet(METALLIC)
                 .flags(NONTM)
                 .element(INTElements.CeTu)
                 .build();
 
         Rhugnor = new Material.Builder(getMaterialsId(), gregtechId("rhugnor"))
                 .fluid()
-                .color(0xBE00FF).iconSet(METALLIC)
+                .color(0xBE00FF)
+                .iconSet(METALLIC)
                 .element(INTElements.Rhugnor)
                 .build();
 
@@ -103,8 +122,13 @@ public class AlloyMaterials {
                 .element(INTElements.Hypogen)
                 .color(0xDC784B)
                 .iconSet(CUSTOM_HYPOGEN)
-                .toolStats(ToolProperty.Builder.of(20.0F, 200.0F, 2000000, 200).unbreakable().enchantability(33).magnetic().build())
-                .flags(GENERATE_PLATE, NO_UNIFICATION)
+                .toolStats(ToolProperty.Builder.of(20.0F, 200.0F, 2000000, 200)
+                        .unbreakable()
+                        .enchantability(33)
+                        .magnetic()
+                        .build()
+                )
+                .flags(GENERATE_PLATE, NO_UNIFICATION, NO_CASING_SMALL)
                 .build();
 
         DegenerateRhenium = new Material.Builder(getMaterialsId(), gregtechId("degenerate_rhenium"))
@@ -134,7 +158,9 @@ public class AlloyMaterials {
                 .iconSet(CUSTOM_LEGENDARIUM)
                 //.components(Naquadria, 1, Trinium, 1, Duranium, 1, Tritanium, 1, Orichalcum, 1, Adamantium, 1, Vibranium, 1, Taranium, 1) TODO
                 .blast(b -> b .temp(12960, HIGHEST).blastStats(VA[UIV], 5200))
-                .flags(GENERATE_PLATE, GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_ROUND, GENERATE_BOLT_SCREW, GENERATE_FRAME, GENERATE_DOUBLE_PLATE, GENERATE_GEAR, GENERATE_SMALL_GEAR, NO_UNIFICATION)
+                .flags(GENERATE_PLATE, GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_ROUND,
+                        GENERATE_BOLT_SCREW, GENERATE_FRAME, GENERATE_DOUBLE_PLATE, GENERATE_GEAR,
+                        GENERATE_SMALL_GEAR, NO_UNIFICATION, NO_CASING_SMALL)
                 .build();
 
 

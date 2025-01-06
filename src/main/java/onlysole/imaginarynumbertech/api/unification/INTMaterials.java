@@ -149,6 +149,13 @@ public class INTMaterials {
     public static Material BlazingPyrotheum;
     public static Material GelidCryotheum;
     public static Material PineOil;
+    public static Material DegenerateQuarkGluonPlasma;
+    public static Material SaturatedPhononicCrystalSolution;
+    public static Material LosslessPhononTransferMedium;
+    public static Material DimensionallyShiftedSuperfluid;
+    public static Material StabilisedBaryonicMatter;
+    public static Material SemiStableAntimatter;
+    public static Material StargateCrystalSlurry;
 
 
 

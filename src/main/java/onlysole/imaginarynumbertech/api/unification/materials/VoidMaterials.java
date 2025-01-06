@@ -2,6 +2,8 @@ package onlysole.imaginarynumbertech.api.unification.materials;
 
 import gregtech.api.fluids.FluidBuilder;
 import gregtech.api.unification.material.Material;
+import net.minecraft.client.resources.I18n;
+import net.minecraft.util.text.TextFormatting;
 import onlysole.imaginarynumbertech.api.unification.INTElements;
 
 import static gregtech.api.unification.material.info.MaterialFlags.*;
@@ -10,6 +12,7 @@ import static gregtech.api.unification.material.properties.BlastProperty.GasTier
 import static gregtech.api.util.GTUtility.gregtechId;
 import static onlysole.imaginarynumbertech.api.unification.INTMaterials.*;
 import static onlysole.imaginarynumbertech.api.unification.material.info.INTMaterialFlags.GENERATE_NANITES;
+import static onlysole.imaginarynumbertech.api.unification.material.info.INTMaterialFlags.NO_CASING_SMALL;
 import static onlysole.imaginarynumbertech.api.unification.material.info.INTMaterialIconSet.*;
 
 //24000-25000
@@ -58,7 +61,7 @@ public class VoidMaterials {
                 .liquid(new FluidBuilder().customStill())
                 .element(INTElements.CoNe)
                 .color(0x323232).iconSet(CUSTOM_CN)
-                .flags(DIMENSION)
+                .flags(DIMENSION, NO_CASING_SMALL)
                 .blast(b -> b .temp(120000, HIGH))
                 .build();
 
@@ -95,7 +98,9 @@ public class VoidMaterials {
                 .element(INTElements.Un)
                 .iconSet(CUSTOM_UNIVERSIUM)
                 .flags(DIMENSION, GENERATE_NANITES)
-                .build();
+                .build()
+                .setFormula(I18n.format("gregtech.material.universium.tooltip"), true);
+
 
         TranscendentMetal = new Material.Builder(getMaterialsId(), gregtechId("transcendent_metal"))
                 .fluid()

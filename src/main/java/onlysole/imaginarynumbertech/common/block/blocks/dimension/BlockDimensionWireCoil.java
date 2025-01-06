@@ -88,14 +88,15 @@ public class BlockDimensionWireCoil  extends VariantActiveBlock<BlockDimensionWi
 
     public enum CoilType implements IStringSerializable, IHeatingCoilBlockStats {
 
-        ELECTRUM_FLUX("electrum_flux", 9601, 16, 8, INTMaterials.ElectrumFlux),
-        AWAKENED_DRACONIUM("awakened_draconium", 11801, 24, 16, INTMaterials.DraconiumAwakened),//TODO CTM
-        UNIVE("unive", 14601, 32, 24, INTMaterials.CosmicNeutronium),//TODO CTM
-        END("end", 18001, 40, 32, INTMaterials.Infinity),//TODO CTM
-        HYPOGEN("hypogen", 21601, 48, 32, INTMaterials.Hypogen),//TODO CTM
-        UNIVERSIUM_COIL("universium", 24801, 64, 48, INTMaterials.Universium),
-        ETERNAL("eternal", 27301, 72, 64, INTMaterials.Eternity),//TODO CTM
-        CUPAR_PROTON("cupar_proton", 30001, 256, 128, null);//TODO CTM
+        ELECTRUM_FLUX("electrum_flux", 13800, 24, 16, INTMaterials.ElectrumFlux),
+        AWAKENED_DRACONIUM("awakened_draconium", 16800, 32, 24, INTMaterials.DraconiumAwakened),//TODO CTM
+        UNIVE("unive", 19800, 40, 32, INTMaterials.CosmicNeutronium),//TODO CTM
+        END("end", 21000, 48, 40, INTMaterials.Infinity),//TODO CTM
+        HYPOGEN("hypogen", 24000, 64, 48, INTMaterials.Hypogen),//TODO CTM
+        UNIVERSIUM_COIL("universium", 27200, 128, 64, INTMaterials.Universium),
+        ETERNAL("eternal", 30000, 256, 128, INTMaterials.Eternity),//TODO CTM
+        CUPAR_PROTON("cupar_proton", 32000, 512, 256, null)/*,
+        IMAGINARY_NUMBER("imaginary_number", 36000, 4096, 2048, null)*/;//TODO XX
         private final String name;
         private final int coilTemperature;
         private final int level;

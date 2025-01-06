@@ -61,14 +61,6 @@
         "bottom": "imaginarynumbertech:blocks/casings/machine_casing/vacuum_casing"
       }
     },
-    "variant=drill_head": {
-      "model": "minecraft:cube_bottom_top",
-      "textures": {
-        "top": "gregtech:blocks/casings/gearbox/machine_casing_gearbox_steel",
-        "side": "gregtech:blocks/casings/machine_casing/machine_casing_solid_steel",
-        "bottom": "imaginarynumbertech:blocks/casings/machine_casing/drill_head_bottom"
-      }
-    },
     "variant=naquadria_casing": {
       "model": "minecraft:cube_all",
       "textures": {

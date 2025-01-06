@@ -44,7 +44,6 @@ public class BlockMachinelCasing  extends VariantBlock<BlockMachinelCasing.Casin
         SUBSTRATE_CASING("substrate_casing"),
         ADVANCED_SUBSTRATE_CASING("advanced_substrate_casing"),
         VACUUM_CASING("vacuum_casing"),
-        DRILL_HEAD("drill_head"), //TODO XX
         NAQUADRIA_CASING("naquadria_casing"),
         HYPER_CASING("hyper_casing"),
         TALONITE_CASING("talonite_casing"),
