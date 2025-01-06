@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "imaginarynumbertech:items/material_sets/bedrockium/plate_triple",
+    "layer1": "imaginarynumbertech:items/material_sets/bedrockium/halo_overlay"
+  }
+}

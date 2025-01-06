@@ -148,14 +148,24 @@ public class VoidMaterials {
                         .customStill()
                 )
                .iconSet(MAGMATTER)
-               .flags(DIMENSION)
+               .flags(DIMENSION, GENERATE_NANITES)
                .element(INTElements.Magmatter)
                 .blast(b -> b
                         .temp(120000, HIGH)
                 )
                .build();
 
-
+        Bedrockium = new Material.Builder(getMaterialsId(), gregtechId("bedrockium"))
+               .ingot()
+                .plasma(new FluidBuilder()
+                        .customStill()
+                )
+               .liquid(new FluidBuilder()
+                       .customStill()
+                )
+               .iconSet(BEDROCKIUM)
+               .flags(DIMENSION)
+               .build();
 
 
 

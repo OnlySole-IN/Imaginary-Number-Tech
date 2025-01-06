@@ -1,0 +1,8 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "imaginarynumbertech:items/material_sets/bedrockium/wire_fine",
+    "layer1": "imaginarynumbertech:items/material_sets/bedrockium/wire_fine_overlay",
+    "layer2": "imaginarynumbertech:items/material_sets/bedrockium/halo_overlay"
+  }
+}

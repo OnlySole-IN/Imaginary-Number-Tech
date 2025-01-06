@@ -98,7 +98,7 @@ public class INTMaterials {
     public static Material TranscendentMetal;
     public static Material CrystalMatrix;
     public static Material Magmatter;
-
+    public static Material Bedrockium;
 
 
 

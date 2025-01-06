@@ -24,6 +24,8 @@ public class INTMaterialIconSet {
             null, true);
     public static final MaterialIconSet CUSTOM_LEGENDARIUM = new MaterialIconSet("legendarium",
             null, true);
+    public static final MaterialIconSet BEDROCKIUM = new MaterialIconSet("bedrockium",
+            null, true);
 
 
     public static final MaterialIconSetWithRenderer MAGMATTER = new MaterialIconSetWithRenderer("Magmatter",

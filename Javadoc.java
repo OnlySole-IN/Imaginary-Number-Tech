@@ -53,8 +53,12 @@ public @interface Javadoc {
   所有材料建设者应遵循以下通用格式:
   <p>
   material = new MaterialBuilder(id, gregtechId("name"))
-  .ingot().fluid().ore().dust().plasma()         <--- 类型
-  .liquid(new FluidBuilder()
+  .ingot()          <--- 类型:锭
+  .fluid()          <--- 类型:流体
+  .ore()            <--- 类型:矿石
+  .dust()           <--- 类型:粉
+  .plasma()         <--- 类型:等离子气体
+  .liquid(new FluidBuilder()//液体
   .temperature(600)//自定义温度
   .customStill()//自定义材质
   .alternativeName("seed.oil")//替代名称
