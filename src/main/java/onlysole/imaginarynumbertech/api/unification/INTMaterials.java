@@ -97,6 +97,18 @@ public class INTMaterials {
     public static Material Universium;
     public static Material TranscendentMetal;
     public static Material CrystalMatrix;
+    public static Material Magmatter;
+
+
+
+
+
+
+
+
+
+
+
 
     //#---------魔法---------#
     public static Material Draconium;

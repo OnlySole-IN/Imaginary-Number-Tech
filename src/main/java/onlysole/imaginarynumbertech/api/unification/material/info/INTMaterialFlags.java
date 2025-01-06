@@ -14,6 +14,5 @@ public class INTMaterialFlags {
             .build();
 
     public static final MaterialFlag NO_CASING_SMALL = new MaterialFlag.Builder("no_casing_small")
-
             .build();
 }

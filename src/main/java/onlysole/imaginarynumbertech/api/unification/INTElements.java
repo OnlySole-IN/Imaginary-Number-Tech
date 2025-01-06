@@ -60,7 +60,8 @@ public class INTElements {
             "Quantium", "Qt", false);
     public static final Element SaturatedPhononicCrystalSolution = add(-1, -1, -1, null,
             "saturated_phononic_crystal_solution", "☒", false);
-
+    public static final Element Magmatter = add(-1, -1, -1, null,
+            "Magmatter", "M¤", false);
 
     //public static final Element  = add(-1, -1, -1, null, "", "", false);
 

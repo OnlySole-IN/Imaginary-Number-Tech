@@ -922,6 +922,8 @@ gregtech.material.universium=§3宇宙素
 gregtech.material.universium.tooltip=进入超越空间的领域
 gregtech.material.transcendent_metal=超时空金属
 gregtech.material.crystal_matrix=水晶矩阵
+gregtech.material.magmatter=磁物质
+
 
 #---------魔法---------#
 gregtech.material.draconium=龙素
