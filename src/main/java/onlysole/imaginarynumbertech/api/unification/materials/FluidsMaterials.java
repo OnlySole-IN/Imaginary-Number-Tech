@@ -298,6 +298,20 @@ public class FluidsMaterials {
                 )
                 .build();
 
+        MoltenProtoHalalhaSteelBase = new Material.Builder(getMaterialsId(), gregtechId( "molten_proto_halalha_steel_base"))
+                .liquid(new FluidBuilder()
+                        .customStill()
+                        .temperature(2620000)
+                )
+                .build();
+
+        MoltenExoHalalhaSteelPreparationBase = new Material.Builder(getMaterialsId(), gregtechId( "molten_exo_halalha_steel_preparation_base"))
+                .liquid(new FluidBuilder()
+                        .customStill()//TODO XX
+                        .temperature(52400000)
+                )
+                .build();
+
     }
     private static int getMaterialsId() {
         if (startId < END_ID) {

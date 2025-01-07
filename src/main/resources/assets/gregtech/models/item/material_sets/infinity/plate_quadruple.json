@@ -1,7 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "imaginarynumbertech:items/material_sets/infinity/plate_quadruple",
-    "layer1": "imaginarynumbertech:items/material_sets/infinity/halo_overlay"
-  }
-}

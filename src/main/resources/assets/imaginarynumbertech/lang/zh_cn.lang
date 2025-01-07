@@ -521,7 +521,7 @@ metaitem.timepiece.tooltip=小心戴帽子的孩子
 metaitem.dimension.quantum_anomaly.name=量子反常
 metaitem.dimension.quantum_anomaly.tooltip=可能应使用激光来照射它
 metaitem.null.name=空
-metaitem.null.tooltip=§b§o天体即空洞
+metaitem.null.tooltip=§b§o天体即空洞§r
 
 #  Debug
 metaitem.debug.structure_writer.name=多方块导出工具
@@ -560,10 +560,10 @@ metaitem.cosmic_fabric.name=寰宇织料
 metaitem.cosmic_fabric.tooltip=宇宙的织机缓缓扭动
 metaitem.qcd_protective_plating.name=量子色动力学防护层
 metaitem.graviton_shard.name=引力子碎片
-metaitem.black_hole.seed.name=黑洞种子
-metaitem.black_hole.seed.tooltip=放入§f黑洞种子§7以开启黑洞
-metaitem.black_hole.collapser.name=黑洞坍缩器
-metaitem.black_hole.collapser.tooltip=放入§f黑洞坍缩器§7以关闭黑洞
+metaitem.black_hole.pseudo_stability.seed.name=伪稳定-黑洞种子
+metaitem.black_hole.pseudo_stability.seed.tooltip=放入§f伪稳定-黑洞种子§7以开启伪黑洞
+metaitem.black_hole.pseudo_stability.collapser.name=伪稳定-黑洞坍缩器
+metaitem.black_hole.pseudo_stability.collapser.tooltip=放入§f伪稳定-黑洞坍缩器§7以关闭伪黑洞
 metaitem.transdimensional_alignment_matrix.name=超维校准矩阵
 metaitem.transdimensional_alignment_matrix.tooltip=支持跨维度空间对齐的设备。/n在DTPF上启用维度收敛。
 metaitem.relativistic_heat_capacitor.name=相对论性热容器
@@ -884,7 +884,7 @@ metaitem.item.exotic_processor_board.tooltip=奇异CPU
 #---------合金---------#
 gregtech.material.quantum_alloy=量子合金
 gregtech.material.mar_m_200_steel=MAR-M200特种钢
-gregtech.material.electrum_flux=§e通流琥珀金
+gregtech.material.electrum_flux=§e通流琥珀金§r
 gregtech.material.shirabon=调律源金
 gregtech.material.lumium=流明
 gregtech.material.enderium=末影
@@ -909,21 +909,26 @@ gregtech.material.sodium_cyanide=氰化钠
 
 
 
+
+
 #---------虚空---------#
 gregtech.material.quantium=量子
 gregtech.material.blackd_warf_matter=黑矮星物质
 gregtech.material.whited_warf_matter=白矮星物质
-gregtech.material.infinity=§c无尽
-gregtech.material.cosmic_neutronium=§b宇宙中子态素
+gregtech.material.infinity=§c无尽§r
+gregtech.material.cosmic_neutronium=§b宇宙中子态素§r
 gregtech.material.spacetime=时空
-gregtech.material.eternity=§b永恒
+gregtech.material.eternity=§b永恒§r
 gregtech.material.magneto_hydrodynamically_constrained_star_matter=磁流体约束恒星物质
-gregtech.material.universium=§3宇宙素
+gregtech.material.universium=§3宇宙素§r
 gregtech.material.universium.tooltip=进入超越空间的领域
 gregtech.material.transcendent_metal=超时空金属
 gregtech.material.crystal_matrix=水晶矩阵
 gregtech.material.magmatter=磁物质
-gregtech.material.bedrockium=§0基岩
+gregtech.material.bedrockium=§0基岩§r
+
+
+
 
 
 #---------魔法---------#
@@ -984,8 +989,8 @@ gregtech.material.dimensionally_shifted_superfluid=维度偏移超流体
 gregtech.material.stabilised_baryonic_matter=稳定重子物质
 gregtech.material.semi_stable_antimatter=半稳定反物质
 gregtech.material.stargate_crystal_slurry=星门晶体浆液
-
-
+gregtech.material.molten_proto_halalha_steel_base=
+gregtech.material.molten_exo_halalha_steel_preparation_base=
 
 
 
@@ -999,21 +1004,21 @@ gregtech.material.stargate_crystal_slurry=星门晶体浆液
 
 
 #Coil Block
-tile.wire_coil.electrum_flux.name=‹-§e通流琥珀金线圈§r-›
+tile.wire_coil.electrum_flux.name=§l§0‹-§r §e通流琥珀金线圈 §l§0-›§r
 tile.wire_coil.electrum_flux.tooltip=
-tile.wire_coil.awakened_draconium.name=‹-觉醒龙锭线圈§r-›
+tile.wire_coil.awakened_draconium.name=§l§0‹-§r 觉醒龙锭线圈 §l§0-›§r
 tile.wire_coil.awakened_draconium.tooltip=
-tile.wire_coil.unive.name=‹-§b宇宙态素中子线圈§r-›
+tile.wire_coil.unive.name=§l§0‹-§r §b宇宙态素中子线圈 §l§0-›§r
 tile.wire_coil.unive.tooltip=
-tile.wire_coil.end.name=‹-§c§l寰宇支配之无尽线圈§r-›
+tile.wire_coil.end.name=§l§0‹-§r §c§l寰宇支配之无尽线圈 §l§0-›§r
 tile.wire_coil.end.tooltip=
-tile.wire_coil.hypogen.name=‹-§6海珀珍线圈§r-›
+tile.wire_coil.hypogen.name=§l§0‹-§r §6海珀珍线圈 §l§0-›§r
 tile.wire_coil.hypogen.tooltip=
-tile.wire_coil.universium.name=‹-§3宇宙素线圈§r-›
+tile.wire_coil.universium.name=§l§0‹-§r §3宇宙素线圈 §l§0-›§r
 tile.wire_coil.universium.tooltip=
-tile.wire_coil.eternal.name=‹-§b永恒线圈§r-›
+tile.wire_coil.eternal.name=§l§0‹-§r §b永恒线圈 §l§0-›§r
 tile.wire_coil.eternal.tooltip=
-tile.wire_coil.cupar_proton.name=‹-§o§1库珀对线圈§r-›
+tile.wire_coil.cupar_proton.name=§l§0‹-§r §o§1库珀对线圈 §l§0-›§r
 tile.wire_coil.cupar_proton.tooltip=
 
 
@@ -1312,7 +1317,7 @@ imaginarynumbertech.machine.industrial_maintenance_hatch.name=工业级维护仓
 
 imaginarynumbertech.machine.infinite_water_hatch.name=无限水仓
 imaginarynumbertech.tooltip.inf_water1=供水 2^31-1 mb/t
-imaginarynumbertech.tooltip.inf_water2=§9百 度 贴 吧
+imaginarynumbertech.tooltip.inf_water2=§9百 度 贴 吧§r
 imaginarynumbertech.tooltip.inf_water3=只能给多方块结构供水,你不能从中抽水.
 
 imaginarynumbertech.machine.blazing_blast_furnace.name=炽焱高炉

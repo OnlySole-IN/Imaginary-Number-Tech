@@ -1,0 +1,6 @@
+{
+  "parent": "gregtech:block/tinted_cube_all",
+  "textures": {
+    "all": "gregtech:blocks/material_sets/pseudo_stability_exo_halalha_steel/frame_gt"
+  }
+}

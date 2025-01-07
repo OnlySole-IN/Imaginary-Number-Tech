@@ -1,5 +1,6 @@
 package onlysole.imaginarynumbertech.common.block;
 
+import gregtech.common.blocks.MetaBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -93,6 +94,7 @@ public class INTMetaBlocks {
         DHPCA_FACTORY_CASING.setRegistryName("dhpca_factory_casing");
 
     }
+    
     @SideOnly(Side.CLIENT)
     public static void registerItemModels() {
         registerItemModel(CONTROL_CASING);

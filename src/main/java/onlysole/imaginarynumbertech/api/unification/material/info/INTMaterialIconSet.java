@@ -26,6 +26,10 @@ public class INTMaterialIconSet {
             null, true);
     public static final MaterialIconSet BEDROCKIUM = new MaterialIconSet("bedrockium",
             null, true);
+    public static final MaterialIconSet PSEUDO_STABILITY_PROTO_HALALHA_STEEL = new MaterialIconSet("pseudo_stability_proto_halalha_steel",
+            null, true);
+
+
 
 
     public static final MaterialIconSetWithRenderer MAGMATTER = new MaterialIconSetWithRenderer("Magmatter",
@@ -34,6 +38,10 @@ public class INTMaterialIconSet {
             null, true, new HaloRenderItemBehavior(10, 0xFF000000, () -> INTTextures.HALO, true));
     public static final MaterialIconSetWithRenderer CUSTOM_INFINITY = new MaterialIconSetWithRenderer("infinity",
             null, true, new HaloRenderItemBehavior(10, 0xFF000000, () -> INTTextures.HALO, true));
+    public static final MaterialIconSetWithRenderer PSEUDO_STABILITY_EXO_HALALHA_STEEL = new MaterialIconSetWithRenderer("pseudo_stability_exo_halalha_steel",
+            null, true, new HaloRenderItemBehavior(10, 0xFF000000, () -> INTTextures.HALO, true));
+
+
 
     public static final MaterialIconSetWithRenderer CUSTOM_UNIVERSIUM = new MaterialIconSetWithRenderer("universium",
             null, true,  new CosmicRenderItemBehavior(() -> INTTextures.HALO, 1));

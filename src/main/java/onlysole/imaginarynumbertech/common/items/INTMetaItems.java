@@ -87,8 +87,8 @@ public class INTMetaItems {
     public static MetaItem<?>.MetaValueItem TIMEPIECE;
     public static MetaItem<?>.MetaValueItem QUANTUM_ANOMALY;
     public static MetaItem<?>.MetaValueItem GRAVITON_SHARD;
-    public static MetaItem<?>.MetaValueItem BLACK_HOLE_SEED;
-    public static MetaItem<?>.MetaValueItem BLACK_HOLE_COLLAPSER;
+    public static MetaItem<?>.MetaValueItem BLACK_HOLE_PSEUDO_STABILITY_SEED;
+    public static MetaItem<?>.MetaValueItem BLACK_HOLE_PSEUDO_STABILITY_COLLAPSER;
     public static MetaItem<?>.MetaValueItem TRANSDIMENSIONAL_ALIGNMENT_MATRIX;
     public static MetaItem<?>.MetaValueItem RELATIVISTIC_HEAT_CAPACITOR;
     public static MetaItem<?>.MetaValueItem PHONONIC_SEED_CRYSTAL;

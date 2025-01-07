@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "imaginarynumbertech:items/material_sets/proto_halalha_steel/gear",
+    "layer1": "imaginarynumbertech:items/material_sets/proto_halalha_steel/halo_overlay"
+  }
+}

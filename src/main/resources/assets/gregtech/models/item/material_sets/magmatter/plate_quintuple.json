@@ -1,7 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "imaginarynumbertech:items/material_sets/magmatter/plate_quintuple",
-    "layer1": "imaginarynumbertech:items/material_sets/magmatter/plate_quintuple_overlay"
-  }
-}

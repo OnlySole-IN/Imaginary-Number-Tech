@@ -898,7 +898,8 @@ gregtech.material.dimensionally_shifted_superfluid=Dimensionally Shifted Superfl
 gregtech.material.stabilised_baryonic_matter=Stabilised Baryonic Matter
 gregtech.material.semi_stable_antimatter=Semi-Stable Antimatter
 gregtech.material.stargate_crystal_slurry=Stargate Crystal Slurry
-
+gregtech.material.molten_proto_halalha_steel_base=Molten Proto-Halalha Steel Base
+gregtech.material.molten_exo_halalha_steel_preparation_base=Molten Exo-Halalha Steel Preparation Base
 
 
 
@@ -1553,10 +1554,10 @@ metaitem.supra_dimension_research_data_card.name=
 
 
 metaitem.graviton_shard.name=Graviton Shard
-metaitem.black_hole.seed.name=Black Hole Seed
-metaitem.black_hole.seed.tooltip=Opens a pseudostable black hole
-metaitem.black_hole.collapser.name=Black Hole Collapser
-metaitem.black_hole.collapser.tooltip=Safely closes a pseudostable black hole
+metaitem.black_hole.pseudo_stability.seed.name=Pseudo-Stability Black Hole Seed
+metaitem.black_hole.pseudo_stability.seed.tooltip=Opens a pseudostable black hole
+metaitem.black_hole.pseudo_stability.collapser.name=Pseudo-Stability Black Hole Collapser
+metaitem.black_hole.pseudo_stability.collapser.tooltip=Safely closes a pseudostable black hole
 metaitem.transdimensional_alignment_matrix.name=Transdimensional Alignment Matrix
 metaitem.transdimensional_alignment_matrix.tooltip=Device supporting the alignment of transdimensional spaces./n Enables Dimensional Convergence on the DTPF.
 metaitem.relativistic_heat_capacitor.name=Relativistic Heat Capacitor

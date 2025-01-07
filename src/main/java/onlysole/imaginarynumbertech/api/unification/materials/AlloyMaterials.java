@@ -164,7 +164,18 @@ public class AlloyMaterials {
                         GENERATE_SMALL_GEAR, NO_UNIFICATION, NO_CASING_SMALL)
                 .build();
 
+        PseudoStabilityProtoHalalhaSteel = new Material.Builder(getMaterialsId(), gregtechId("pseudo_stability_proto_halalha_steel"))
+               .ingot()
+               .iconSet(PSEUDO_STABILITY_PROTO_HALALHA_STEEL)
+               .flags(HALALHA_STEEL, GENERATE_DOUBLE_PLATE)
+               .build();
 
+
+        PseudoStabilityExoHalalhaSteel = new Material.Builder(getMaterialsId(), gregtechId("pseudo_stability_exo_halalha_steel"))
+              .ingot()
+              .iconSet(PSEUDO_STABILITY_EXO_HALALHA_STEEL)
+              .flags(HALALHA_STEEL)
+              .build();
 
 
     }

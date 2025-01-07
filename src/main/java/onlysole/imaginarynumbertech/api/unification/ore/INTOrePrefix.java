@@ -3,20 +3,19 @@ package onlysole.imaginarynumbertech.api.unification.ore;
 import crafttweaker.annotations.ZenRegister;
 import gregtech.api.unification.material.Materials;
 import gregtech.api.unification.material.info.MaterialFlags;
+import gregtech.api.unification.material.info.MaterialIconType;
 import gregtech.api.unification.ore.OrePrefix;
 import gregtech.api.unification.stack.MaterialStack;
 import net.minecraft.client.resources.I18n;
-import onlysole.imaginarynumbertech.api.unification.material.info.INTMaterialFlags;
-import onlysole.imaginarynumbertech.api.unification.material.info.INTMaterialIconType;
+import onlysole.imaginarynumbertech.api.unification.material.info.*;
 import stanhebben.zenscript.annotations.ZenClass;
 
 import java.util.Collections;
 
 import static gregtech.api.GTValues.M;
-import static gregtech.api.unification.ore.OrePrefix.Conditions.hasIngotProperty;
-import static gregtech.api.unification.ore.OrePrefix.Conditions.hasOreProperty;
-import static gregtech.api.unification.ore.OrePrefix.Flags.ENABLE_UNIFICATION;
-import static onlysole.imaginarynumbertech.api.unification.material.info.INTMaterialFlags.NO_CASING_SMALL;
+import static gregtech.api.unification.ore.OrePrefix.Conditions.*;
+import static gregtech.api.unification.ore.OrePrefix.Flags.*;
+import static onlysole.imaginarynumbertech.api.unification.material.info.INTMaterialFlags.*;
 
 @ZenClass("mods.imaginarynumbertech.ore.INTOrePrefix")
 @ZenRegister

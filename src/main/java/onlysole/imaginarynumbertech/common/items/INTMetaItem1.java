@@ -140,9 +140,9 @@ public class INTMetaItem1 extends StandardMetaItem {
         GRAVITON_SHARD = this.addItem(66, "graviton_shard")
                 .addComponents(new HaloRenderItemBehavior(10, 0xFF000000, () -> INTTextures.HALO, true));
 
-        BLACK_HOLE_SEED = this.addItem(67, "black_hole.seed")
+        BLACK_HOLE_PSEUDO_STABILITY_SEED = this.addItem(67, "black_hole.pseudo_stability.seed")
                 .addComponents(new HaloRenderItemBehavior(10, 0xFF000000, () -> INTTextures.HALO, true));
-        BLACK_HOLE_COLLAPSER = this.addItem(68, "black_hole.collapser")
+        BLACK_HOLE_PSEUDO_STABILITY_COLLAPSER = this.addItem(68, "black_hole.pseudo_stability.collapser")
                 .addComponents(new HaloRenderItemBehavior(10, 0xFF000000, () -> INTTextures.HALO, true));
 
         TRANSDIMENSIONAL_ALIGNMENT_MATRIX = this.addItem(69, "transdimensional_alignment_matrix");
@@ -596,7 +596,7 @@ public class INTMetaItem1 extends StandardMetaItem {
 
         PROSPECTOR_UIV = this.addItem(2002, "prospector.uiv")
                 .addComponents(ElectricStats.createElectricItem(256_000_000_000L, 9),
-                        new ProspectorScannerBehavior(11, 9))// todo
+                        new ProspectorScannerBehavior(11, 9))// TODO
                 .setMaxStackSize(1)
                 .setCreativeTabs(GregTechAPI.TAB_GREGTECH_TOOLS);
 
