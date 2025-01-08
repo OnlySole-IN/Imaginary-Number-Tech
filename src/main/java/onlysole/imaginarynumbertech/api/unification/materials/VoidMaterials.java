@@ -73,7 +73,7 @@ public class VoidMaterials {
                 .element(INTElements.CoNe)
                 .color(0x323232)
                 .iconSet(CUSTOM_CN)
-                .flags(DIMENSION, NO_CASING_SMALL)
+                .flags(DIMENSION, NO_CASING_SMALL, NO_PLATE_SUPERDENSE)
                 .blast(b -> b
                         .temp(120000, HIGH)
                 )
@@ -167,7 +167,18 @@ public class VoidMaterials {
                .flags(DIMENSION)
                .build();
 
+        ProtoHalalhaSteel = new Material.Builder(getMaterialsId(), gregtechId("proto_halalha_steel"))
+              .ingot()
+              .iconSet(CUSTOM_PROTO_HALALHA_STEEL)
+              .flags(HALALHA_STEEL)
+              .build();
 
+
+        ExoHalalhaSteel = new Material.Builder(getMaterialsId(), gregtechId("exo_halalha_steel"))
+             .ingot()
+             .iconSet(CUSTOM_EXO_HALALHA_STEEL)
+             .flags(EXO_HALALHA_STEEL, GENERATE_LENS)
+             .build();
 
 
 

@@ -2,43 +2,43 @@ public @interface Javadoc {
 
 /*
 *
-* ULV = 0
+  ULV = 0
 *
-* 基础 - basics -
-* [Basics] - LV - MV = 1 - 2
+  基础 - basics -
+  [Basics] - LV - MV = 1 - 2
 *
-* 进阶 - advanced -
-* [Advanced] - HV - EV = 3 - 4
+  进阶 - advanced -
+  [Advanced] - HV - EV = 3 - 4
 *
-* 精英 - elite -
-* [Elite] - IV - LuV = 5 - 6
+  精英 - elite -
+  [Elite] - IV - LuV = 5 - 6
 *
-* 生物 - gooware -
-* [Gooware] - ZPM = 7
+  生物 - gooware -
+  [Gooware] - ZPM = 7
 *
-* 光学 - gooware -
-* [Gooware] - UV = 8
+  光学 - gooware -
+  [Gooware] - UV = 8
 *
-* 自旋电子学 - spintronic -
-* [Spintronic] - UHV = 9
+  自旋电子学 - spintronic -
+  [Spintronic] - UHV = 9
 *
-* 寰宇 - cosmic -
-* [Cosmic] - UEV = 10
+  寰宇 - cosmic -
+  [Cosmic] - UEV = 10
 *
-* 虚空 - void -
- * [Void] - UIV = 11
+  虚空 - void -
+   [Void] - UIV = 11
 *
-* 超因果 - supra_causal -
-* [Supra_Causal] - UXV = 12
+  超因果 - supra_causal -
+  [Supra_Causal] - UXV = 12
 *
-* 超时空 - supra_chronal -
-* [Supra_Chronal] - OpV = 13
+  超时空 - supra_chronal -
+  [Supra_Chronal] - OpV = 13
 *
-* 超维度 - supra_dimension -
-* [Supra_Dimension] - MAX = 14
+  超维度 - supra_dimension -
+  [Supra_Dimension] - MAX = 14
 *
-* 虚数 - imaginary_number -
-* [Imaginary_Number] - INT = ∞
+  虚数 - imaginary_number -
+  [Imaginary_Number] - INT = ∞
 *
 */
 /*
@@ -53,11 +53,15 @@ public @interface Javadoc {
   所有材料建设者应遵循以下通用格式:
   <p>
   material = new MaterialBuilder(id, gregtechId("name"))
-  .ingot()          <--- 类型:锭
   .fluid()          <--- 类型:流体
-  .ore()            <--- 类型:矿石
-  .dust()           <--- 类型:粉
   .plasma()         <--- 类型:等离子气体
+  .gas()            <--- 类型:气体
+  .dust()           <--- 类型:粉
+  .wood()           <--- 类型:木
+  .ingot()          <--- 类型:锭
+  .gem()            <--- 类型:宝石
+  .polymer()        <--- 类型:聚合物
+  .ore()            <--- 类型:矿石
   .liquid(new FluidBuilder()//液体
   .temperature(600)//自定义温度
   .customStill()//自定义材质
@@ -66,22 +70,40 @@ public @interface Javadoc {
   .translation("tooltip=")
   )
 
-  .color().iconSet()                    <--- 外观
+  .burnTime(100)                        <--- 燃烧时间
+  .color()                              <--- 颜色
+  .colorAverage(0xFFFFFF)               <--- 颜色平均值
+  .iconSet()                            <--- 自定义外观
+  .components()                         <--- 成分
   .flags()                              <--- 特殊生成
-  .element() / .components()            <--- 成分
-  .toolStats(ToolProperty.Builder.of(7.0F, 6.0F, 2560, 3) )  <---工具统计信息
-  .oreByProducts()                         | 附加属性
-  ...                                   <---
-  .itemPipeProperties(2048, 1)          <---管道特性
-  .rotorStats(15.0f, 7.0f, 3000)        <---转子统计
-  .attackSpeed(0.1F).enchantability(21).build())             <---攻击速度
-  .blast(1700, GasTier.LOW)
+  .element()                            <--- 元素
+  .rotorStats(15.0f, 7.0f, 3000)        <--- 转子统计
+  .blastTemp(1000)                      <--- 燃烧温度//TODO 2.9
+  .washedIn()                           <--- 洗成
+  .separatedInto()                      <--- 分离成
+  .oreSmeltInto()                       <--- 烧炼成
+  .polarizesInto()                      <--- 极化成
+  .arcSmeltInto()                       <--- 电弧烧炼成
+  .macerateInto()                       <--- 磨成
+  .ingotSmeltInto()                     <--- 锭烧炼成
+  .addOreByproducts()                   <--- 添加产物
+  .cableProperties(2048, 1)             <--- 电线特性
+  .fluidPipeProperties(2048, 1)         <--- 流体管道特性
+  .itemPipeProperties(2048, 1)          <--- 物品管道特性
+  .addDefaultEnchant()                  <--- 添加默认附魔
+
+  .attackSpeed(0.1F).enchantability(21).build())               <---攻击速度
+  .blast(1700, GasTier.LOW)                                    <--- 爆炸统计
   .blast(b -> b
                 .temp(temp, tier)
                 .blastStats(blastEUt, blastDuration)//爆炸
-                .vacuumStats(vacuumEUt, vacuumDuration));//真空              <--- 鼓风温度
+                .vacuumStats(vacuumEUt, vacuumDuration));//真空 <--- 鼓风温度
+  .toolStats(ToolProperty.Builder.of(7.0F, 6.0F, 2560, 3) )    <---工具统计信息
+
   .build();
+
   .setFormula("NH4Cl", true);           <---设置公式
+
   <p>
   使用默认值对您有利！一些默认值:
   - iconSet: DULL
@@ -97,7 +119,7 @@ public @interface Javadoc {
   ᴻ ᴽ ᵄ ᵅ ᵆ ᵊ ᵋ ᵌ ᵑ ᵓ ᵚ ᵝ ᵞ ᵟ ᵠ ᵡ ᵎ ᵔ ᵕ ᵙ ᵜ ᶛ
   ᶜ ᶝ ᶞ ᶟ ᶡ ᶣ ᶤ ᶥ ᶦ ᶧ ᶨ ᶩ ᶪ ᶫ ᶬ ᶭ ᶮ ᶯ ᶰ ᶱ ᶲ ᶳ ᶴ ᶵ ᶶ ᶷ ᶸ ᶹ ᶺ
   ᶼ ᶽ ᶾ ᶿ ჼ ᒃ ᕻ ᑦ ᒄ ᕪ ᑋ ᑊ ᔿ ᐢ ᣕ ᐤ ᣖ ᣴ ᣗ ᔆ ᙚ ᐡ ᘁ ᐜ ᕽ ᙆ ᙇ
-  ᒼ ᣳ ᒢ ᒻ ᔿ ᐤ ᣖ ᣵ ᙚ ᐪ ᓑ ᘁ ᐜ ᕽ ᙆ ᙇ ⁰ ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁺ ⁻ ⁼ ˂ ˃ ⁽ ⁾ ˙ * º
+  ᒼ ᣳ ᒢ ᒻ ᔿ ᐤ ᣖ ᣵ ᙚ ᐪ ᓑ ᘁ ᐜ ᕽ ᙆ ᙇ ⁰ ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁺ ⁻ ⁼ ˂ ˃ ⁽ ⁾ ˙   º
   更多下标 ₐ ₔ ₑ ᵢ ₒ ᵣ ᵤ ᵥ ₓ ᙮ ᵤ ᵩ ᵦ ˪ ៳ ៷ ₒ ᵨ ៴ ᵤ ᵪ ᵧ
  */
 /*
@@ -119,6 +141,7 @@ MaterialFlag
  EXPLOSIVE=添加到材料中，会有爆炸性
  FLAMMABLE=添加到材料中，会有易燃性
  STICKY=添加到材料中，会有粘性
+ GLOWING=添加到材料中，会有发光性
 
 //DUST=粉
 
@@ -129,6 +152,7 @@ MaterialFlag
 
 GENERATE_PLATE=生成板
 GENERATE_DOUBLE_PLATE=生成双重板
+GENERATE_DENSE=生成致密板
 GENERATE_ROD=生成杆
 GENERATE_BOLT_SCREW=生成螺栓螺钉
 GENERATE_FRAME=生成框架
@@ -143,8 +167,8 @@ EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES=排除工作台制作的方块配方
 MORTAR_GRINDABLE=研磨
 
 NO_WORKING=不能通过除粉碎或熔炼以外的任何其他方式进行加工
-NO_SMASHING=不能用于常规金属加工技术，禁用卷板机配方
-NO_SMELTING=禁用合金炉配方
+NO_SMASHING=表示材料不能被粉碎
+NO_SMELTING=表示材料不能被熔炼
 
 铁，黄铁矿，生铁，锻铁
 BLAST_FURNACE_CALCITE_DOUBLE=高炉双倍
@@ -177,6 +201,7 @@ GENERATE_LENS=生成透镜
 //ORE=矿石
 
 HIGH_SIFTER_OUTPUT=筛选器
+DISABLE_ORE_BLOCK=表示材料生成矿石处理物品，但不生成矿石块
 
 */
 
@@ -191,7 +216,17 @@ ORE=矿石
 
 
  */
+/*
+  GCYM
+  
+  NO_ALLOY_BLAST_RECIPES=用于禁用合金爆破配方的生成。
+  DISABLE_ALLOY_PROPERTY=用于禁用所有与合金爆破相关的内容。
+  
+  
+  
+  
 
+  */
 /*
 代码	官方名称
 §0	黑色

@@ -12,5 +12,6 @@ public class OrePrefixAdditions {
         wrap.setMarkerPrefix(true);
         wrapCircuit.setMarkerPrefix(true);
         MetaItems.addOrePrefix(casingSmall);
+        MetaItems.addOrePrefix(plateSuperdense);
     }
 }

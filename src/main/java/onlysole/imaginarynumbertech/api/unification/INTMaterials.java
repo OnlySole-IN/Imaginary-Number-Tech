@@ -24,6 +24,7 @@ public class INTMaterials {
     public static final List<MaterialFlag> DIMENSION = new ArrayList<>();
 
     public static final List<MaterialFlag> HALALHA_STEEL = new ArrayList<>();
+    public static final List<MaterialFlag> EXO_HALALHA_STEEL = new ArrayList<>();
 
     //EXT2_METAL=生成板,生成杆,生成螺栓螺钉,生成长杆
     static {
@@ -58,13 +59,16 @@ public class INTMaterials {
         DIMENSION.add(GENERATE_FRAME);
 
         HALALHA_STEEL.addAll(EXT2_METAL);
-        HALALHA_STEEL.addAll((Arrays.asList(GENERATE_DENSE, GENERATE_FOIL)));
         HALALHA_STEEL.addAll(GEAR_CLASS);
+        HALALHA_STEEL.addAll(DENSE_CLASS);
         HALALHA_STEEL.addAll(CIRCLE_CLASS);
         HALALHA_STEEL.addAll(Arrays.asList(GENERATE_FRAME, EXCLUDE_BLOCK_CRAFTING_RECIPES, NO_UNIFICATION));
 
+        EXO_HALALHA_STEEL.addAll(HALALHA_STEEL);
+        EXO_HALALHA_STEEL.addAll(SPRING_CLASS);
 
-    }
+
+    }//EXT2_METAL, GEAR_CLASS, CIRCLE_CLASS, GENERATE_DENSE, GENERATE_FOIL, GENERATE_FRAME, EXCLUDE_BLOCK_CRAFTING_RECIPES, NO_UNIFICATION
 
     public static void initregister() {
 
@@ -85,6 +89,9 @@ public class INTMaterials {
 
         //29001-30000 魔法
         MagicMaterials.register();
+
+        // Flags
+        INTMaterialFlagAddition.init();
     }
 
     //材料
@@ -108,7 +115,6 @@ public class INTMaterials {
     public static Material DegenerateRhenium;
     public static Material Taranium;
     public static Material Legendarium;
-
     public static Material PseudoStabilityProtoHalalhaSteel;
     public static Material PseudoStabilityExoHalalhaSteel;
 

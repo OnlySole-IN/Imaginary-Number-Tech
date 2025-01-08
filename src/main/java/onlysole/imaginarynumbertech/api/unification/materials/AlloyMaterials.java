@@ -10,11 +10,10 @@ import static gregtech.api.GTValues.*;
 import static gregtech.api.unification.material.Materials.*;
 import static gregtech.api.unification.material.info.MaterialFlags.*;
 import static gregtech.api.unification.material.info.MaterialIconSet.*;
-import static gregtech.api.unification.material.properties.BlastProperty.GasTier.HIGHER;
-import static gregtech.api.unification.material.properties.BlastProperty.GasTier.HIGHEST;
+import static gregtech.api.unification.material.properties.BlastProperty.GasTier.*;
 import static gregtech.api.util.GTUtility.gregtechId;
 import static onlysole.imaginarynumbertech.api.unification.INTMaterials.*;
-import static onlysole.imaginarynumbertech.api.unification.material.info.INTMaterialFlags.NO_CASING_SMALL;
+import static onlysole.imaginarynumbertech.api.unification.material.info.INTMaterialFlags.*;
 import static onlysole.imaginarynumbertech.api.unification.material.info.INTMaterialIconSet.*;
 
 public class AlloyMaterials {
@@ -167,14 +166,14 @@ public class AlloyMaterials {
         PseudoStabilityProtoHalalhaSteel = new Material.Builder(getMaterialsId(), gregtechId("pseudo_stability_proto_halalha_steel"))
                .ingot()
                .iconSet(PSEUDO_STABILITY_PROTO_HALALHA_STEEL)
-               .flags(HALALHA_STEEL, GENERATE_DOUBLE_PLATE)
+               .flags(HALALHA_STEEL)
                .build();
 
 
         PseudoStabilityExoHalalhaSteel = new Material.Builder(getMaterialsId(), gregtechId("pseudo_stability_exo_halalha_steel"))
               .ingot()
               .iconSet(PSEUDO_STABILITY_EXO_HALALHA_STEEL)
-              .flags(HALALHA_STEEL)
+              .flags(EXO_HALALHA_STEEL)
               .build();
 
 

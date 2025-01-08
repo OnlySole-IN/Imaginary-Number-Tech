@@ -1,0 +1,8 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "imaginarynumbertech:items/material_sets/exo_halalha_steel/lens",
+    "layer1": "imaginarynumbertech:items/material_sets/exo_halalha_steel/lens_overlay",
+    "layer2": "imaginarynumbertech:items/material_sets/exo_halalha_steel/halo_overlay"
+  }
+}

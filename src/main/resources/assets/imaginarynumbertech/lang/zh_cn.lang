@@ -5,6 +5,7 @@ metaitem.milled.tooltip.flotation=使用§6工业浮选机§7进行进一步精�
 item.material.oreprefix.nanites=%s纳米蜂群
 item.material.oreprefix.wrap=封装%s
 item.material.oreprefix.casingSmall=%s外壳
+item.material.oreprefix.plateSuperdense=超致密%s板
 
 #  Behavior
 behavior.data_item.require_decoding=存有需要解码的未知信息
@@ -897,6 +898,10 @@ gregtech.material.hypogen=海珀珍
 gregtech.material.degenerate_rhenium=简并态铼
 gregtech.material.taranium=塔兰金属
 gregtech.material.legendarium=传奇金属
+gregtech.material.pseudo_stability_proto_halalha_steel=伪稳定-原始阿尔哈钢
+gregtech.material.pseudo_stability_exo_halalha_steel=伪稳定-超然阿尔哈钢
+
+
 
 
 
@@ -926,7 +931,8 @@ gregtech.material.transcendent_metal=超时空金属
 gregtech.material.crystal_matrix=水晶矩阵
 gregtech.material.magmatter=磁物质
 gregtech.material.bedrockium=§0基岩§r
-
+gregtech.material.proto_halalha_steel=原始阿尔哈钢
+gregtech.material.exo_halalha_steel=超然阿尔哈钢
 
 
 
@@ -989,8 +995,8 @@ gregtech.material.dimensionally_shifted_superfluid=维度偏移超流体
 gregtech.material.stabilised_baryonic_matter=稳定重子物质
 gregtech.material.semi_stable_antimatter=半稳定反物质
 gregtech.material.stargate_crystal_slurry=星门晶体浆液
-gregtech.material.molten_proto_halalha_steel_base=
-gregtech.material.molten_exo_halalha_steel_preparation_base=
+gregtech.material.molten_proto_halalha_steel_base=熔融原始阿尔哈钢基底
+gregtech.material.molten_exo_halalha_steel_preparation_base=熔融超然阿尔哈钢配制基底
 
 
 

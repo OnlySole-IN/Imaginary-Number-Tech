@@ -9,6 +9,6 @@ public class INTMaterialIconType {
     public static final MaterialIconType milled = new MaterialIconType("milled");
     public static final MaterialIconType wrap = new MaterialIconType("wrap");
     public static final MaterialIconType wrapCircuit = new MaterialIconType("wrapCircuit");
-
+    public static final MaterialIconType plateSuperdense = new MaterialIconType("plateSuperdense");
 
 }

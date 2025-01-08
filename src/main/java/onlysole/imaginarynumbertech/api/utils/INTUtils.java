@@ -6,7 +6,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class INTUtils {
     @NotNull
-    public static ResourceLocation INTID(@NotNull String path) {
+    public static ResourceLocation intId(@NotNull String path) {
             return new ResourceLocation(INTValues.MOD_ID, path);
     }
 }

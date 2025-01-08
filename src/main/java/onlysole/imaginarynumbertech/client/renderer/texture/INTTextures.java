@@ -100,28 +100,28 @@ OrientedOverlayRenderer
 
     public static void register(TextureMap textureMap) {
 
-        HALO = textureMap.registerSprite(INTUtils.INTID("items/halo"));
-        HALO_NOISE = textureMap.registerSprite(INTUtils.INTID("items/halo_noise"));
+        HALO = textureMap.registerSprite(INTUtils.intId("items/halo"));
+        HALO_NOISE = textureMap.registerSprite(INTUtils.intId("items/halo_noise"));
 
-        SUPRA_DIMENSION_RESEARCH_DATA_CARD_HALO = textureMap.registerSprite(INTUtils.INTID("items/supra_dimension_research_data_card_halo"));
+        SUPRA_DIMENSION_RESEARCH_DATA_CARD_HALO = textureMap.registerSprite(INTUtils.intId("items/supra_dimension_research_data_card_halo"));
 
-        MASK_INGOT = textureMap.registerSprite(INTUtils.INTID( "items/mask_ingot"));
+        MASK_INGOT = textureMap.registerSprite(INTUtils.intId( "items/mask_ingot"));
 
-        ETERNAL_SINGULARITY = textureMap.registerSprite(INTUtils.INTID( "items/eternal_singularity_mask"));
-        COMBINED_SINGULARITY = textureMap.registerSprite(INTUtils.INTID( "items/combined_singularity_mask"));
+        ETERNAL_SINGULARITY = textureMap.registerSprite(INTUtils.intId( "items/eternal_singularity_mask"));
+        COMBINED_SINGULARITY = textureMap.registerSprite(INTUtils.intId( "items/combined_singularity_mask"));
 
-        COSMIC_0 = textureMap.registerSprite(INTUtils.INTID("shader/cosmic_0"));
-        COSMIC_1 = textureMap.registerSprite(INTUtils.INTID("shader/cosmic_1"));
-        COSMIC_2 = textureMap.registerSprite(INTUtils.INTID("shader/cosmic_2"));
-        COSMIC_3 = textureMap.registerSprite(INTUtils.INTID("shader/cosmic_3"));
-        COSMIC_4 = textureMap.registerSprite(INTUtils.INTID("shader/cosmic_4"));
-        COSMIC_5 = textureMap.registerSprite(INTUtils.INTID("shader/cosmic_5"));
-        COSMIC_6 = textureMap.registerSprite(INTUtils.INTID("shader/cosmic_6"));
-        COSMIC_7 = textureMap.registerSprite(INTUtils.INTID("shader/cosmic_7"));
-        COSMIC_8 = textureMap.registerSprite(INTUtils.INTID("shader/cosmic_8"));
-        COSMIC_9 = textureMap.registerSprite(INTUtils.INTID("shader/cosmic_9"));
+        COSMIC_0 = textureMap.registerSprite(INTUtils.intId("shader/cosmic_0"));
+        COSMIC_1 = textureMap.registerSprite(INTUtils.intId("shader/cosmic_1"));
+        COSMIC_2 = textureMap.registerSprite(INTUtils.intId("shader/cosmic_2"));
+        COSMIC_3 = textureMap.registerSprite(INTUtils.intId("shader/cosmic_3"));
+        COSMIC_4 = textureMap.registerSprite(INTUtils.intId("shader/cosmic_4"));
+        COSMIC_5 = textureMap.registerSprite(INTUtils.intId("shader/cosmic_5"));
+        COSMIC_6 = textureMap.registerSprite(INTUtils.intId("shader/cosmic_6"));
+        COSMIC_7 = textureMap.registerSprite(INTUtils.intId("shader/cosmic_7"));
+        COSMIC_8 = textureMap.registerSprite(INTUtils.intId("shader/cosmic_8"));
+        COSMIC_9 = textureMap.registerSprite(INTUtils.intId("shader/cosmic_9"));
 
-        FORCE_FIELD = textureMap.registerSprite(INTUtils.INTID("blocks/force_field"));
+        FORCE_FIELD = textureMap.registerSprite(INTUtils.intId("blocks/force_field"));
 
         COSMIC = new TextureAtlasSprite[] {
                 COSMIC_0,
@@ -137,10 +137,10 @@ OrientedOverlayRenderer
         };
 
         //TODO 材质
-        RESEARCH_PIPE_IN = textureMap.registerSprite(INTUtils.INTID("blocks/pipe/pipe_research_in"));
-        RESEARCH_PIPE_SIDE = textureMap.registerSprite(INTUtils.INTID("blocks/pipe/pipe_research_side"));
-        RESEARCH_PIPE_SIDE_OVERLAY = textureMap.registerSprite(INTUtils.INTID("blocks/pipe/pipe_research_side_overlay"));
-        RESEARCH_PIPE_SIDE_OVERLAY_ACTIVE = textureMap.registerSprite(INTUtils.INTID("blocks/pipe/pipe_research_side_overlay_active"));
+        RESEARCH_PIPE_IN = textureMap.registerSprite(INTUtils.intId("blocks/pipe/pipe_research_in"));
+        RESEARCH_PIPE_SIDE = textureMap.registerSprite(INTUtils.intId("blocks/pipe/pipe_research_side"));
+        RESEARCH_PIPE_SIDE_OVERLAY = textureMap.registerSprite(INTUtils.intId("blocks/pipe/pipe_research_side_overlay"));
+        RESEARCH_PIPE_SIDE_OVERLAY_ACTIVE = textureMap.registerSprite(INTUtils.intId("blocks/pipe/pipe_research_side_overlay_active"));
     }
     public static void preInit() {TextureUtils.addIconRegister(INTTextures::register);}
 

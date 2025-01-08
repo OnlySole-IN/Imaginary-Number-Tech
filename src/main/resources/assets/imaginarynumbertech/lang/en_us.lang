@@ -2,9 +2,10 @@ itemGroup.ImaginaryNumberTech=Imaginary Number Tech(IMAGINARY_NUMBER_TECH)
 item.material.oreprefix.plateCurved=Curved %s Plate
 item.material.oreprefix.milled=Milled %s Dust
 metaitem.milled.tooltip.flotation=Further processing requires §6Industrial Flotation Factory§7.
-item.material.oreprefix.nanites=%s
-item.material.oreprefix.wrap=%s
-item.material.oreprefix.casingSmall=%s
+item.material.oreprefix.nanites=%s Nanites
+item.material.oreprefix.wrap=Wrap %s
+item.material.oreprefix.casingSmall=Small %s Casing
+item.material.oreprefix.plateSuperdense=Superdense %s Plate
 
 #  Behavior
 behavior.data_item.require_decoding=
@@ -840,6 +841,10 @@ gregtech.material.quantum_alloy=Quantum Alloy
 gregtech.material.quantium=Quantum Alloy
 gregtech.material.magmatter=Magmatter
 gregtech.material.bedrockium=Bedrockium
+gregtech.material.proto_halalha_steel=Proto-Halalha Steel
+gregtech.material.pseudo_stability_proto_halalha_steel=Pseudo-Stability Proto-Halalha Steel
+gregtech.material.pseudo_stability_exo_halalha_steel=Pseudo-Stability Exo-Halalha Steel
+gregtech.material.exo_halalha_steel=
 
 
 gregtech.material.mar_m_200_steel=
@@ -900,9 +905,6 @@ gregtech.material.semi_stable_antimatter=Semi-Stable Antimatter
 gregtech.material.stargate_crystal_slurry=Stargate Crystal Slurry
 gregtech.material.molten_proto_halalha_steel_base=Molten Proto-Halalha Steel Base
 gregtech.material.molten_exo_halalha_steel_preparation_base=Molten Exo-Halalha Steel Preparation Base
-
-
-
 
 
 

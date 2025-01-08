@@ -19,7 +19,9 @@ public class INTMaterialFlags {
     public static final MaterialFlag NO_CASING_SMALL = new MaterialFlag.Builder("no_casing_small")
             .build();
 
+    public static final MaterialFlag NO_PLATE_SUPERDENSE = new MaterialFlag.Builder("no_plate_superdense")
+           .build();
+
     public static final MaterialFlag NO_GENERATE_BLOCK = new MaterialFlag.Builder("no_generate_block")
-            .requireFlags(FORCE_GENERATE_BLOCK)
             .build();
 }
