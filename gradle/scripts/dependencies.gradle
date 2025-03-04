@@ -40,6 +40,9 @@ dependencies {
 
     // Include StripLatestForgeRequirements by default for the dev env, saves everyone a hassle
     runtimeOnly 'com.cleanroommc:strip-latest-forge-requirements:1.0'
+    // Include OSXNarratorBlocker by default for the dev env, for M1+ Macs
+    runtimeOnly 'com.cleanroommc:osxnarratorblocker:1.0'
+
     implementation rfg.deobf("curse.maven:codechicken-lib-1-8-242818:2779848")//CCL-3.2.3.358-universal
     implementation rfg.deobf("curse.maven:gregtech-ce-unofficial-557242:5519022")//GT CEu-2.8.10-beta
     implementation rfg.deobf("curse.maven:gregicality-multiblocks-564858:5619513")//GCYM-1.2.11
@@ -75,6 +78,7 @@ dependencies {
     // runtimeOnly = runtime dependency
     // compileOnly = compile time dependency
     // annotationProcessor = annotation processing dependencies
+    // embed = bundle dependencies into final output artifact (no relocation)
 
     // Transitive dependencies:
     // (Dependencies that your dependency depends on)
