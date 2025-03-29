@@ -18,7 +18,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
-import onlysole.imaginarynumbertech.api.INTValues;
+import onlysole.imaginarynumbertech.Tags;
 import onlysole.imaginarynumbertech.api.utils.INTLog;
 import onlysole.imaginarynumbertech.common.items.INTMetaItems;
 
@@ -28,7 +28,7 @@ import java.util.function.Function;
 
 import static onlysole.imaginarynumbertech.common.block.INTMetaBlocks.*;
 
-@Mod.EventBusSubscriber(modid = INTValues.MOD_ID)
+@Mod.EventBusSubscriber(modid = Tags.MOD_ID)
 public class CommonProxy {
 
         public static final CreativeTabs IMAGINARY_TAB = new CreativeTabs("ImaginaryNumberTech") {

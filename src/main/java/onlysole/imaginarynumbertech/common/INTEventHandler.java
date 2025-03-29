@@ -7,12 +7,12 @@ import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import onlysole.imaginarynumbertech.api.INTValues;
+import onlysole.imaginarynumbertech.Tags;
 import onlysole.imaginarynumbertech.api.capability.pollution.PollutionProvider;
 import onlysole.imaginarynumbertech.api.unification.INTMaterials;
 import onlysole.imaginarynumbertech.api.unification.OrePrefixAdditions;
 
-@Mod.EventBusSubscriber(modid = INTValues.MOD_ID)
+@Mod.EventBusSubscriber(modid = Tags.MOD_ID)
 public class INTEventHandler {
     public INTEventHandler() {}
 
@@ -23,6 +23,6 @@ public class INTEventHandler {
     }
     @SubscribeEvent
     public void attachChunkPollutionCapability(AttachCapabilitiesEvent<Chunk> event) {
-        event.addCapability(new ResourceLocation(INTValues.MOD_ID, "pollution_cap"), new PollutionProvider());
+        event.addCapability(new ResourceLocation(Tags.MOD_ID, "pollution_cap"), new PollutionProvider());
     }
 }

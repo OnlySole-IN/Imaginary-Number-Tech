@@ -14,17 +14,15 @@ import onlysole.imaginarynumbertech.common.items.INTMetaItems;
 
 import java.io.IOException;
 
-import static onlysole.imaginarynumbertech.api.INTValues.*;
-
-@Mod(modid = MOD_ID,
-        name = MOD_NAME,
+@Mod(modid = Tags.MOD_ID,
+        name = Tags.MOD_NAME,
         acceptedMinecraftVersions = "[1.12.2,1.13)",
-        version = VERSION,
+        version = Tags.VERSION,
         dependencies = "required-after:gregtech@[2.8.10-beta,);")
 public class ImaginaryNumberTech {
 
     @SidedProxy(
-            modId = MOD_ID,
+            modId = Tags.MOD_ID,
             clientSide = "onlysole.imaginarynumbertech.client.ClientProxy",
             serverSide = "onlysole.imaginarynumbertech.common.CommonProxy"
     )
